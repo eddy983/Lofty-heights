@@ -1,0 +1,88 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $black-color;
+}
+
+.signup {
+  &__heading {
+    font-weight: 500;
+    font-size: 2.4rem;
+
+    @include respond(tab-land2) {
+      font-size: 4.4rem;
+    }
+  }
+
+  &__sub {
+    color: $grey-color;
+    font-size: 1.6rem;
+
+    @include respond(tab-land2) {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__acct {
+    font-size: 1.4rem;
+    color: $grey-color-2;
+
+    @include respond(tab-land2) {
+      font-size: 2.4rem;
+    }
+
+    &__link {
+      font-weight: bold;
+      color: $primary-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__terms {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $grey-color-3;
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+
+    @include respond(desktop) {
+      font-size: 1.4rem;
+    }
+  }
+}
+.login {
+  &__heading {
+    font-size: 3.6rem;
+    text-align: center;
+
+    @include respond(tab-land2) {
+      font-size: 5.6rem;
+    }
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    color: $primary-color;
+    text-decoration: none;
+
+    @include respond(tab-land2) {
+      font-size: 2.2rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2.6rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

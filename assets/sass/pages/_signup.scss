@@ -1,0 +1,61 @@
+.signup {
+  height: 100%;
+  display: flex;
+
+  @include respond(tab-land2) {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  &__banner {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../../assets/img/BG-Login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 0 0 40%;
+    padding: 2.5% 2%;
+
+    @include respond(tab-land2) {
+      flex: 0 0 32%;
+      background: url(../../../assets/img/Banner-tab3.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: bottom;
+    }
+  }
+
+  &__logo {
+    width: 10.6rem;
+    height: 6.3rem;
+  }
+
+  &__forms {
+    flex: 0 0 60%;
+    padding: 3% 7% 2%;
+    display: flex;
+    flex-direction: column;
+
+    @include respond(desktop) {
+      padding: 5% 7% 2%;
+    }
+
+    @include respond(tab-land) {
+      padding: 3% 7% 2%;
+    }
+
+    @include respond(m-phone-m) {
+      padding: 3% 5.5% 2%;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 5%;
+
+      @include respond(desktop) {
+        margin-top: 9%;
+      }
+    }
+  }
+}
