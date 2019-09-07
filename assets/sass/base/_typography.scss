@@ -86,3 +86,19 @@ body {
     }
   }
 }
+
+.account {
+  &__heading {
+    font-size: 2.7rem;
+    line-height: 168%;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+  }
+}
+
+.footer {
+  &__copyright {
+    font-size: 1.4rem;
+    color: #A8A8A8;
+  }
+}

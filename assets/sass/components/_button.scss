@@ -54,5 +54,14 @@
     @include respond(phone) {
       margin-bottom: 18%;
     }
-  }    
+  }  
+  
+  &__details {
+    padding: 1.8rem 0;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 }

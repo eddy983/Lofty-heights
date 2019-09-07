@@ -8,10 +8,14 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/dropdown";
 @import "components/input";
+@import "components/nav-bar";
 
+@import "layouts/footer";
 @import "layouts/header";
 
+@import "pages/account";
 @import "pages/home";
 @import "pages/login";
 @import "pages/signup";

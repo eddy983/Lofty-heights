@@ -56,6 +56,10 @@
       @include respond(desktop) {
         margin-top: 9%;
       }
+
+      &--1 {
+        margin-top: 6%;
+      }
     }
   }
 }

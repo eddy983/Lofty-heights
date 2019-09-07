@@ -1,0 +1,31 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 4%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  align-items: center;
+
+  &__logo {
+    width: 6.7rem;
+    height: 4rem;
+  }
+
+  &__link {
+    display: flex;
+    list-style-type: none;
+
+    &__items {
+      margin-right: 14%;
+      // &:not(:last-child) {
+      //   margin-right: 14%;
+      // }
+
+      &__link {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+}

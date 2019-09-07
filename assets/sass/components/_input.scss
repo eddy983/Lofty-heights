@@ -19,6 +19,10 @@
     @include respond(tab-land2) {
       font-size: 2.4rem;
     }
+
+    &--acct {
+      color: #A8A8A8;
+    }
   }
 
   &__field {
