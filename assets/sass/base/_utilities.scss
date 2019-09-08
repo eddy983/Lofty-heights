@@ -30,6 +30,12 @@
   }
 }
 
+.phone-sx-d {
+  @include respond(sx-phone) {
+    display: none !important;
+  }
+}
+
 .logo-d {
   display: none;
 
@@ -44,6 +50,10 @@
 
 .red-color {
   color: #C9472C;
+}
+
+.blue-color {
+  color: #2ca7e0;
 }
 
 .unset {

@@ -1,0 +1,49 @@
+.pagination {
+  display: inline-block;
+  padding: 8rem 0 4rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    border: none;
+    float: left;
+    outline: 0;
+    padding: 1rem 1.6rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    color: $black-color;
+    padding: 1rem 2rem;
+
+    @include respond(l-phone2) {
+      font-size: 2rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 3%;
+
+      @include respond(l-phone2) {
+        margin-right: 9%;
+      }
+    }
+
+    &:active,
+    &:hover,
+    &::selection {
+      background-color: $black-color;
+      color: $white-color;
+      border-radius: 8px;
+    }
+  }
+}
+
+.actives {
+  background-color: $black-color;
+  border-radius: 8px;
+  color: $white-color;
+  &:focus {
+    outline: 0;
+  }
+}

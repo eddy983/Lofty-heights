@@ -148,6 +148,17 @@ body {
   }
 }
 
+.payment {
+  &__sub {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+  }
+}
+
 .footer {
   &__copyright {
     font-size: 1.4rem;

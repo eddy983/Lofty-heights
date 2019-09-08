@@ -50,7 +50,7 @@
 
     <header class="account__header">
       <a href="account.html" class="account__arrow">&larr;</a>
-      <p class="account__main">Transactions</p>
+      <p class="account__main">Payments</p>
     </header>
 
     <main class="account">
@@ -64,7 +64,7 @@
             />
             My Account
           </a>
-          <a href="#" class="account__nav__item grey-bg">
+          <a href="#" class="account__nav__item">
             <img
               src="assets/img/transaction.svg"
               alt="Transaction Icon"
@@ -72,7 +72,7 @@
             />
             Transactions
           </a>
-          <a href="#" class="account__nav__item">
+          <a href="#" class="account__nav__item grey-bg">
             <img
               src="assets/img/credit-card.svg"
               alt="Payment Icon"
@@ -105,183 +105,59 @@
         </nav>
       </div>
       <div class="account__content">
-        <h1 class="account__heading">Transactions</h1>
-        <div class="account__transaction">
-          <div class="account__trans__items">
-            <div class="account__trans__imgs">
-              <img
-                src="assets/img/trans-img-1.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-              <img
-                src="assets/img/trans-img-2.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-              <img
-                src="assets/img/trans-img-3.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-            </div>
-            <button class="btn btn__view">View</button>
+        <h1 class="account__heading">Payments</h1>
+        <div class="account__payment">
+            <table>
+              <tr>
+                <th class="payment__text">Recent Transactions</th>
+                <th class="phone-d">&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+              </tr>
+              <tr>
+                <td class="payment__sub phone-sx-d">DATE</td>
+                <td class="payment__sub phone-d">LOCATION</td>
+                <td class="payment__sub phone-d">AMOUNT PAYED</td>
+                <td class="payment__sub">AMOUNT DUE</td>
+                <td class="payment__sub">STATUS</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="payment__text phone-sx-d">11/08/2019</td>
+                <td class="payment__text phone-d">akoka, yaba, lagos</td>
+                <td class="payment__text phone-d">₦5,000</td>
+                <td class="payment__text">₦50,000</td>
+                <td class="blue-color">Ongoing</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="payment__text phone-sx-d">11/08/2019</td>
+                <td class="payment__text phone-d">akoka, yaba, lagos</td>
+                <td class="payment__text phone-d">₦5,000</td>
+                <td class="payment__text">₦50,000</td>
+                <td class="red-color">Payment Due</td>
+                <td><a href="#" class="btn btn__pay">Pay</a></td>
+              </tr>
+              <tr>
+                <td class="payment__text phone-sx-d">11/08/2019</td>
+                <td class="payment__text phone-d">akoka, yaba, lagos</td>
+                <td class="payment__text phone-d">₦5,000</td>
+                <td class="payment__text">₦50,000</td>
+                <td class="green-color">Completed</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="payment__text phone-sx-d">11/08/2019</td>
+                <td class="payment__text phone-d">akoka, yaba, lagos</td>
+                <td class="payment__text phone-d">₦5,000</td>
+                <td class="payment__text">₦50,000</td>
+                <td class="blue-color">Ongoing</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
           </div>
-          <div class="account__trans__statuses">
-            <div class="account__trans__status">
-              <p class="account__trans__type">Number of Units</p>
-              <p class="account__trans__unit">20</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Type</p>
-              <p class="account__trans__unit">Installmental</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Amount Due</p>
-              <p class="account__trans__unit red-color">‎₦50,000</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Status</p>
-              <p class="account__trans__unit green-color">Ongoing</p>
-            </div>
-            <div class="account__trans__line"></div>
-          </div>
-        </div>
-        <div class="account__transaction">
-          <div class="account__trans__items">
-            <div class="account__trans__imgs">
-              <img
-                src="assets/img/trans-img-1.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-              <img
-                src="assets/img/trans-img-2.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-              <img
-                src="assets/img/trans-img-3.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-            </div>
-            <button class="btn btn__view">View</button>
-          </div>
-          <div class="account__trans__statuses">
-            <div class="account__trans__status">
-              <p class="account__trans__type">Number of Units</p>
-              <p class="account__trans__unit">20</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Type</p>
-              <p class="account__trans__unit">Installmental</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Amount Due</p>
-              <p class="account__trans__unit red-color">‎₦50,000</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Status</p>
-              <p class="account__trans__unit green-color">Ongoing</p>
-            </div>
-            <div class="account__trans__line"></div>
-          </div>
-        </div>
-        <div class="account__transaction">
-          <div class="account__trans__items">
-            <div class="account__trans__imgs">
-              <img
-                src="assets/img/trans-img-1.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-              <img
-                src="assets/img/trans-img-2.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-              <img
-                src="assets/img/trans-img-3.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-            </div>
-            <button class="btn btn__view">View</button>
-          </div>
-          <div class="account__trans__statuses">
-            <div class="account__trans__status">
-              <p class="account__trans__type">Number of Units</p>
-              <p class="account__trans__unit">20</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Type</p>
-              <p class="account__trans__unit">Installmental</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Amount Due</p>
-              <p class="account__trans__unit red-color">‎₦50,000</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Status</p>
-              <p class="account__trans__unit green-color">Ongoing</p>
-            </div>
-            <div class="account__trans__line"></div>
-          </div>
-        </div>
-        <div class="account__transaction">
-          <div class="account__trans__items">
-            <div class="account__trans__imgs">
-              <img
-                src="assets/img/trans-img-1.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-              <img
-                src="assets/img/trans-img-2.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-              <img
-                src="assets/img/trans-img-3.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-            </div>
-            <button class="btn btn__view">View</button>
-          </div>
-          <div class="account__trans__statuses">
-            <div class="account__trans__status">
-              <p class="account__trans__type">Number of Units</p>
-              <p class="account__trans__unit">20</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Type</p>
-              <p class="account__trans__unit">Installmental</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Amount Due</p>
-              <p class="account__trans__unit red-color">‎₦50,000</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Status</p>
-              <p class="account__trans__unit green-color">Ongoing</p>
-            </div>
-            <div class="account__trans__line"></div>
-          </div>
-        </div>
         <!-- Pagination -->
         <div class="pagination">
           <a href="#" class="pagination__item pagination-font">1</a>
