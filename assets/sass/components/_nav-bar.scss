@@ -14,17 +14,22 @@
     display: flex;
     list-style-type: none;
 
+    @include respond(tab-land2) {
+      display: none;
+    }
+
     &__items {
       margin-right: 14%;
-      // &:not(:last-child) {
-      //   margin-right: 14%;
-      // }
 
       &__link {
         font-size: 1.4rem;
         text-transform: uppercase;
-        color: #000000;
+        color: $black-color;
         text-decoration: none;
+
+        &:hover {
+          color: $primary-color;
+        }
       }
     }
   }

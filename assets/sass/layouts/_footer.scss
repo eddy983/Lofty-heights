@@ -2,26 +2,71 @@
   background: #060707;
   margin-top: 10.8rem;
 
+  @include respond(tab-land2) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  @include respond(tab-port3) {
+    position: unset;
+  }
+
   &__content {
     padding: 3% 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(tab-land2) {
+      flex-direction: column;
+    }
   }
 
   &__link {
     flex: 0 0 32%;
 
+    @include respond(tab-land2) {
+      width: 67%;
+      order: 1;
+      margin: 5% 0 2.5%;
+    }
+
     &__items {
       display: flex;
       justify-content: space-between;
       list-style-type: none;
+
+      @include respond(l-phone2) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &__item {
+      @include respond(l-phone2) {
+        margin-bottom: 8%;
+      }
+    }
+
+    &__text {
       font-size: 1.4rem;
       color: #ffffff;
       text-decoration: none;
+
+      @include respond(tab-land2) {
+        font-size: 1.8rem;
+      }
+
+      @include respond(l-phone2) {
+        font-size: 2.5rem;
+      }
+
+
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
 
@@ -29,10 +74,29 @@
     flex: 0 0 25%;
     display: flex;
     justify-content: space-between;
+
+    @include respond(tab-land2) {
+      width: 30%;
+      align-self: center;
+    }
+
+    @include respond(tab-port3) {
+      width: 40%;
+    }
+
+    @include respond(l-phone2) {
+      display: none;
+    }
+  }
+
+  &__button {
+    // &:hover {
+    //   stroke: $primary-color;
+    // }
   }
 
   &__line {
-    border: .5px solid #A8A8A8;
+    border: 0.5px solid #a8a8a8;
   }
 
   &__bottom {
@@ -40,11 +104,29 @@
     padding: 1% 4%;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(l-phone2) {
+      justify-content: center;
+    }
   }
 
-  &__social-media {
+  &__social-medias {
     flex: 0 0 10%;
     display: flex;
     justify-content: space-between;
+
+    @include respond(l-phone2) {
+      display: none;
+    }
   }
+
+  &__social-media {
+    &:hover {
+      fill: $primary-color;
+    }
+  }
+}
+
+.footer__button:hover > * > * {
+  stroke: $primary-color;
 }

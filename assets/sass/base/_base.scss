@@ -18,4 +18,14 @@ html {
 
 body {
   box-sizing: border-box; 
+
+  @include respond(tab-land2) {
+    height: 120vh;
+    position: relative;
+  }
+
+  @include respond(tab-port3) {
+    height: 100%;
+    position: unset;
+  }
 }

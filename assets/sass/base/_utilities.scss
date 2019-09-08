@@ -17,3 +17,23 @@
 .grey-bg {
   background: #EBEBEB;
 }
+
+.tab-d {
+  @include respond(tab-land2) {
+    display: none !important;
+  }
+}
+
+.phone-d {
+  @include respond(l-phone2) {
+    display: none !important;
+  }
+}
+
+.logo-d {
+  display: none;
+
+  @include respond(tab-land2) {
+    display: flex;
+  }
+}
