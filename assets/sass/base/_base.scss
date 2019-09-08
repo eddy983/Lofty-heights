@@ -20,7 +20,7 @@ body {
   box-sizing: border-box; 
 
   @include respond(tab-land2) {
-    height: 110vh;
+    height: 140vh;
     position: relative;
   }
 

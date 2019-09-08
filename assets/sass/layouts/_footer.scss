@@ -10,7 +10,7 @@
   }
 
   &--unset {
-    @include respond(tab-land2) {
+    @include respond(tab-port3) {
       position: unset;
     }
   }

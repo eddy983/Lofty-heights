@@ -122,18 +122,18 @@
   }
 
   &__overview {
-    border: 0.75px solid #d6d6d6;
+    border: 0.75px solid $grey-light-color-2;
     border-radius: 8px;
   }
 
   &__details {
     flex: 0 0 38%;
-    border: 0.75px solid #d6d6d6;
+    border: 0.75px solid $grey-light-color-2;
     border-radius: 8px;
 
     &__header {
       padding: 1.2rem 2.4rem;
-      border-bottom: 0.75px solid #d6d6d6;
+      border-bottom: 0.75px solid $grey-light-color-2;
     }
 
     &__body {
@@ -142,7 +142,7 @@
   }
 
   &__transaction {
-    border: 0.75px solid #d6d6d6;
+    border: 0.75px solid $grey-light-color-2;
     border-radius: 8px;
     padding: 3.2rem;
     margin-top: 6%;
@@ -228,7 +228,7 @@
 
     &__line {
       height: 3.8rem;
-      border: 0.5px solid #d6d6d6;
+      border: 0.5px solid $grey-light-color-2;
 
       @include respond(l-phone2) {
         opacity: 0;
@@ -237,9 +237,68 @@
   }
 
   &__payment {
-    border: 0.75px solid #d6d6d6;
+    border: 0.75px solid $grey-light-color-2;
     border-radius: 8px;
     margin-top: 8%;
+  }
+
+  &__int {
+    display: flex;
+    justify-content: space-between;
+    border: 0.75px solid $grey-light-color-2;
+    border-radius: 8px;
+    padding: 3.2rem;
+    margin-top: 6%;
+
+    @include respond(l-phone2) {
+      flex-direction: column;
+      margin-top: 20%;
+    }
+
+    &:not(:first-child) {
+      margin-top: 4%;
+
+      @include respond(l-phone2) {
+        margin-top: 10%;
+      }
+    }
+
+    &__items {
+      display: flex;
+      width: 70%;
+    }
+
+    &__img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+
+      @include respond(l-phone2) {
+        display: none;
+      }
+    }
+
+    &__texts {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 4%;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      justify-content: space-between;
+
+      @include respond(l-phone2) {
+        flex-direction: row;
+        width: 100%;
+        border-top: 1px solid $grey-light-color-2;
+        padding-top: 10%;
+        margin-top: 10%;
+      }
+    }
   }
 }
 
@@ -263,6 +322,6 @@ th {
 
 tr {
   &:not(:last-child) {
-    border-bottom: 0.75px solid #d6d6d6;
+    border-bottom: 0.75px solid $grey-light-color-2;
   }
 }

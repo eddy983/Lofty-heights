@@ -82,7 +82,7 @@
     margin-left: -1.2rem;
 
     &:hover {
-      background: #fae9e6;
+      background: $pink-color;
     }
   }
 
@@ -105,6 +105,14 @@
       padding: 1.5rem 0;
     }
 
+    &--2 {
+      width: 100%;
+
+      @include respond(l-phone2) {
+        width: 48%;
+      }
+    }
+
     &:hover {
       color: #fff;
       border: none;
@@ -112,9 +120,33 @@
   }
 
   &__pay {
-    padding: .6rem 1.4rem;
+    padding: 0.6rem 1.4rem;
     font-size: 1.2rem;
     border-radius: 4px;
     text-decoration: none;
+  }
+
+  &__remove {
+    font-size: 1.8rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #140300;
+    display: flex;
+    justify-content: center;
+    padding: 1.4rem 0;
+    background: transparent;
+
+    @include respond(l-phone2) {
+      width: 48%;
+    }
+
+    &::before {
+      content: url(https://res.cloudinary.com/eddy983/image/upload/v1567940866/remove.svg);
+      margin-right: 8px;
+    }
+
+    &:hover {
+      background: $pink-color;
+    }
   }
 }
