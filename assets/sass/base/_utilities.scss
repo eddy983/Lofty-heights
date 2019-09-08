@@ -14,6 +14,10 @@
   margin-bottom: 12%;
 }
 
+.mt-6 {
+  margin-top: 6%;
+}
+
 .grey-bg {
   background: #EBEBEB;
 }
@@ -58,4 +62,16 @@
 
 .unset {
   position: unset;
+}
+
+.w50 {
+  width: 50%;
+
+  @include respond(l-phone2) {
+    width: 100%;
+  }
+}
+
+.w100 {
+  width: 100%;
 }
