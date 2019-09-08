@@ -9,6 +9,17 @@
     margin-top: 12%;
   }
 
+  &__header {
+    padding: 5% 4%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    display: none;
+    align-items: center;
+
+    @include respond(tab-land2) {
+      display: flex;
+    }
+  }
+
   &__nav {
     flex: 0 0 28%;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
@@ -103,14 +114,14 @@
     }
   }
 
-  &__transactions {
+  &__overviews {
     display: flex;
     justify-content: space-between;
     align-items: start;
     margin-top: 6%;
   }
 
-  &__transaction {
+  &__overview {
     border: 0.75px solid #d6d6d6;
     border-radius: 8px;
   }
@@ -127,6 +138,101 @@
 
     &__body {
       padding: 2.4rem 2.4rem 1.2rem;
+    }
+  }
+
+  &__transaction {
+    border: 0.75px solid #d6d6d6;
+    border-radius: 8px;
+    padding: 3.2rem;
+    margin-top: 6%;
+
+    @include respond(sx-phone) {
+      margin-top: 10%;
+    }
+
+    &:not(:first-child) {
+      margin-top: 4.5%;
+
+      @include respond(sx-phone) {
+        margin-top: 10%;
+      }
+    }
+
+    @include respond(l-phone2) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__trans {
+    &__items {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+
+      @include respond(l-phone2) {
+        order: 1;
+      }
+    }
+
+    &__imgs {
+      display: flex;
+      flex: 0 0 69%;
+      align-items: start;
+      justify-content: space-between;
+
+      @include respond(l-phone2) {
+        display: none;
+      }
+    }
+
+    &__img {
+      width: 13.6rem;
+      height: 12.4rem;
+      object-fit: cover;
+    }
+
+    &__statuses {
+      display: flex;
+      margin: 4% 0 0;
+      align-items: center;
+
+      @include respond(l-phone2) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+
+    &__status {
+      margin-right: 4.2rem;
+
+      @include respond(l-phone2) {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &:not(:first-child) {
+        margin: 0 4.2rem 0 2rem;
+
+        @include respond(l-phone2) {
+          margin: 0;
+        }
+      }
+    }
+
+    &__line {
+      height: 3.8rem;
+      border: 0.5px solid #d6d6d6;
+
+      @include respond(l-phone2) {
+        opacity: 0;
+      }
     }
   }
 }
@@ -151,6 +257,6 @@ th {
 
 tr {
   &:not(:last-child) {
-  border-bottom:  0.75px solid #d6d6d6;
+    border-bottom: 0.75px solid #d6d6d6;
   }
 }

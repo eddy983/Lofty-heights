@@ -9,6 +9,12 @@
     width: 100%;
   }
 
+  &--unset {
+    @include respond(tab-land2) {
+      position: unset;
+    }
+  }
+
   @include respond(tab) {
     position: unset;
   }
@@ -62,7 +68,6 @@
       @include respond(l-phone2) {
         font-size: 2.5rem;
       }
-
 
       &:hover {
         color: $primary-color;
