@@ -94,11 +94,28 @@ body {
     letter-spacing: 0.03em;
     font-weight: 400;
   }
+
+  &__details {
+      letter-spacing: 0.03em;
+
+      &__heading {
+        font-size: 1.2rem;
+      }
+
+      &__name {
+        font-size: 1.6rem;
+      }
+      &__sub {
+        font-size: 1.2rem;
+        letter-spacing: 0.03em;
+        color: #a8a8a8;
+      }
+    }
 }
 
 .footer {
   &__copyright {
     font-size: 1.4rem;
-    color: #A8A8A8;
+    color: #a8a8a8;
   }
 }

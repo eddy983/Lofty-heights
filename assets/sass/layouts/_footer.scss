@@ -9,7 +9,7 @@
     width: 100%;
   }
 
-  @include respond(tab-port3) {
+  @include respond(tab) {
     position: unset;
   }
 

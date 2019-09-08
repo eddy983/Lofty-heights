@@ -20,12 +20,12 @@ body {
   box-sizing: border-box; 
 
   @include respond(tab-land2) {
-    height: 120vh;
+    height: 100vh;
     position: relative;
   }
 
-  @include respond(tab-port3) {
+  @include respond(tab) {
     height: 100%;
-    position: unset;
+    position: unset; 
   }
 }
