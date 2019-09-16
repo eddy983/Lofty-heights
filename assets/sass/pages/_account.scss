@@ -240,6 +240,10 @@
     border: 0.75px solid $grey-light-color-2;
     border-radius: 8px;
     margin-top: 8%;
+
+    &--1 {
+      margin: 6% 0 5%;
+    }
   }
 
   &__int {
