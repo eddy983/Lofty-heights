@@ -9,7 +9,7 @@
 
   &__banner {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(../../../assets/img/BG-Login.png);
+      url(https://res.cloudinary.com/eddy983/image/upload/v1568724547/BG-Login.png);
     background-size: cover;
     background-repeat: no-repeat;
     flex: 0 0 40%;
@@ -17,7 +17,7 @@
 
     @include respond(tab-land2) {
       flex: 0 0 32%;
-      background: url(../../../assets/img/Banner-tab3.png);
+      background: url(https://res.cloudinary.com/eddy983/image/upload/v1568724546/Banner-tab.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position-y: bottom;
