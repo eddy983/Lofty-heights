@@ -21,7 +21,7 @@
     }
 
     &--acct {
-      color: #A8A8A8;
+      color: #a8a8a8;
     }
   }
 
@@ -60,3 +60,12 @@
 .lc {
   margin-bottom: 2%;
 }
+
+input:valid {
+  background: url(https://res.cloudinary.com/eddy983/image/upload/v1568888695/checked.svg);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+}
+
+
