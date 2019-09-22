@@ -16,11 +16,8 @@
     padding: 2.5% 2%;
 
     @include respond(tab-land2) {
-      flex: 0 0 32%;
-      background: url(https://res.cloudinary.com/eddy983/image/upload/v1568724546/Banner-tab.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-y: bottom;
+      display: none;
+      background: none;
     }
   }
 
