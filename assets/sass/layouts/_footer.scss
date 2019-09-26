@@ -2,22 +2,15 @@
   background: #060707;
   margin-top: 10.8rem;
 
-  @include respond(tab-land2) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  &--unset {
-    @include respond(tab-port3) {
-      position: unset;
+  &--set {
+    @include respond(tab-land2) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
     }
   }
 
-  @include respond(tab) {
-    position: unset;
-  }
 
   &__content {
     padding: 3% 4%;

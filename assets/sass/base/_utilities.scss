@@ -1,3 +1,5 @@
+//? Margins
+
 .mt-1-5p {
   margin-top: 1.5%;
 }
@@ -10,17 +12,31 @@
   margin-top: 4%; 
 }
 
-.mb-12 {
-  margin-bottom: 12%;
-}
-
 .mt-6 {
   margin-top: 6%;
 }
 
+.mt-40p {
+  margin-top: 40%;
+}
+
+.mb-12 {
+  margin-bottom: 12%;
+}
+
+.m-none {
+  margin: 0 !important;
+}
+
+
+
+//? Backgrounds
+
 .grey-bg {
   background: #EBEBEB;
 }
+
+//? Display
 
 .tab-d {
   @include respond(tab-land2) {
@@ -48,6 +64,8 @@
   }
 }
 
+//? Colors
+
 .green-color {
   color: #5FB391;
 }
@@ -60,9 +78,17 @@
   color: #2ca7e0;
 }
 
+.white-color {
+  color: #fff;
+}
+
+//? Positions
+
 .unset {
   position: unset;
 }
+
+//? Widths
 
 .w50 {
   width: 50%;
@@ -74,4 +100,10 @@
 
 .w100 {
   width: 100%;
+}
+
+//? Heights
+
+.h140vh {
+    height: 140vh;
 }

@@ -184,6 +184,60 @@ body {
   }
 }
 
+.header {
+  color: $white-color;
+
+  &__main {
+    font-weight: bold;
+    font-size: 7.2rem;
+    letter-spacing: 0.02em;
+  }
+
+  &__sub {
+    font-size: 1.6rem;
+    letter-spacing: 0.03em;
+
+    @include respond(l-phone2) {
+      display: none;
+    }
+  }
+}
+
+.contact {
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    color: $white-color;
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+    color: $white-color;
+  }
+}
+
+.content {
+  &__heading {
+    font-size: 2.4rem;
+    letter-spacing: 0.03em;
+
+    @include respond(l-phone2) {
+      font-size: 4.4rem;
+    }
+  }
+
+  &__sub {
+    font-size: 1.4rem;
+    color: #333;
+
+    @include respond(l-phone2) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
 .footer {
   &__copyright {
     font-size: 1.4rem;

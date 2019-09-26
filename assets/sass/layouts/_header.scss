@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+
+  &__choice {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../../assets/img/building-banner.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position-y: center;
+
+    @include respond(l-phone2) {
+      height: 40vh;
+    }
+  }
+
+  &__texts {
+    @include position;
+    text-align: center;
+  }
+}

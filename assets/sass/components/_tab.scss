@@ -1,0 +1,36 @@
+.tab {
+  border: 0.5px solid $primary-color;
+  border-radius: 6px;
+  display: flex;
+  width: 100%;
+
+  &__item {
+    width: 33.33333333333333%;
+    padding: 1.8rem 0;
+    border: none;
+    outline: 0;
+    background: transparent;
+
+    &:not(:first-child) {
+      border-left: 0.5px solid $primary-color;
+    }
+
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+
+    &:hover {
+      color: $white-color;
+      background: $primary-color;
+    }
+  }
+}
+
+.w3-red {
+  color: $white-color;
+  background: $primary-color;
+}

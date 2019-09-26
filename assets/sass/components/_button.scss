@@ -9,7 +9,7 @@
   cursor: pointer;
 
   &:hover {
-    background: #9f3823;
+    background: $dark-red-color;
   }
 
   &__signup {
@@ -147,6 +147,51 @@
 
     &:hover {
       background: $pink-color;
+    }
+  }
+
+  &__nav {
+    font-size: 1.4rem;
+    padding: 1.4rem 4rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 500;
+
+    &-signin {
+      background: $primary-color;
+    }
+
+    &-login {
+      background: transparent;
+      margin-left: 2%;
+
+      &:hover {
+        color: $primary-color;
+        background: $white-color;
+      }
+    }
+  }
+
+  &__send {
+    width: 28%;
+    padding: .9rem;
+    font-size: 1.8rem;
+    border: 2px solid $primary-color;
+    background: white;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-top: 10%;
+    
+    &:hover {
+      background: $dark-red-color;
+      border: 2px solid $dark-red-color;
+      color: $white-color;
+    }
+
+    @include respond(l-phone2) {
+      font-size: 1.4rem;
+      width: 100%;
+      padding: 2.4rem 0;
     }
   }
 }
