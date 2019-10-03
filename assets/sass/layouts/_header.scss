@@ -1,8 +1,21 @@
 .header {
   position: relative;
 
+  &__landing {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+      url(../../../assets/img/architecture-beautiful-exterior-106399.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+
+    @include respond(tab-land2) {
+      height: 35vh;
+    }
+  }
+
   &__choice {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../../assets/img/building-banner.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(https://res.cloudinary.com/eddy983/image/upload/v1569979208/building-banner.jpg);
     height: 80vh;
     background-size: cover;
     background-position-y: center;
@@ -15,5 +28,98 @@
   &__texts {
     @include position;
     text-align: center;
+  }
+
+  &__bar {
+    background: $white-color;
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: flex;
+    transform: translate(-50%, 50%);
+    padding: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
+    @include respond(l-phone2) {
+      flex-direction: column;
+      transform: translate(-50%, 85%);
+    }
+
+    &__icon {
+      font-size: 3rem;
+      transform: rotate(-45deg);
+      margin-left: 1%;
+      color: #c87a6a;
+      font-weight: bold;
+
+      @include respond(l-phone2) {
+        display: none;
+      }
+    }
+
+    &__search {
+      flex: 2 1 auto;
+      border: none;
+      font-size: 1.6rem;
+      padding: 0 1.6rem;
+      outline: 0;
+
+      @include respond(l-phone2) {
+        padding: 3.6rem 1.6rem;
+        font-size: 2.2rem;
+      }
+
+      &:focus {
+        outline-offset: -2px;
+      }
+
+      &::placeholder {
+        color: #a89f9f;
+        font-size: 1.6rem;
+
+        @include respond(l-phone2) {
+          font-size: 2.2rem;
+        }
+      }
+    }
+
+    &__dropdown {
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      border-radius: 8px;
+      padding: 1.6rem 2.4rem;
+      flex: 1 1 auto;
+      margin-left: 1%;
+      border: none;
+      outline: 0;
+      /* for Firefox */
+      -moz-appearance: none;
+      /* for Chrome */
+      -webkit-appearance: none;
+      background: url(../../../assets/img/arrow.svg) no-repeat 94% #f0f0f0;
+
+      &::-ms-expand {
+        display: none;
+      }
+
+      @include respond(l-phone2) {
+        font-size: 2.2rem;
+        letter-spacing: 0.03em;
+        padding: 2.6rem 2.4rem;
+        margin-bottom: 3%;
+      }
+    }
+
+    &__option {
+      background: #f0f0f0;
+      text-transform: uppercase;
+
+      &:hover {
+        background: #e0e0e0;
+        color: $black-color;
+      }
+    }
   }
 }

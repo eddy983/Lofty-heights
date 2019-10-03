@@ -5,6 +5,10 @@
   display: flex;
   justify-content: center;
 
+  &--2 {
+    padding: 8rem 0;
+  }
+
   &__item {
     border: none;
     float: left;

@@ -1,0 +1,98 @@
+.landing {
+  padding: 0 4%;
+
+  &__heading {
+    margin: 14% 0 6% 0;
+
+    @include respond(l-phone2) {
+      margin: 80% 0 6% 0;
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__box {
+    flex: 0 0 calc(100% / 3 - 3%);
+    box-shadow: 0px 4px 12px rgba(20, 3, 0, 0.08);
+    height: 100%;
+    margin-bottom: 3%;
+    border-radius: 8px;
+    transition: all 0.5s;
+
+    &:hover {
+      box-shadow: 0px 16px 20px rgba(20, 3, 0, 0.18);
+    }
+
+    @include respond(tab-land2) {
+      flex: 0 0 100%;
+      margin-bottom: 8%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 40%;
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  &__overlay {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  &__like {
+    &:hover {
+      fill: $dark-red-color;
+      cursor: pointer;
+    }
+  }
+
+  &__costs {
+    padding: 2.2rem 2rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__content {
+    padding: 2rem;
+    border-radius: 0 0 8px 8px;
+  }
+
+  &__first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__infos {
+    display: flex;
+    margin-top: 2.4rem;
+  }
+
+  &__info {
+    &__icon {
+      display: block;
+    }
+    &:last-child {
+      margin-left: 8%;
+    }
+  }
+}

@@ -191,6 +191,10 @@ body {
     font-weight: bold;
     font-size: 7.2rem;
     letter-spacing: 0.02em;
+
+    @include respond(l-phone2) {
+      font-size: 4.2rem;
+    }
   }
 
   &__sub {
@@ -235,6 +239,43 @@ body {
     @include respond(l-phone2) {
       font-size: 2.4rem;
     }
+  }
+}
+
+.landing {
+  &__title {
+    font-size: 1.6rem;
+
+    @include respond(l-phone2) {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__cost {
+    font-size: 1.6rem;
+    color: $white-color;
+  }
+
+  &__location {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  &__sub {
+    font-size: 1.6rem;
+    color: $grey-color-4;
+  }
+
+  &__room {
+    font-size: 1.4rem;
+    color: $grey-color-4;
+    display: inline-block;
+  }
+
+  &__size {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2.4rem;
   }
 }
 
