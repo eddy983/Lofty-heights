@@ -1,0 +1,13 @@
+.map {
+  padding: 0 4%;
+  margin-top: 12%;
+
+  &__showcase {
+    height: 85vh;
+    width: 100%;
+
+    @include respond(l-phone2) {
+      height: 40vh;
+    }
+  }
+}
