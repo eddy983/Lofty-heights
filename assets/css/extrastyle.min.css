@@ -6,10 +6,6 @@
   width: fit-content;
 }
 
-.h48 {
-  height: 48px !important;
-}
-
 .padding67-56 {
   padding-top: 56px;
   padding-left: 67px;
@@ -85,27 +81,4 @@ svg#camera {
 iframe {
   width: 756px;
   height: 437px;
-}
-
-@media screen and (max-width: 40.75em) {
-  .buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .wfc {
-    width: 100%;
-  }
-
-  .h48 {
-    height: 100% !important;
-  }
-
-  .m__r30 {
-    margin-right: 0;
-  }
-
-  .btn_orange {
-    margin-top: 20px;
-  }
 }
