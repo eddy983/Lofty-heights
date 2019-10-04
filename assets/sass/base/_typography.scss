@@ -205,6 +205,11 @@ body {
       display: none;
     }
   }
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
 }
 
 .contact {
@@ -398,6 +403,25 @@ body {
     @include respond(tab-port3) {
       font-size: 4rem;
     }
+  }
+}
+
+.about {
+  &__title {
+    font-size: 4rem;
+  }
+
+  &__paragraph {
+    font-size: 1.6rem;
+
+    @include respond(l-phone2) {
+      font-size: 3.4rem;
+    }
+  }
+
+  &__head {
+    font-size: 1.8rem;
+    font-weight: 500;
   }
 }
 

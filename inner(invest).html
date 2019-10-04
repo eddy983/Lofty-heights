@@ -16,28 +16,67 @@
 
   <body>
     <nav class="nav-bar">
-      <img src="assets/img/logo.png" alt="Logo" class="nav-bar__logo" />
+      <div class="navigation">
+        <input required
+               required
+               type="checkbox"
+               class="navigation__checkbox"
+               id="nav-toggle" />
+        <label for="nav-toggle"
+               class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="landing.html"
+                 class="navigation__link">HOME</a>
+            </li>
+            <li class="navigation__item">
+              <a href="tours.html"
+                 class="navigation__link">TOURS</a>
+            </li>
+            <li class="navigation__item">
+              <a href="about.html"
+                 class="navigation__link">ABOUT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <img src="assets/img/logo.png"
+           alt="Logo"
+           class="nav-bar__logo" />
       <ul class="nav-bar__link">
         <li class="nav-bar__link__items">
-          <a href="#" class="nav-bar__link__items__link">Home</a>
+          <a href="landing.html"
+             class="nav-bar__link__items__link">Home</a>
         </li>
         <li class="nav-bar__link__items">
-          <a href="#" class="nav-bar__link__items__link">properties</a>
+          <a href="tours.html"
+             class="nav-bar__link__items__link">tours</a>
         </li>
         <li class="nav-bar__link__items">
-          <a href="#" class="nav-bar__link__items__link">tours</a>
-        </li>
-        <li class="nav-bar__link__items">
-          <a href="#" class="nav-bar__link__items__link">about</a>
+          <a href="about.html"
+             class="nav-bar__link__items__link">about</a>
         </li>
       </ul>
-      <div class="nav-bar__buttons">
-        <button class="btn btn__nav btn__nav-login btn__nav-login--b">
-          login
+      <div class="dropdown">
+        <button class="dropbtn tab-d">
+          <img src="assets/img/user.svg"
+               alt="user" />
         </button>
-        <button class="btn btn__nav btn__nav-signin">signup</button>
+        <div class="dropdown-content tab-d">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <a href="account.html"><img src="assets/img/User(2).svg"
+               alt="User Logo"
+               class="logo-d" /></a>
       </div>
     </nav>
+
     <section class="inner">
       <div class="inner__heading">
         <div class="inner__header">

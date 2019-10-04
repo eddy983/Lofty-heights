@@ -1,0 +1,115 @@
+.about {
+  &__section {
+    margin-bottom: 18%;
+    position: relative;
+    
+    @include respond(l-phone2) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 10%;
+    }
+
+
+    &--1 {
+      background: url(https://res.cloudinary.com/eddy983/image/upload/v1570198256/scott-blake-x-ghf9LjrVg-unsplash.jpg);
+      height: 75vh;
+      margin-top: 6%;
+      background-size: 70% 200%;
+      background-position: right center;
+      background-repeat: no-repeat;
+
+      @include respond(tab-land2) {
+        height: 35vh;
+      }
+
+      @include respond(l-phone2) {
+        height: 100%;
+        background: none;
+      }
+    }
+
+    &--2 {
+      background: url(https://res.cloudinary.com/eddy983/image/upload/v1570202075/charles-Za9oagRJNLM-unsplash.jpg);
+      height: 100vh;
+      background-size: 70% 200%;
+      background-position: left center;
+      background-repeat: no-repeat;
+
+      @include respond(tab-land2) {
+        height: 40vh;
+      }
+
+      @include respond(l-phone2) {
+        height: 100%;
+        background: none;
+      }
+    }
+
+    &--3 {
+      background: url(https://res.cloudinary.com/eddy983/image/upload/v1570202111/abuja7.jpg);
+      height: 75vh;
+      background-size: 70% 140%;
+      background-position: right center;
+      background-repeat: no-repeat;
+
+      @include respond(tab-land2) {
+        height: 40vh;
+      }
+
+      @include respond(l-phone2) {
+        height: 100%;
+        background: none;
+      }
+    }
+  }
+
+  &__card {
+    width: 50%;
+    padding: 4% 6%;
+    background: #ffffff;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.4);
+    position: absolute;
+
+    @include respond(tab-land2) {
+      width: 80%;
+    }
+
+    @include respond(l-phone2) {
+      position: unset;
+      width: 100%;
+      box-shadow: none;
+    }
+  }
+
+  &__header {
+    width: fit-content;
+  }
+
+  &__line {
+    width: 30%;
+    height: 1.5px;
+    background: #c9472c;
+  }
+}
+
+.top {
+  left: 0;
+  top: -12%;
+}
+
+.center {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include respond(l-phone2) {
+    transform: translateY(0);
+  }
+}
+
+.bottom {
+  bottom: -12%;
+  left: 0;
+}

@@ -1,57 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <title>Lofty Heights</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible"
-        content="ie=edge" />
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap"
-        rel="stylesheet" />
-  <!-- Main CSS -->
-  <link rel="stylesheet"
-        href="assets/css/main.min.css" />
-  <title>Lofty Heights</title>
-</head>
+  <body>
+    <nav class="nav-bar nav-bar--trans">
+      <img src="assets/img/logo-white.png" alt="Logo" class="nav-bar__logo" />
+      <ul class="nav-bar__link">
+        <li class="nav-bar__link__items">
+          <a
+            href="landing.html"
+            class="nav-bar__link__items__link nav-bar__link__items__link--white"
+            >Home</a
+          >
+        </li>
+        <li class="nav-bar__link__items">
+          <a
+            href="tours.html"
+            class="nav-bar__link__items__link nav-bar__link__items__link--white"
+            >tours</a
+          >
+        </li>
+        <li class="nav-bar__link__items">
+          <a
+            href="about.html"
+            class="nav-bar__link__items__link nav-bar__link__items__link--white"
+            >about</a
+          >
+        </li>
+      </ul>
+      <div class="nav-bar__buttons">
+        <button onclick="window.location.href='login.html'" class="btn btn__nav btn__nav-login">login</button>
+        <button onclick="window.location.href='signup.html'" class="btn btn__nav btn__nav-signin">signup</button>
+      </div>
+    </nav>
+    <header class="header header__about">
+      <div class="header__texts">
+        <div class="header__header">
+          <p class="header__title">About Us</p>
+          <div class="header__line"></div>
+        </div>
 
-<body>
-  <nav class="nav-bar nav-bar--trans">
-    <img src="assets/img/logo-white.png"
-         alt="Logo"
-         class="nav-bar__logo" />
-    <ul class="nav-bar__link">
-      <li class="nav-bar__link__items">
-        <a href="#"
-           class="nav-bar__link__items__link nav-bar__link__items__link--white">Home</a>
-      </li>
-      <li class="nav-bar__link__items">
-        <a href="#"
-           class="nav-bar__link__items__link nav-bar__link__items__link--white">properties</a>
-      </li>
-      <li class="nav-bar__link__items">
-        <a href="#"
-           class="nav-bar__link__items__link nav-bar__link__items__link--white">tours</a>
-      </li>
-      <li class="nav-bar__link__items">
-        <a href="#"
-           class="nav-bar__link__items__link nav-bar__link__items__link--white">about</a>
-      </li>
-    </ul>
-    <div class="nav-bar__buttons">
-      <button class="btn btn__nav btn__nav-login">login</button>
-      <button class="btn btn__nav btn__nav-signin">signup</button>
-    </div>
-  </nav>
-  <header class="header header__landing">
-    <div class="header__texts">
-      <h1 class="header__main">Who are we</h1>
-      <p class="header__sub">We love what we do and like to see our clients develop and buy properties at cheap prices.</p>
-    </div>
-  </header>
-  
-  <!-- <footer class="footer m-none">
+        <h1 class="header__main">Who are we</h1>
+        <p class="header__sub">
+          We love what we do and like to see our clients develop and buy
+          properties at cheap prices.
+        </p>
+      </div>
+    </header>
+
+    <main class="about">
+      <div class="about__section about__section--1">
+        <div class="about__card bottom">
+          <div class="about__header">
+            <h3 class="about__title">Who are we</h3>
+            <div class="about__line"></div>
+          </div>
+          <p class="about__paragraph mt-3">
+            We are Lofty Heights Africa is a real estate financing and
+            development company established in 2018, looking to solve the
+            housing problems in Nigeria and Africa at large.
+          </p>
+          <p class="about__paragraph mt-3">
+            With Nigeria’s housing deficit standing at about 20 million units,
+            Lofty Heights aims to provide quality, affordable housing for
+            everybody.
+          </p>
+          <p class="about__paragraph mt-3">
+            Our vision is to create Africa’s largest housing chain for low and
+            middle income earners.
+          </p>
+        </div>
+      </div>
+      <div class="about__section about__section--2">
+        <div class="about__card center">
+          <div class="about__header">
+            <h3 class="about__title">Our Values</h3>
+            <div class="about__line"></div>
+          </div>
+          <p class="about__paragraph mt-3">
+            We exist to keep our clients and collaborators happy and fulfilled.
+            In fulfilling our client mandate, we imbibe the following values:
+          </p>
+          <p class="about__head mt-3">Integrity</p>
+          <p class="about__paragraph">
+            We walk the talk, trustworthy and ethical in all our actions.
+          </p>
+          <p class="about__head mt-3">Competence</p>
+          <p class="about__paragraph">
+            We are research-driven, using reliable data to that help our clients
+            make the right decisions.
+          </p>
+          <p class="about__head mt-3">Quality Client/Customer</p>
+          <p class="about__paragraph ">
+            Our existence is key to providing satisfaction for all our clients
+            by providing opportunities that establish competitive advantages and
+            delivering results.
+          </p>
+        </div>
+      </div>
+      <div class="about__section about__section--3">
+        <div class="about__card top">
+          <div class="about__header">
+            <h3 class="about__title">Our Strategy</h3>
+            <div class="about__line"></div>
+          </div>
+          <p class="about__paragraph mt-3">
+            To achieve our visions, Lofty Heights Africa seeks out and work with the right partners with building expertise and with
+            similar goals. The aim of these partnerships is to provide the necessary resources such as land, capital and expertise.
+          </p>
+          <p class="about__paragraph mt-3">
+            The current lofty heights partners include;
+          </p>
+          <p class="about__paragraph">
+            <span class="about__head">Riby</span>
+            - A financial technology company
+          </p>
+          <p class="about__paragraph">
+            <span class="about__head">Skyline Designs</span>
+            - Building and construction Company
+          </p>
+          <button class="btn btn__tour">Take a tour <span>&#x279C;</span> </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer m-none">
     <div class="footer__content">
       <div class="footer__link">
         <ul class="footer__link__items">
@@ -246,7 +331,6 @@
         </svg>
       </div>
     </div>
-  </footer> -->
-</body>
-
+  </footer>
+  </body>
 </html>
