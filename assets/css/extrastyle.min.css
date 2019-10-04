@@ -1,84 +1,111 @@
-.w164{
-    width: 164px !important;
+.buttons {
+  display: flex;
 }
 
-.h48{
-    height: 48px !important;
+.wfc {
+  width: fit-content;
 }
 
-.padding67-56{
-    padding-top: 56px;
-    padding-left: 67px;
-    padding-right: 67px;
+.h48 {
+  height: 48px !important;
 }
 
-.m__r30{
-    margin-right: 30px;
+.padding67-56 {
+  padding-top: 56px;
+  padding-left: 67px;
+  padding-right: 67px;
 }
 
-.m__t0{
-    margin-top: 0px;
+.m__r30 {
+  margin-right: 30px;
 }
 
-.width100{
+.m__t0 {
+  margin-top: 0px;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.btn_orange {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #c9472c;
+  color: #ffffff;
+  padding-left: 2.1rem;
+  padding-right: 2.1rem;
+  /* identical to box height */
+}
+
+.btn_white {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #ffffff;
+  color: #c9472c;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+
+  /* identical to box height */
+}
+
+button.btn_orange span {
+  position: relative;
+  top: -2px;
+  left: 5px;
+  white-space: nowrap;
+}
+
+button.btn_white span {
+  position: relative;
+  top: -2px;
+  left: -3px;
+  white-space: nowrap;
+}
+
+svg#camcoder,
+svg#camera {
+  position: relative;
+  top: 4px;
+  left: -1px;
+}
+
+.video {
+  display: flex;
+  margin: 64px 0px 64px 0px;
+  align-items: center;
+  justify-content: center;
+}
+iframe {
+  width: 756px;
+  height: 437px;
+}
+
+@media screen and (max-width: 40.75em) {
+  .buttons {
+    flex-direction: column;
     width: 100%;
-}
+  }
 
-.btn_orange{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    background-color: #C9472C;
-    color: #FFFFFF;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-    /* identical to box height */
-}
+  .wfc {
+    width: 100%;
+  }
 
-.btn_white{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    background-color: #FFFFFF;
-    color: #C9472C;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-    
-    /* identical to box height */
-}
+  .h48 {
+    height: 100% !important;
+  }
 
-button.btn_orange span{
-    position: relative;
-    top: -2px;
-    left: 5px;
-    white-space:nowrap;
-}
+  .m__r30 {
+    margin-right: 0;
+  }
 
-button.btn_white span{
-    position: relative;
-    top: -2px;
-    left: -3px;
-    white-space:nowrap;
-}
-
-svg#camcoder, svg#camera{
-    position: relative;
-    top: 4px;
-    left: -1px;
-}
-
-.video{
-    display: flex;
-    margin: 64px 0px 64px 0px;
-    align-items: center;
-    justify-content: center;
-    
-}
-iframe{
-    width: 756px;
-    height: 437px;
+  .btn_orange {
+    margin-top: 20px;
+  }
 }
