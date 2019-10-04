@@ -6,6 +6,14 @@
     height: 48px !important;
 }
 
+.w163{
+    width: 163px !important;
+}
+
+.h40{
+    height: 40px !important;
+}
+
 .padding67-56{
     padding-top: 56px;
     padding-left: 67px;
@@ -76,9 +84,79 @@ svg#camcoder, svg#camera{
     margin: 64px 0px 64px 0px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between
     
 }
+
 iframe{
     width: 756px;
     height: 437px;
+}
+
+.gallery_card{
+    width: 362px;
+    height: 272px;
+    background-color: rgb(231, 231, 231);
+    margin-bottom: 30px;
+    flex-shrink: 0;
+    position: relative;
+}
+.gallery_card img{
+    width: 362px;
+    height: 272px;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 362px;
+    height: 272px;
+    top: -277px;
+}
+
+#overlay_content{
+    display: none;
+}
+
+.overlay div{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 168%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.btn_view{
+    margin-top: 8px;
+    color: #C9472C;
+    border-radius: 6px;
+    background: #FFFFFF;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn_view:hover{
+    color: #ffffff;
+    background: #C9472C;
+}
+
+.overlay:hover {
+    animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in{
+    0% {
+        background-color: rgba(0, 0, 0, 0.061)
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }
