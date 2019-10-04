@@ -10,19 +10,25 @@
 @import "components/button";
 @import "components/dropdown";
 @import "components/input";
+@import "components/map";
+@import "components/modal";
 @import "components/nav-bar";
 @import "components/navigation";
 @import "components/pagination";
+@import "components/progress";
 @import "components/radio-group";
 @import "components/radio";
+@import "components/related";
 @import "components/tab";
 @import "components/tags";
 
 @import "layouts/footer";
 @import "layouts/header";
 
+@import "pages/about";
 @import "pages/account";
 @import "pages/building";
+@import "pages/inner";
 @import "pages/landing";
 @import "pages/login";
 @import "pages/signup";

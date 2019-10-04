@@ -1,0 +1,66 @@
+.progress {
+  display: flex;
+  justify-content: space-between;
+  padding: 8% 4%;
+    background: #FBF9F4;
+    margin-top: 12%;
+
+  &--1 {
+    flex: 0 0 48%;
+
+    @include respond(tab-port3) {
+      flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    }
+  }
+
+  &--2 {
+    flex: 0 0 48%;
+    position: relative;
+
+    @include respond(tab-port3) {
+    display: none;
+    }
+  }
+
+  &__texts {
+    @include position;
+  }
+
+  &__no {
+    font-weight: bold;
+    font-size: 4rem;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+  }
+}
+
+.radialProgressBar {
+  @include position;
+  border-radius: 50%;
+  width: 34rem;
+  height: 34rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ddd;
+  margin: 20px;
+}
+
+.radialProgressBar .overlay {
+  border-radius: 50%;
+  width: 32rem;
+  height: 32rem;
+  margin: auto;
+  background: #FBF9F4;
+  text-align: center;
+  padding-top: 30%;
+}
+
+.progress-10 {
+  background-image: -webkit-linear-gradient(36deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+  background-image: linear-gradient(54deg, #ddd 50%, transparent 50%), linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+}

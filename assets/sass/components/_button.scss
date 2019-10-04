@@ -212,4 +212,18 @@
 
     }
   }
+
+  &__inner {
+    width: 100%;
+    padding: 1.8rem 0;
+    border-radius: 8px;
+    font-size: 2.4rem;
+    margin-top: 2%;
+  }
+
+  &__payment {
+    padding: 1.2rem 6.4rem;
+    border-radius: 8px;
+    font-size: 2.4rem;
+  }
 }

@@ -1,162 +1,84 @@
-.w164{
-    width: 164px !important;
+.buttons {
+  display: flex;
 }
 
-.h48{
-    height: 48px !important;
+.wfc {
+  width: fit-content;
 }
 
-.w163{
-    width: 163px !important;
+.padding67-56 {
+  padding-top: 56px;
+  padding-left: 67px;
+  padding-right: 67px;
 }
 
-.h40{
-    height: 40px !important;
+.m__r30 {
+  margin-right: 30px;
 }
 
-.padding67-56{
-    padding-top: 56px;
-    padding-left: 67px;
-    padding-right: 67px;
+.m__t0 {
+  margin-top: 0px;
 }
 
-.m__r30{
-    margin-right: 30px;
+.width100 {
+  width: 100%;
 }
 
-.m__t0{
-    margin-top: 0px;
+.btn_orange {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #c9472c;
+  color: #ffffff;
+  padding-left: 2.1rem;
+  padding-right: 2.1rem;
+  /* identical to box height */
 }
 
-.width100{
-    width: 100%;
+.btn_white {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #ffffff;
+  color: #c9472c;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+
+  /* identical to box height */
 }
 
-.btn_orange{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    background-color: #C9472C;
-    color: #FFFFFF;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-    /* identical to box height */
+button.btn_orange span {
+  position: relative;
+  top: -2px;
+  left: 5px;
+  white-space: nowrap;
 }
 
-.btn_white{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    background-color: #FFFFFF;
-    color: #C9472C;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-    
-    /* identical to box height */
+button.btn_white span {
+  position: relative;
+  top: -2px;
+  left: -3px;
+  white-space: nowrap;
 }
 
-button.btn_orange span{
-    position: relative;
-    top: -2px;
-    left: 5px;
-    white-space:nowrap;
+svg#camcoder,
+svg#camera {
+  position: relative;
+  top: 4px;
+  left: -1px;
 }
 
-button.btn_white span{
-    position: relative;
-    top: -2px;
-    left: -3px;
-    white-space:nowrap;
+.video {
+  display: flex;
+  margin: 64px 0px 64px 0px;
+  align-items: center;
+  justify-content: center;
 }
-
-svg#camcoder, svg#camera{
-    position: relative;
-    top: 4px;
-    left: -1px;
-}
-
-.video{
-    display: flex;
-    margin: 64px 0px 64px 0px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-between
-    
-}
-
-iframe{
-    width: 756px;
-    height: 437px;
-}
-
-.gallery_card{
-    width: 362px;
-    height: 272px;
-    background-color: rgb(231, 231, 231);
-    margin-bottom: 30px;
-    flex-shrink: 0;
-    position: relative;
-}
-.gallery_card img{
-    width: 362px;
-    height: 272px;
-}
-
-.overlay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 362px;
-    height: 272px;
-    top: -277px;
-}
-
-#overlay_content{
-    display: none;
-}
-
-.overlay div{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 168%;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    margin-bottom: 8px;
-}
-
-.btn_view{
-    margin-top: 8px;
-    color: #C9472C;
-    border-radius: 6px;
-    background: #FFFFFF;
-    border: none;
-    margin: 0;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.btn_view:hover{
-    color: #ffffff;
-    background: #C9472C;
-}
-
-.overlay:hover {
-    animation: fade-in 1s forwards;
-}
-
-@keyframes fade-in{
-    0% {
-        background-color: rgba(0, 0, 0, 0.061)
-    }
-    100%{
-        background-color: rgba(0, 0, 0, 0.5);
-    }
+iframe {
+  width: 756px;
+  height: 437px;
 }
