@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
     flex: 0 0 40%;
     padding: 2.5% 2%;
+    height: 100vh;
 
     @include respond(tab-land2) {
       display: none;
