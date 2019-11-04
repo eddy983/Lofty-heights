@@ -61,6 +61,7 @@
     font-size: 2rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-top: 4%;
 
     @include respond(tab-land2) {
       margin-top: 6%;

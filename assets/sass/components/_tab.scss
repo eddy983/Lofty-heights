@@ -34,3 +34,45 @@
   color: $white-color;
   background: $primary-color;
 }
+
+.tab2 {
+  width: 100%;
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 4% 0 0 0;
+  display: flex;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem;
+  background: #EBEBEB;
+  border-top: 4px solid #d8d8d8;
+  font-size: 2rem;
+  float: left;
+  width: 100%;
+  color: #595D5F;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #F7F7F7;
+}
+.tab-group .active a {
+  background: $white-color;
+  border-top: 4px solid $primary-color;
+  color: $black-color;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}

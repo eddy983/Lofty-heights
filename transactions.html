@@ -1,371 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/main.min.css" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet" />
 
-    <title>Lofty Heights</title>
-  </head>
-  <body>
-    <nav class="nav-bar tab-d">
-      <img src="assets/img/logo.png" alt="Logo" class="nav-bar__logo" />
-      <ul class="nav-bar__link">
-        <li class="nav-bar__link__items">
-          <a href="#" class="nav-bar__link__items__link">Home</a>
-        </li>
-        <li class="nav-bar__link__items">
-          <a href="#" class="nav-bar__link__items__link">properties</a>
-        </li>
-        <li class="nav-bar__link__items">
-          <a href="#" class="nav-bar__link__items__link">tours</a>
-        </li>
-        <li class="nav-bar__link__items">
-          <a href="#" class="nav-bar__link__items__link">about</a>
-        </li>
-      </ul>
-      <div class="dropdown">
-        <button class="dropbtn tab-d">
-          <img src="assets/img/user.svg" alt="user" />
-        </button>
-        <div class="dropdown-content tab-d">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-        <a href="details.html"
-          ><img src="assets/img/User(2).svg" alt="User Logo" class="logo-d"
-        /></a>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.min.css" />
+
+  <title>Lofty Heights</title>
+</head>
+
+<body>
+  <nav class="nav-bar tab-d">
+    <img src="assets/img/logo.png" alt="Logo" class="nav-bar__logo" />
+    <ul class="nav-bar__link">
+      <li class="nav-bar__link__items">
+        <a href="#" class="nav-bar__link__items__link">Home</a>
+      </li>
+      <li class="nav-bar__link__items">
+        <a href="#" class="nav-bar__link__items__link">properties</a>
+      </li>
+      <li class="nav-bar__link__items">
+        <a href="#" class="nav-bar__link__items__link">tours</a>
+      </li>
+      <li class="nav-bar__link__items">
+        <a href="#" class="nav-bar__link__items__link">about</a>
+      </li>
+    </ul>
+    <div class="dropdown">
+      <button class="dropbtn tab-d">
+        <img src="assets/img/user.svg" alt="user" />
+      </button>
+      <div class="dropdown-content tab-d">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
       </div>
-    </nav>
+      <a href="details.html"><img src="assets/img/User(2).svg" alt="User Logo" class="logo-d" /></a>
+    </div>
+  </nav>
 
-    <header class="account__header">
-      <a href="account.html" class="account__arrow">&larr;</a>
-      <p class="account__main">Transactions</p>
-    </header>
+  <header class="account__header">
+    <a href="account.html" class="account__arrow">&larr;</a>
+    <p class="account__main">Transactions</p>
+  </header>
 
-    <main class="account">
-      <div class="account__nav tab-d">
-        <nav class="account__nav__items">
-          <a href="account.html" class="account__nav__item">
-            <img
-              src="assets/img/user (1).svg"
-              alt="User Icon"
-              class="account__nav__icon"
-            />
-            My Account
-          </a>
-          <a href="transactions.html" class="account__nav__item grey-bg">
-            <img
-              src="assets/img/transaction.svg"
-              alt="Transaction Icon"
-              class="account__nav__icon"
-            />
-            Transactions
-          </a>
-          <a href="payment.html" class="account__nav__item">
-            <img
-              src="assets/img/credit-card.svg"
-              alt="Payment Icon"
-              class="account__nav__icon"
-            />
-            Payments
-          </a>
-          <a href="interested.html" class="account__nav__item">
-            <img
-              src="assets/img/heart.svg"
-              alt="Heart Icon"
-              class="account__nav__icon"
-            />
-            Interested Properties
-          </a>
-          <div class="account__nav__line"></div>
-          <a href="details.html" class="account__nav__item">
-            Details
-          </a>
-          <a href="password.html" class="account__nav__item">
-            Change Password
-          </a>
-          <a href="switch.html" class="account__nav__item">
-            Switch Ownership
-          </a>
-          <div class="account__nav__line"></div>
-          <a
-            href="login.html"
-            class="account__nav__item account__nav__item--lo"
-          >
-            LOG OUT
-          </a>
-        </nav>
-      </div>
-      <div class="account__content">
-        <h1 class="account__heading">Transactions</h1>
-        <div class="account__transaction">
-          <div class="account__trans__items">
-            <div class="account__trans__imgs">
-              <img
-                src="assets/img/trans-img-1.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-            </div>
-            <div class="account__trans__info">
-              <div class="account__trans__text">
-                <p class="account__house">Miniflat</p>
-                <p class="account__location">Akoka, yaba</p>
-              </div>
-              <button class="btn btn__view">View</button>
-            </div>
+  <main class="account">
+    <div class="account__nav tab-d">
+      <nav class="account__nav__items">
+        <a href="account.html" class="account__nav__item">
+          <img src="assets/img/user (1).svg" alt="User Icon" class="account__nav__icon" />
+          My Account
+        </a>
+        <a href="transactions.html" class="account__nav__item grey-bg">
+          <img src="assets/img/transaction.svg" alt="Transaction Icon" class="account__nav__icon" />
+          Transactions
+        </a>
+        <a href="payment.html" class="account__nav__item">
+          <img src="assets/img/credit-card.svg" alt="Payment Icon" class="account__nav__icon" />
+          Payments
+        </a>
+        <a href="interested.html" class="account__nav__item">
+          <img src="assets/img/heart.svg" alt="Heart Icon" class="account__nav__icon" />
+          Interested Properties
+        </a>
+        <div class="account__nav__line"></div>
+        <a href="details.html" class="account__nav__item">
+          Details
+        </a>
+        <a href="password.html" class="account__nav__item">
+          Change Password
+        </a>
+        <a href="switch.html" class="account__nav__item">
+          Switch Ownership
+        </a>
+        <div class="account__nav__line"></div>
+        <a href="login.html" class="account__nav__item account__nav__item--lo">
+          LOG OUT
+        </a>
+      </nav>
+    </div>
+    <div class="account__content">
+      <h1 class="account__heading">Transactions</h1>
+      <div class="account__transaction">
+        <div class="account__trans__items">
+          <div class="account__trans__imgs">
+            <img src="assets/img/trans-img-1.png" alt="Transaction Image" class="account__trans__img" />
           </div>
-          <div class="account__trans__statuses">
-            <div class="account__trans__status">
-              <p class="account__trans__type">Number of Units</p>
-              <p class="account__trans__unit">20</p>
+          <div class="account__trans__info">
+            <div class="account__trans__text">
+              <p class="account__house">Miniflat</p>
+              <p class="account__location">Akoka, yaba</p>
             </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Type</p>
-              <p class="account__trans__unit">Investment</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Amount Due</p>
-              <p class="account__trans__unit red-color">‎₦50,000</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Status</p>
-              <p class="account__trans__unit blue-color">Ongoing</p>
-            </div>
-            <div class="account__trans__line"></div>
+            <button class="btn btn__view">View</button>
           </div>
         </div>
-        <div class="account__transaction">
-          <div class="account__trans__items">
-            <div class="account__trans__imgs">
-              <img
-                src="assets/img/trans-img-2.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-            </div>
-            <div class="account__trans__info">
-              <div class="account__trans__text">
-                <p class="account__house">Duplex</p>
-                <p class="account__location">Eti Osa, victoria island</p>
-              </div>
-              <button class="btn btn__view">View</button>
-            </div>
+        <div class="account__trans__statuses">
+          <div class="account__trans__status">
+            <p class="account__trans__type">Number of Units</p>
+            <p class="account__trans__unit">20</p>
           </div>
-          <div class="account__trans__statuses">
-            <div class="account__trans__status">
-              <p class="account__trans__type">Number of Units</p>
-              <p class="account__trans__unit">1</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Type</p>
-              <p class="account__trans__unit">Purchase</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Amount Due</p>
-              <p class="account__trans__unit">‎₦0</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Status</p>
-              <p class="account__trans__unit green-color">Completed</p>
-            </div>
-            <div class="account__trans__line"></div>
+          <div class="account__trans__line"></div>
+          <div class="account__trans__status">
+            <p class="account__trans__type">Type</p>
+            <p class="account__trans__unit">Investment</p>
           </div>
-        </div>
-        <div class="account__transaction">
-          <div class="account__trans__items">
-            <div class="account__trans__imgs">
-              <img
-                src="assets/img/trans-img-3.png"
-                alt="Transaction Image"
-                class="account__trans__img"
-              />
-            </div>
-            <div class="account__trans__info">
-              <div class="account__trans__text">
-                <p class="account__house">Penthouse</p>
-                <p class="account__location">Alagomeji, yaba, lagos</p>
-              </div>
-              <button class="btn btn__view">View</button>
-            </div>
+          <div class="account__trans__line"></div>
+          <div class="account__trans__status">
+            <p class="account__trans__type">Amount Due</p>
+            <p class="account__trans__unit red-color">‎₦50,000</p>
           </div>
-          <div class="account__trans__statuses">
-            <div class="account__trans__status">
-              <p class="account__trans__type">Number of Units</p>
-              <p class="account__trans__unit">20</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Type</p>
-              <p class="account__trans__unit">Investment</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Amount Due</p>
-              <p class="account__trans__unit red-color">‎₦50,000</p>
-            </div>
-            <div class="account__trans__line"></div>
-            <div class="account__trans__status">
-              <p class="account__trans__type">Status</p>
-              <p class="account__trans__unit blue-color">Ongoing</p>
-            </div>
-            <div class="account__trans__line"></div>
+          <div class="account__trans__line"></div>
+          <div class="account__trans__status">
+            <p class="account__trans__type">Status</p>
+            <p class="account__trans__unit blue-color">Ongoing</p>
           </div>
-        </div>
-        <!-- Pagination -->
-        <div class="pagination">
-          <a href="#" class="pagination__item pagination-font">1</a>
-          <a href="#" class="pagination__item pagination-font">2</a>
-          <a href="#" class="pagination__item pagination-font">3</a>
-          <a href="#" class="pagination__item pagination-font">&rarr;</a>
+          <div class="account__trans__line"></div>
         </div>
       </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__content">
-        <div class="footer__link">
-          <ul class="footer__link__items">
-            <li class="footer__link__item">
-              <p class="footer__link__title">Quick Links</p>
-            </li>
-            <li class="footer__link__item">
-              <a href="#" class="footer__link__text footer__link__text__link"
-                >About Us</a
-              >
-            </li>
-            <li class="footer__link__item">
-              <a href="#" class="footer__link__text footer__link__text__link"
-                >Partners & Programs</a
-              >
-            </li>
-            <li class="footer__link__item">
-              <a href="#" class="footer__link__text footer__link__text__link"
-                >Terms and Conditions</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer__contact">
-          <p class="footer__link__title">CONTACT</p>
-          <p class="footer__link__text">
-            Block G, House 4, Moore Road, Yaba, Lagos.
-          </p>
-          <p class="footer__link__text">0809 222 2109, 01 291 4247</p>
-          <p class="footer__link__text">info@loftyheights.com</p>
-        </div>
-        <div class="footer__subcribe">
-          <p class="footer__link__title">NEWSLETTER</p>
-          <p class="footer__link__text">
-            Recieve latest updates and news directly from our team
-          </p>
-          <div class="footer__input-container">
-            <input
-              type="text"
-              placeholder="What’s your email address"
-              class="footer__input"
-            />
-            <button type="submit" class="footer__input__btn">Subscribe</button>
+      <div class="account__transaction">
+        <div class="account__trans__items">
+          <div class="account__trans__imgs">
+            <img src="assets/img/trans-img-2.png" alt="Transaction Image" class="account__trans__img" />
+          </div>
+          <div class="account__trans__info">
+            <div class="account__trans__text">
+              <p class="account__house">Duplex</p>
+              <p class="account__location">Eti Osa, victoria island</p>
+            </div>
+            <button class="btn btn__view">View</button>
           </div>
         </div>
-
-        <div class="footer__apps">
-          <p class="footer__link__title">Also find us on</p>
-          <div class="footer__buttons">
-            <a href="#" class="footer__button">
-              <img
-                src="assets/img/google-play-download-android-app.svg"
-                alt="Instagram"
-                class="footer__button__img"
-              />
-            </a>
-            <a href="#" class="footer__button">
-              <img
-                src="assets/img/appstore-apple.svg"
-                alt="Instagram"
-                class="footer__button__img"
-              />
-            </a>
+        <div class="account__trans__statuses">
+          <div class="account__trans__status">
+            <p class="account__trans__type">Number of Units</p>
+            <p class="account__trans__unit">1</p>
           </div>
+          <div class="account__trans__line"></div>
+          <div class="account__trans__status">
+            <p class="account__trans__type">Type</p>
+            <p class="account__trans__unit">Purchase</p>
+          </div>
+          <div class="account__trans__line"></div>
+          <div class="account__trans__status">
+            <p class="account__trans__type">Amount Due</p>
+            <p class="account__trans__unit">‎₦0</p>
+          </div>
+          <div class="account__trans__line"></div>
+          <div class="account__trans__status">
+            <p class="account__trans__type">Status</p>
+            <p class="account__trans__unit green-color">Completed</p>
+          </div>
+          <div class="account__trans__line"></div>
         </div>
       </div>
-      <div class="footer__line"></div>
-      <div class="footer__bottom">
-        <p class="footer__copyright">
-          ©2018 - Lofty Heights | All right reserved
+      <div class="account__transaction">
+        <div class="account__trans__items">
+          <div class="account__trans__imgs">
+            <img src="assets/img/trans-img-3.png" alt="Transaction Image" class="account__trans__img" />
+          </div>
+          <div class="account__trans__info">
+            <div class="account__trans__text">
+              <p class="account__house">Penthouse</p>
+              <p class="account__location">Alagomeji, yaba, lagos</p>
+            </div>
+            <button class="btn btn__view">View</button>
+          </div>
+        </div>
+        <div class="account__trans__statuses">
+          <div class="account__trans__status">
+            <p class="account__trans__type">Number of Units</p>
+            <p class="account__trans__unit">20</p>
+          </div>
+          <div class="account__trans__line"></div>
+          <div class="account__trans__status">
+            <p class="account__trans__type">Type</p>
+            <p class="account__trans__unit">Investment</p>
+          </div>
+          <div class="account__trans__line"></div>
+          <div class="account__trans__status">
+            <p class="account__trans__type">Amount Due</p>
+            <p class="account__trans__unit red-color">‎₦50,000</p>
+          </div>
+          <div class="account__trans__line"></div>
+          <div class="account__trans__status">
+            <p class="account__trans__type">Status</p>
+            <p class="account__trans__unit blue-color">Ongoing</p>
+          </div>
+          <div class="account__trans__line"></div>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <div class="pagination">
+        <a href="#" class="pagination__item pagination-font">1</a>
+        <a href="#" class="pagination__item pagination-font">2</a>
+        <a href="#" class="pagination__item pagination-font">3</a>
+        <a href="#" class="pagination__item pagination-font">&rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__link">
+        <ul class="footer__link__items">
+          <li class="footer__link__item">
+            <p class="footer__link__title">Quick Links</p>
+          </li>
+          <li class="footer__link__item">
+            <a href="#" class="footer__link__text footer__link__text__link">About Us</a>
+          </li>
+          <li class="footer__link__item">
+            <a href="#" class="footer__link__text footer__link__text__link">Partners & Programs</a>
+          </li>
+          <li class="footer__link__item">
+            <a href="#" class="footer__link__text footer__link__text__link">Terms and Conditions</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <p class="footer__link__title">CONTACT</p>
+        <p class="footer__link__text">
+          Block G, House 4, Moore Road, Yaba, Lagos.
         </p>
-        <div class="footer__social-medias">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <a href="#">
-              <g clip-path="url(#clip0)">
-                <path
-                  class="footer__social-media"
-                  d="M20 3.79875C19.2562 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4413 2.18C18.6488 2.6525 17.7737 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5762 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7912 2.23375 11.7362C2.765 13.36 4.2725 14.5537 6.065 14.5925C4.67 15.6837 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3262 0 16.285C1.81625 17.4562 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9537 6.10125 17.945 5.9275C18.7587 5.35 19.4425 4.62875 20 3.79875Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect width="20" height="20" fill="white" />
-                </clipPath>
-              </defs>
-            </a>
-          </svg>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <a href="#">
-              <path
-                class="footer__social-media"
-                d="M5.2711 10.652H7.46341V19.6774C7.46341 19.8556 7.60778 20 7.78599 20H11.5031C11.6813 20 11.8257 19.8556 11.8257 19.6774V10.6945H14.346C14.5099 10.6945 14.6477 10.5716 14.6665 10.4088L15.0492 7.08609C15.0597 6.99469 15.0308 6.90313 14.9696 6.83453C14.9084 6.7659 14.8208 6.7266 14.7288 6.7266H11.8259V4.64375C11.8259 4.0159 12.1639 3.6975 12.8308 3.6975C12.9258 3.6975 14.7288 3.6975 14.7288 3.6975C14.907 3.6975 15.0514 3.55305 15.0514 3.37492V0.324961C15.0514 0.146758 14.907 0.00238281 14.7288 0.00238281H12.113C12.0946 0.00148438 12.0536 0 11.9932 0C11.5393 0 9.96173 0.0891015 8.71552 1.23555C7.33474 2.50602 7.52669 4.02715 7.57255 4.2909V6.72652H5.27106C5.09286 6.72652 4.94849 6.8709 4.94849 7.0491V10.3294C4.94853 10.5075 5.0929 10.652 5.2711 10.652Z"
-                fill="white"
-              />
-            </a>
-          </svg>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <a href="#">
-              <path
-                class="footer__social-media"
-                d="M2.3112 0.000854492H15.6899C16.9609 0.000854492 18 1.15579 18 2.56805V17.4333C18 18.8451 16.9609 19.9993 15.6899 19.9993H2.3112C1.04016 19.9993 0 18.8451 0 17.4333V2.56805C0 1.15579 1.04016 0.000854492 2.3112 0.000854492ZM13.1128 2.22199C12.6665 2.22199 12.3025 2.62805 12.3025 3.12365V5.27792C12.3025 5.77372 12.6665 6.17885 13.1128 6.17885H15.1469C15.5925 6.17885 15.9573 5.77372 15.9573 5.27792V3.12365C15.9573 2.62805 15.5925 2.22199 15.1469 2.22199H13.1128ZM15.965 8.45792H14.3813C14.5315 9.00292 14.6129 9.57765 14.6129 10.1752C14.6129 13.5007 12.1069 16.1979 9.01692 16.1979C5.9277 16.1979 3.42168 13.5007 3.42168 10.1752C3.42168 9.57765 3.50388 9.00292 3.65334 8.45792H2.001V16.9067C2.001 17.3443 2.32254 17.7002 2.71596 17.7002H15.2504C15.6442 17.7002 15.965 17.3443 15.965 16.9067V8.45792ZM9.01698 6.06525C7.02138 6.06525 5.40258 7.80712 5.40258 9.95779C5.40258 12.1063 7.02138 13.8495 9.01698 13.8495C11.0137 13.8495 12.6325 12.1063 12.6325 9.95779C12.6325 7.80705 11.0137 6.06525 9.01698 6.06525Z"
-                fill="white"
-              />
-            </a>
-          </svg>
+        <p class="footer__link__text">0809 222 2109, 01 291 4247</p>
+        <p class="footer__link__text">info@loftyheights.com</p>
+      </div>
+      <div class="footer__subcribe">
+        <p class="footer__link__title">NEWSLETTER</p>
+        <p class="footer__link__text">
+          Recieve latest updates and news directly from our team
+        </p>
+        <div class="footer__input-container">
+          <input type="text" placeholder="What’s your email address" class="footer__input" />
+          <button type="submit" class="footer__input__btn">Subscribe</button>
         </div>
       </div>
-    </footer>
-  </body>
+
+      <div class="footer__apps">
+        <p class="footer__link__title">Also find us on</p>
+        <div class="footer__buttons">
+          <a href="#" class="footer__button">
+            <img src="assets/img/google-play-download-android-app.svg" alt="Instagram" class="footer__button__img" />
+          </a>
+          <a href="#" class="footer__button">
+            <img src="assets/img/appstore-apple.svg" alt="Instagram" class="footer__button__img" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__line"></div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        ©2018 - Lofty Heights | All right reserved
+      </p>
+      <div class="footer__social-medias">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="#">
+            <g clip-path="url(#clip0)">
+              <path class="footer__social-media"
+                d="M20 3.79875C19.2562 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4413 2.18C18.6488 2.6525 17.7737 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5762 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7912 2.23375 11.7362C2.765 13.36 4.2725 14.5537 6.065 14.5925C4.67 15.6837 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3262 0 16.285C1.81625 17.4562 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9537 6.10125 17.945 5.9275C18.7587 5.35 19.4425 4.62875 20 3.79875Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </a>
+        </svg>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="#">
+            <path class="footer__social-media"
+              d="M5.2711 10.652H7.46341V19.6774C7.46341 19.8556 7.60778 20 7.78599 20H11.5031C11.6813 20 11.8257 19.8556 11.8257 19.6774V10.6945H14.346C14.5099 10.6945 14.6477 10.5716 14.6665 10.4088L15.0492 7.08609C15.0597 6.99469 15.0308 6.90313 14.9696 6.83453C14.9084 6.7659 14.8208 6.7266 14.7288 6.7266H11.8259V4.64375C11.8259 4.0159 12.1639 3.6975 12.8308 3.6975C12.9258 3.6975 14.7288 3.6975 14.7288 3.6975C14.907 3.6975 15.0514 3.55305 15.0514 3.37492V0.324961C15.0514 0.146758 14.907 0.00238281 14.7288 0.00238281H12.113C12.0946 0.00148438 12.0536 0 11.9932 0C11.5393 0 9.96173 0.0891015 8.71552 1.23555C7.33474 2.50602 7.52669 4.02715 7.57255 4.2909V6.72652H5.27106C5.09286 6.72652 4.94849 6.8709 4.94849 7.0491V10.3294C4.94853 10.5075 5.0929 10.652 5.2711 10.652Z"
+              fill="white" />
+          </a>
+        </svg>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="#">
+            <path class="footer__social-media"
+              d="M2.3112 0.000854492H15.6899C16.9609 0.000854492 18 1.15579 18 2.56805V17.4333C18 18.8451 16.9609 19.9993 15.6899 19.9993H2.3112C1.04016 19.9993 0 18.8451 0 17.4333V2.56805C0 1.15579 1.04016 0.000854492 2.3112 0.000854492ZM13.1128 2.22199C12.6665 2.22199 12.3025 2.62805 12.3025 3.12365V5.27792C12.3025 5.77372 12.6665 6.17885 13.1128 6.17885H15.1469C15.5925 6.17885 15.9573 5.77372 15.9573 5.27792V3.12365C15.9573 2.62805 15.5925 2.22199 15.1469 2.22199H13.1128ZM15.965 8.45792H14.3813C14.5315 9.00292 14.6129 9.57765 14.6129 10.1752C14.6129 13.5007 12.1069 16.1979 9.01692 16.1979C5.9277 16.1979 3.42168 13.5007 3.42168 10.1752C3.42168 9.57765 3.50388 9.00292 3.65334 8.45792H2.001V16.9067C2.001 17.3443 2.32254 17.7002 2.71596 17.7002H15.2504C15.6442 17.7002 15.965 17.3443 15.965 16.9067V8.45792ZM9.01698 6.06525C7.02138 6.06525 5.40258 7.80712 5.40258 9.95779C5.40258 12.1063 7.02138 13.8495 9.01698 13.8495C11.0137 13.8495 12.6325 12.1063 12.6325 9.95779C12.6325 7.80705 11.0137 6.06525 9.01698 6.06525Z"
+              fill="white" />
+          </a>
+        </svg>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
