@@ -5,6 +5,10 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   align-items: center;
 
+  @include respond(desktop-min) {
+    padding: 1% 8%; 
+  }
+
   &--trans {
     box-shadow: none;
     background-color: transparent;
@@ -29,13 +33,23 @@
     }
 
     &__items {
-      margin-right: 14%;
+      &:not(:first-child) { 
+        margin-left: 14%;
+
+        @include respond(desktop-min) {
+          margin-left: 18%;
+        }
+      }
 
       &__link {
         font-size: 1.4rem;
         text-transform: uppercase;
         color: $black-color;
         text-decoration: none;
+
+        @include respond(desktop-min) {
+          font-size: 1.8rem;
+        }
 
         &--white {
           color: $white-color;
@@ -49,7 +63,6 @@
   }
 
   &__buttons {
-    flex: 0 0 23%;
     display: flex;
     justify-content: space-between;
   }

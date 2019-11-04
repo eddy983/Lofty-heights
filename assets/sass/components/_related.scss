@@ -1,5 +1,10 @@
 .related {
   padding: 0 4%;
+
+  @include respond(desktop-min) {
+    padding: 0% 8%; 
+  }
+  
   margin: 12% 0 4%;
 
   &__heading {

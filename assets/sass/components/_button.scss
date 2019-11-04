@@ -1,7 +1,7 @@
 .btn {
   border: none;
   color: #fff;
-  border-radius: 6px;
+  border-radius: 100px;
   font-family: "Ubuntu", sans-serif;
   letter-spacing: 1px;
   outline: 0;
@@ -41,7 +41,6 @@
     display: block;
     width: 100%;
     padding: 1.5rem 0;
-    border-radius: 6px;
     font-weight: bold;
     font-size: 2.4rem;
     margin-top: 16%;
@@ -59,7 +58,6 @@
   &__details {
     padding: 1.8rem 0;
     width: 100%;
-    border-radius: 8px;
     font-size: 2rem;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -88,7 +86,7 @@
 
   &__view {
     padding: 1rem 0;
-    width: 25%;
+    width: 100%;
     font-size: 1.8rem;
     line-height: 168%;
     letter-spacing: 0.03em;
@@ -96,7 +94,6 @@
     color: $primary-color;
     border: 2px solid $primary-color;
     box-sizing: border-box;
-    border-radius: 8px;
     background: transparent;
 
     @include respond(l-phone2) {
@@ -122,7 +119,6 @@
   &__pay {
     padding: 0.6rem 1.4rem;
     font-size: 1.2rem;
-    border-radius: 4px;
     text-decoration: none;
   }
 
@@ -154,7 +150,6 @@
     font-size: 1.4rem;
     padding: 1.4rem 4rem;
     text-transform: uppercase;
-    border-radius: 4px;
     font-weight: 500;
 
     &-signin {
@@ -163,7 +158,7 @@
 
     &-login {
       background: transparent;
-      margin-left: 2%;
+      margin-right: 2%;
 
       &--b {
         color: $black-color;
@@ -202,27 +197,30 @@
   &__bar {
     flex: 2 1 auto;
     font-size: 1.4rem;
-    border-radius: 8px;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
     margin-left: 1%;
 
     @include respond(l-phone2) {
       font-size: 2.2rem;
       letter-spacing: 0.03em;
       padding: 2.6rem 0;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
     }
   }
 
   &__inner {
     width: 100%;
     padding: 1.8rem 0;
-    border-radius: 8px;
+
     font-size: 2.4rem;
     margin-top: 2%;
   }
 
   &__payment {
     padding: 1.2rem 6.4rem;
-    border-radius: 8px;
+
     font-size: 2.4rem;
   }
 

@@ -5,6 +5,11 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin footer-width {
+  width: 100%;
+  margin: 5% 0 5%;
+}
+
 // MEDIA QUERY MANAGER
 /*
 0 - 400px: Small Phone
@@ -101,6 +106,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   @if $breakpoint == desktop {
     @media (max-width: 90em) { @content }; // 1440px in em
+  }
+  @if $breakpoint == desktop-min {
+    @media (min-width: 90em) { @content }; // 1440px in em
   }
   @if $breakpoint == big-desktop2 {
     @media (max-width: 138.5625em) { @content }; // 2217px in em
