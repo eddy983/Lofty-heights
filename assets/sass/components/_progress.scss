@@ -13,6 +13,11 @@
     display: flex;
     justify-content: center;
     }
+
+    @include respond(l-phone) {
+      height: 20%;
+      width: 20%;
+    }
   }
 
   &--2 {

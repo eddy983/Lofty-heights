@@ -145,6 +145,24 @@
     }
   }
 
+  &__head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__status {
+    display: flex;
+    align-items: center;
+  }
+
+  &__stat {
+    border-radius: 4px;
+    color: $white-color;
+    font-size: 1.2rem;
+    margin-left: 3%;
+    padding: 5px 12px;
+  }
+
   &__transaction {
     border: 0.75px solid $grey-light-color-2;
     border-radius: 8px;

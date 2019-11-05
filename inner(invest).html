@@ -1,864 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/main.min.css" />
-    <title>Lofty Heights</title>
-  </head>
 
-  <body>
-    <nav class="nav-bar">
-      <div class="navigation">
-        <input
-          required
-          required
-          type="checkbox"
-          class="navigation__checkbox"
-          id="nav-toggle"
-        />
-        <label for="nav-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="landing.html" class="navigation__link">HOME</a>
-            </li>
-            <li class="navigation__item">
-              <a href="tours.html" class="navigation__link">TOURS</a>
-            </li>
-            <li class="navigation__item">
-              <a href="about.html" class="navigation__link">ABOUT</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <img src="assets/img/logo.png" alt="Logo" class="nav-bar__logo" />
-      <ul class="nav-bar__link">
-        <li class="nav-bar__link__items">
-          <a href="landing.html" class="nav-bar__link__items__link">Home</a>
-        </li>
-        <li class="nav-bar__link__items">
-          <a href="tours.html" class="nav-bar__link__items__link">tours</a>
-        </li>
-        <li class="nav-bar__link__items">
-          <a href="about.html" class="nav-bar__link__items__link">about</a>
-        </li>
-      </ul>
-      <div class="dropdown">
-        <button class="dropbtn tab-d">
-          <img src="assets/img/user.svg" alt="user" />
-        </button>
-        <div class="dropdown-content tab-d">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-        <a href="account.html"
-          ><img src="assets/img/User(2).svg" alt="User Logo" class="logo-d"
-        /></a>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="assets/css/swiper.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.min.css" />
+  <title>Lofty Heights</title>
+</head>
 
-    <section class="inner">
-      <div class="inner__heading">
-        <div class="inner__header">
-          <h1 class="inner__title">Akoka, Yaba</h1>
-          <p class="inner__subt">Lagos</p>
-        </div>
+<body>
+  <nav class="nav-bar">
+    <div class="navigation">
+      <input required required type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="landing.html" class="navigation__link">HOME</a>
+          </li>
+          <li class="navigation__item">
+            <a href="tours.html" class="navigation__link">TOURS</a>
+          </li>
+          <li class="navigation__item">
+            <a href="about.html" class="navigation__link">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <img src="assets/img/logo.png" alt="Logo" class="nav-bar__logo" />
+    <ul class="nav-bar__link">
+      <li class="nav-bar__link__items">
+        <a href="landing.html" class="nav-bar__link__items__link">Home</a>
+      </li>
+      <li class="nav-bar__link__items">
+        <a href="tours.html" class="nav-bar__link__items__link">tours</a>
+      </li>
+      <li class="nav-bar__link__items">
+        <a href="about.html" class="nav-bar__link__items__link">about</a>
+      </li>
+    </ul>
+    <div class="dropdown">
+      <button class="dropbtn tab-d">
+        <img src="assets/img/user.svg" alt="user" />
+      </button>
+      <div class="dropdown-content tab-d">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
       </div>
-      <div class="inner__main">
-        <div class="inner__main--1">
-          <img
-            src="assets/img/abuja7.jpg"
-            alt="House Image"
-            class="inner__main__img"
-          />
+      <a href="account.html"><img src="assets/img/User(2).svg" alt="User Logo" class="logo-d" /></a>
+    </div>
+  </nav>
+
+  <section class="inner">
+    <div class="inner__heading">
+      <div class="inner__header">
+        <h1 class="inner__title">Akoka, Yaba</h1>
+        <p class="inner__subt">Lagos</p>
+      </div>
+    </div>
+    <div class="inner__main">
+      <div class="inner__main--1">
+        <div class="swiper-container gallery-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" />></div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
         </div>
-        <div class="inner__main--2">
-          <div class="inner__pay">
-            <button onclick="myFunction()" class="inner__dropdown">
-              Invest in a home
-            </button>
-            <a href="inner(buy).html">
-              <div id="Demo" class="inner__dropdown__content">
-                <p>Buy a home</p>
-              </div>
-            </a>
-            <p class="inner__pay-title">‎₦5,000,000</p>
-            <p class="inner__pay-sub">Amount to be earned ‎₦8,000,000</p>
-            <p class="inner__pay-discount">
-              <a href="#" class="inner__pay-link"
-                >Get 20% discount by using Riby Cobanking
-                <span class="inner__pay-arrow">&#8594;</span></a
-              >
-            </p>
-            <button type="submit" class="btn btn__inner">Pay</button>
+        <div class="swiper-container gallery-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" /></div>
+            <div class="swiper-slide"><img src="assets/img/abuja7.jpg" alt="House" class="inner__img" />></div>
           </div>
         </div>
       </div>
-      <div class="inner__sub">
-        <div class="inner__sub--1">
-          <div class="inner__folders">
-            <button data-modal-trigger="trigger-1" class="inner__folder">
-              <img src="assets/img/folder.svg" alt="folder" />
-              <p class="folder">Land & survey</p>
-            </button>
-            <button data-modal-trigger="trigger-2" class="inner__folder">
-              <img src="assets/img/folder.svg" alt="folder" />
-              <p class="folder">Development</p>
-            </button>
-            <button data-modal-trigger="trigger-3" class="inner__folder">
-              <img src="assets/img/folder.svg" alt="folder" />
-              <p class="folder">Completion</p>
-            </button>
-          </div>
-        </div>
-        <div class="inner__sub--2">
-          <h4 class="features-title">Key Features</h4>
-          <div class="inner__line"></div>
-          <ul class="inner__list">
-            <li class="inner__list__item">
-              18” kitchen/diner overlooking garden
-            </li>
-            <li class="inner__list__item">Fully integrated appliances</li>
-            <li class="inner__list__item">
-              Fitted kitchen with soft close doors and drawers
-            </li>
-            <li class="inner__list__item">Beatiful tiling to bathroom</li>
-            <li class="inner__list__item">Two parking spaces</li>
-            <li class="inner__list__item">Excellent transport links</li>
-          </ul>
-        </div>
-      </div>
-      <div class="inner__detail">
-        <div class="inner__detail--1">
-          <h4 class="features-title">Details</h4>
-          <div class="inner__line"></div>
-          <p class="features-paragraph">
-            The property is a four-bedroom home at 1087 Sq. Ft., it boasts a
-            master bedroom with ensuite, south-east facing garden, extensive
-            storage, 18ft kitchen/diner with integrated appliances, the bathroom
-            has a beautiful tiling and aluminium taps and shower and two side by
-            side parking spaces. Yaba bus stop is only 100 metres away and the
-            property has been carefully designed with todays lifestyle in mind.
-            Inviting landscaped gardens to give a welcoming feel, and the
-            well-proportioned apartments will make you instantly feel at home.
+      <div class="inner__main--2">
+        <div class="inner__pay">
+          <button onclick="myFunction()" class="inner__dropdown">
+            Invest in a home
+          </button>
+          <a href="inner(buy).html">
+            <div id="Demo" class="inner__dropdown__content">
+              <p>Buy a home</p>
+            </div>
+          </a>
+          <p class="inner__pay-title">‎₦5,000,000</p>
+          <p class="inner__pay-sub">Amount to be earned ‎₦8,000,000</p>
+          <p class="inner__pay-discount">
+            <a href="#" class="inner__pay-link">Get 20% discount by using Riby Cobanking
+              <span class="inner__pay-arrow">&#8594;</span></a>
           </p>
-        </div>
-        <div class="inner__detail--2">
-          <div class="inner__features">
-            <div class="inner__feature">
-              <img src="assets/img/bed.svg" alt="Bed" />
-              <p class="features-sub">4 Bedrooms</p>
-            </div>
-            <div class="inner__feature">
-              <img src="assets/img/bathroom.svg" alt="Bath" />
-              <p class="features-sub">4 Bathrooms</p>
-            </div>
-          </div>
+          <button type="submit" class="btn btn__inner">Pay</button>
         </div>
       </div>
-    </section>
-    <section class="progress">
-      <div class="progress--1">
-        <svg
-          width="469"
-          height="478"
-          viewBox="0 0 469 478"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <mask
-            maskUnits="userSpaceOnUse"
-            x="0"
-            y="0"
-            width="0"
-            height="0"
-            fill="black"
-          >
-            <rect fill="white" width="0" height="0" />
-          </mask>
-          <path
-            d="M62.7071 94.2929C62.3166 93.9024 61.6834 93.9024 61.2929 94.2929L54.9289 100.657C54.5384 101.047 54.5384 101.681 54.9289 102.071C55.3195 102.462 55.9526 102.462 56.3431 102.071L62 96.4142L67.6569 102.071C68.0474 102.462 68.6805 102.462 69.0711 102.071C69.4616 101.681 69.4616 101.047 69.0711 100.657L62.7071 94.2929ZM61.2929 477.707C61.6834 478.098 62.3166 478.098 62.7071 477.707L69.0711 471.343C69.4616 470.953 69.4616 470.319 69.0711 469.929C68.6805 469.538 68.0474 469.538 67.6568 469.929L62 475.586L56.3431 469.929C55.9526 469.538 55.3194 469.538 54.9289 469.929C54.5384 470.319 54.5384 470.953 54.9289 471.343L61.2929 477.707ZM61 95L61 477L63 477L63 95L61 95Z"
-            fill="black"
-            mask="url(#)"
-          />
-          <path
-            d="M1.44 297.216C2.05867 296.971 2.67733 296.656 3.296 296.272C3.92533 295.888 4.48 295.435 4.96 294.912H6.32V306H4.384V297.504C4.096 297.728 3.73333 297.947 3.296 298.16C2.85867 298.373 2.43733 298.549 2.032 298.688L1.44 297.216ZM17.9738 300.448C17.9738 302.315 17.6324 303.749 16.9497 304.752C16.2671 305.744 15.3231 306.24 14.1177 306.24C12.9124 306.24 11.9684 305.744 11.2857 304.752C10.6031 303.749 10.2617 302.315 10.2617 300.448C10.2617 299.52 10.3471 298.699 10.5177 297.984C10.6991 297.259 10.9551 296.651 11.2857 296.16C11.6271 295.669 12.0324 295.296 12.5017 295.04C12.9817 294.784 13.5204 294.656 14.1177 294.656C15.3231 294.656 16.2671 295.157 16.9497 296.16C17.6324 297.152 17.9738 298.581 17.9738 300.448ZM15.9737 300.448C15.9737 299.872 15.9417 299.333 15.8777 298.832C15.8137 298.331 15.7071 297.899 15.5577 297.536C15.4191 297.163 15.2324 296.869 14.9977 296.656C14.7631 296.443 14.4697 296.336 14.1177 296.336C13.7657 296.336 13.4671 296.443 13.2217 296.656C12.9871 296.869 12.7951 297.163 12.6457 297.536C12.5071 297.899 12.4057 298.331 12.3417 298.832C12.2884 299.333 12.2617 299.872 12.2617 300.448C12.2617 301.024 12.2884 301.563 12.3417 302.064C12.4057 302.565 12.5071 303.003 12.6457 303.376C12.7951 303.739 12.9871 304.027 13.2217 304.24C13.4671 304.453 13.7657 304.56 14.1177 304.56C14.4697 304.56 14.7631 304.453 14.9977 304.24C15.2324 304.027 15.4191 303.739 15.5577 303.376C15.7071 303.003 15.8137 302.565 15.8777 302.064C15.9417 301.563 15.9737 301.024 15.9737 300.448ZM28.0019 293.584C28.4499 293.584 28.8445 293.627 29.1859 293.712C29.5272 293.787 29.7832 293.856 29.9539 293.92L29.5859 295.52C29.4045 295.435 29.1912 295.365 28.9459 295.312C28.7112 295.259 28.4552 295.232 28.1779 295.232C27.8685 295.232 27.6072 295.28 27.3939 295.376C27.1805 295.461 27.0099 295.584 26.8819 295.744C26.7539 295.904 26.6632 296.101 26.6099 296.336C26.5565 296.56 26.5299 296.805 26.5299 297.072V297.632H29.5699V299.248H26.5299V306H24.5939V297.04C24.5939 295.963 24.8765 295.12 25.4419 294.512C26.0072 293.893 26.8605 293.584 28.0019 293.584ZM31.3841 295.424L33.3201 295.104V297.632H36.2961V299.248H33.3201V302.656C33.3201 303.328 33.4268 303.808 33.6401 304.096C33.8535 304.384 34.2161 304.528 34.7281 304.528C35.0801 304.528 35.3895 304.491 35.6561 304.416C35.9335 304.341 36.1521 304.272 36.3121 304.208L36.6321 305.744C36.4081 305.84 36.1148 305.936 35.7521 306.032C35.3895 306.139 34.9628 306.192 34.4721 306.192C33.8748 306.192 33.3735 306.112 32.9681 305.952C32.5735 305.792 32.2588 305.563 32.0241 305.264C31.7895 304.955 31.6241 304.587 31.5281 304.16C31.4321 303.723 31.3841 303.227 31.3841 302.672V295.424Z"
-            fill="#424B5A"
-          />
-          <path
-            d="M239.464 19C239.528 18.1893 239.672 17.336 239.896 16.44C240.12 15.544 240.392 14.6747 240.712 13.832C241.043 12.9787 241.4 12.184 241.784 11.448C242.179 10.7013 242.568 10.0773 242.952 9.576H237.848V7.912H245.256V9.384C244.904 9.77867 244.52 10.3173 244.104 11C243.688 11.6827 243.293 12.456 242.92 13.32C242.547 14.1733 242.221 15.0907 241.944 16.072C241.677 17.0533 241.512 18.0293 241.448 19H239.464ZM255.428 6.584C255.876 6.584 256.271 6.62667 256.612 6.712C256.953 6.78667 257.209 6.856 257.38 6.92L257.012 8.52C256.831 8.43467 256.617 8.36533 256.372 8.312C256.137 8.25867 255.881 8.232 255.604 8.232C255.295 8.232 255.033 8.28 254.82 8.376C254.607 8.46133 254.436 8.584 254.308 8.744C254.18 8.904 254.089 9.10133 254.036 9.336C253.983 9.56 253.956 9.80533 253.956 10.072V10.632H256.996V12.248H253.956V19H252.02V10.04C252.02 8.96267 252.303 8.12 252.868 7.512C253.433 6.89333 254.287 6.584 255.428 6.584ZM258.81 8.424L260.746 8.104V10.632H263.722V12.248H260.746V15.656C260.746 16.328 260.853 16.808 261.066 17.096C261.28 17.384 261.642 17.528 262.154 17.528C262.506 17.528 262.816 17.4907 263.082 17.416C263.36 17.3413 263.578 17.272 263.738 17.208L264.058 18.744C263.834 18.84 263.541 18.936 263.178 19.032C262.816 19.1387 262.389 19.192 261.898 19.192C261.301 19.192 260.8 19.112 260.394 18.952C260 18.792 259.685 18.5627 259.45 18.264C259.216 17.9547 259.05 17.5867 258.954 17.16C258.858 16.7227 258.81 16.2267 258.81 15.672V8.424Z"
-            fill="#424B5A"
-          />
-          <mask
-            maskUnits="userSpaceOnUse"
-            x="0"
-            y="0"
-            width="0"
-            height="0"
-            fill="black"
-          >
-            <rect fill="white" width="0" height="0" />
-          </mask>
-          <path
-            d="M85.2929 49.2929C84.9024 49.6834 84.9024 50.3166 85.2929 50.7071L91.6569 57.0711C92.0474 57.4616 92.6805 57.4616 93.0711 57.0711C93.4616 56.6805 93.4616 56.0474 93.0711 55.6569L87.4142 50L93.0711 44.3431C93.4616 43.9526 93.4616 43.3195 93.0711 42.9289C92.6805 42.5384 92.0474 42.5384 91.6569 42.9289L85.2929 49.2929ZM468.707 50.7071C469.098 50.3166 469.098 49.6834 468.707 49.2929L462.343 42.9289C461.953 42.5384 461.319 42.5384 460.929 42.9289C460.538 43.3195 460.538 43.9526 460.929 44.3431L466.586 50L460.929 55.6569C460.538 56.0474 460.538 56.6805 460.929 57.0711C461.319 57.4616 461.953 57.4616 462.343 57.0711L468.707 50.7071ZM86 51H468V49H86V51Z"
-            fill="black"
-            mask="url(#)"
-          />
-          <path
-            d="M210.388 125.503L202.551 129.857V122.02H124.184L85 192.551H92.8368H210.388V125.503Z"
-            fill="#BF515A"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M421.979 122.02H343.612V129.857L335.775 125.503V192.551H453.327H461.163L421.979 122.02Z"
-            fill="#BF515A"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M210.388 192.551H92.8369V427.654H210.388V192.551ZM179.041 333.612V349.286V357.122V388.47V396.306H171.204H132.02H124.183V388.47V357.122V349.286V333.612V325.775H132.02H171.204H179.041V333.612ZM179.041 231.734V247.408V255.245V286.592V294.429H171.204H132.02H124.183V286.592V255.245V247.408V231.734V223.898H132.02H171.204H179.041V231.734Z"
-            fill="#F2D057"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M335.775 427.653H453.327V192.551H335.775V427.653ZM367.123 286.592V255.245V247.408V231.734V223.898H374.959H414.143H421.98V231.734V247.408V255.245V286.592V294.429H414.143H374.959H367.123V286.592ZM367.123 388.47V357.122V349.286V333.612V325.775H374.959H414.143H421.98V333.612V349.286V357.122V388.47V396.306H414.143H374.959H367.123V388.47Z"
-            fill="#F2D057"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M210.388 125.503V192.551V427.654H241.735V333.612H304.429V427.653H335.776V192.551V125.503L273.082 90.6736L210.388 125.503ZM304.429 231.734V247.408V255.245V286.592V294.429H296.592H288.755H249.571H241.735V286.592V255.245V247.408V231.734V223.898H249.571H296.592H304.429V231.734ZM296.592 161.204C296.592 174.188 286.067 184.714 273.082 184.714C260.097 184.714 249.571 174.189 249.571 161.204C249.571 148.219 260.098 137.694 273.082 137.694C286.066 137.694 296.592 148.22 296.592 161.204Z"
-            fill="#E9A868"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M132.02 286.592H163.367L132.02 255.245V286.592Z"
-            fill="#95FFFF"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M163.367 286.592H171.204V255.245H132.02L163.367 286.592Z"
-            fill="#80D7F0"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M171.204 231.734H132.02V247.408H171.204V231.734Z"
-            fill="#6EB1E2"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M132.02 223.898H124.183V231.734V247.408V255.245V286.592V294.429H132.02H171.204H179.041V286.592V255.245V247.408V231.734V223.898H171.204H132.02ZM171.204 286.592H163.367H132.02V255.245H171.204V286.592ZM171.204 247.408H132.02V231.734H171.204V247.408Z"
-            fill="#695A69"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M249.571 286.592H280.918L249.571 255.245V286.592Z"
-            fill="#95FFFF"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M296.592 231.734H249.571V247.408H296.592V231.734Z"
-            fill="#6EB1E2"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M249.571 255.245L280.918 286.592H296.592V255.245H288.755H249.571Z"
-            fill="#80D7F0"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M249.571 223.898H241.734V231.734V247.408V255.245V286.592V294.429H249.571H288.755H296.592H304.429V286.592V255.245V247.408V231.734V223.898H296.592H249.571ZM296.592 286.592H280.918H249.571V255.245H288.755H296.592V286.592ZM296.592 247.408H249.571V231.734H296.592V247.408Z"
-            fill="#695A69"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M304.429 333.612H241.734V427.653V459H304.429V427.653V333.612Z"
-            fill="#944851"
-          />
-          <path
-            d="M210.388 427.653H92.8369V459H210.388V427.653Z"
-            fill="#E9A868"
-          />
-          <path
-            d="M453.327 427.653H335.775V459H453.327V427.653Z"
-            fill="#E9A868"
-          />
-          <path
-            d="M335.776 427.653H304.429V459H335.776V427.653Z"
-            fill="#D6805C"
-          />
-          <path
-            d="M241.735 427.653H210.388V459H241.735V427.653Z"
-            fill="#D6805C"
-          />
-          <path
-            d="M210.388 125.503L273.082 90.6736L335.775 125.503L343.612 129.857V122.02V114.183L273.082 75L202.551 114.183V122.02V129.857L210.388 125.503Z"
-            fill="#944851"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M249.571 161.204C249.571 174.188 260.097 184.714 273.082 184.714C286.066 184.714 296.592 174.189 296.592 161.204C296.592 148.219 286.066 137.694 273.082 137.694C260.098 137.694 249.571 148.22 249.571 161.204ZM288.755 161.204C288.755 169.86 281.738 176.878 273.082 176.878C264.426 176.878 257.408 169.861 257.408 161.204C257.408 155.538 260.424 150.59 264.929 147.837C267.306 146.382 270.091 145.53 273.082 145.53C281.738 145.53 288.755 152.548 288.755 161.204Z"
-            fill="#695A69"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M262 150.122C262.876 149.246 263.866 148.486 264.929 147.837C260.425 150.59 257.408 155.538 257.408 161.204C257.408 169.86 264.426 176.878 273.082 176.878C281.738 176.878 288.755 169.861 288.755 161.204C288.755 165.532 287.001 169.45 284.163 172.286L262 150.122Z"
-            fill="#95FFFF"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M288.755 161.204C288.755 152.548 281.738 145.53 273.082 145.53C281.738 145.53 288.755 152.549 288.755 161.204Z"
-            fill="#95FFFF"
-          />
-          <path
-            d="M273.082 145.53C270.091 145.53 267.306 146.382 264.929 147.837C263.866 148.487 262.876 149.246 262 150.122L284.163 172.286C287.001 169.45 288.755 165.532 288.755 161.204C288.755 152.549 281.738 145.53 273.082 145.53Z"
-            fill="#6EB1E2"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M374.959 255.245V286.592H406.306L374.959 255.245Z"
-            fill="#95FFFF"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M414.143 286.592V255.245H374.959L406.306 286.592H414.143Z"
-            fill="#80D7F0"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M414.143 231.734H374.959V247.408H414.143V231.734Z"
-            fill="#6EB1E2"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M414.143 294.429H421.98V286.592V255.245V247.408V231.734V223.898H414.143H374.959H367.123V231.734V247.408V255.245V286.592V294.429H374.959H414.143ZM374.959 231.734H414.143V247.408H374.959V231.734ZM374.959 255.245H414.143V286.592H406.307H374.959V255.245Z"
-            fill="#695A69"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M132.02 388.47H163.367L132.02 357.122V388.47Z"
-            fill="#95FFFF"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M163.367 388.47H171.204V357.122H132.02L163.367 388.47Z"
-            fill="#80D7F0"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M171.204 333.612H132.02V349.286H171.204V333.612Z"
-            fill="#6EB1E2"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M132.02 325.775H124.183V333.612V349.286V357.122V388.47V396.306H132.02H171.204H179.041V388.47V357.122V349.286V333.612V325.775H171.204H132.02ZM171.204 388.47H163.367H132.02V357.122H171.204V388.47ZM171.204 349.286H132.02V333.612H171.204V349.286Z"
-            fill="#695A69"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M374.959 357.122V388.47H406.306L374.959 357.122Z"
-            fill="#95FFFF"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M414.143 388.47V357.122H374.959L406.306 388.47H414.143Z"
-            fill="#80D7F0"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M414.143 333.612H374.959V349.286H414.143V333.612Z"
-            fill="#6EB1E2"
-            fill-opacity="0.1"
-          />
-          <path
-            d="M414.143 396.306H421.98V388.47V357.122V349.286V333.612V325.775H414.143H374.959H367.123V333.612V349.286V357.122V388.47V396.306H374.959H414.143ZM374.959 333.612H414.143V349.286H374.959V333.612ZM374.959 357.122H414.143V388.47H406.307H374.959V357.122Z"
-            fill="#695A69"
-            fill-opacity="0.1"
-          />
-        </svg>
-      </div>
-      <div class="progress--2">
-        <div class="radialProgressBar progress-10">
-          <div class="overlay">
-            <div class="progress__texts">
-              <p class="progress__no">10</p>
-              <p class="progress__title">Completed</p>
-            </div>
-          </div>
+    </div>
+    <div class="inner__sub">
+      <div class="inner__sub--1">
+        <div class="inner__folders">
+          <button data-modal-trigger="trigger-1" class="inner__folder">
+            <img src="assets/img/folder.svg" alt="folder" />
+            <p class="folder">Land & survey</p>
+          </button>
+          <button data-modal-trigger="trigger-2" class="inner__folder">
+            <img src="assets/img/folder.svg" alt="folder" />
+            <p class="folder">Development</p>
+          </button>
+          <button data-modal-trigger="trigger-3" class="inner__folder">
+            <img src="assets/img/folder.svg" alt="folder" />
+            <p class="folder">Completion</p>
+          </button>
         </div>
       </div>
-    </section>
-    <section class="map">
-      <h3 class="map__title">Map</h3>
-      <p class="map__sub">Akoka, Yaba,Lagos</p>
-      <div class="map__showcase">
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe
-              width="100%"
-              height="100%"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=Akoka%2C%20Yaba%2CLagos&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe
-            ><a href="https://usave.co.uk">usave</a>
-          </div>
-          <style>
-            .mapouter {
-              position: relative;
-              text-align: right;
-              height: 100%;
-              width: 100%;
-            }
-
-            .gmap_canvas {
-              overflow: hidden;
-              background: none !important;
-              height: 100%;
-              width: 100%;
-            }
-          </style>
-        </div>
-      </div>
-    </section>
-    <section class="related">
-      <div class="related__heading">
-        <h4 class="related__title">Related properties</h4>
+      <div class="inner__sub--2">
+        <h4 class="features-title">Key Features</h4>
         <div class="inner__line"></div>
-      </div>
-      <div class="landing__boxes">
-        <div class="landing__box">
-          <div class="landing__image">
-            <img src="assets/img/house1.jpg" alt="House" class="landing__img" />
-            <div class="landing__overlay"></div>
-            <div class="landing__costs">
-              <p class="landing__cost">‎₦5,000 per unit</p>
-            </div>
-          </div>
-          <div class="landing__content">
-            <div class="landing__first">
-              <div class="landing__head">
-                <p class="landing__location">Akoka, yaba</p>
-                <p class="landing__sub">Lagos</p>
-              </div>
-              <svg
-                width="56"
-                height="56"
-                viewBox="0 0 56 56"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  class="landing__like"
-                  cx="28"
-                  cy="28"
-                  r="28"
-                  fill="#C9472C"
-                />
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M39.9604 23.4968C39.6101 19.6408 36.8809 16.8433 33.4653 16.8433C31.1898 16.8433 29.1063 18.0678 27.9339 20.0304C26.7721 18.0424 24.774 16.8428 22.535 16.8428C19.1199 16.8428 16.3902 19.6404 16.0403 23.4963C16.0126 23.6666 15.8991 24.563 16.2443 26.0247C16.7419 28.1332 17.8912 30.051 19.5671 31.5695L27.9284 39.1572L36.4332 31.57C38.1091 30.051 39.2584 28.1336 39.756 26.0247C40.1012 24.5634 39.9877 23.6671 39.9604 23.4968ZM38.8573 25.8134C38.4031 27.739 37.3503 29.4934 35.8156 30.8836L27.9339 37.9156L20.1875 30.8855C18.65 29.4925 17.5976 27.7385 17.143 25.8129C16.8162 24.4296 16.9505 23.6481 16.951 23.6431L16.9579 23.5965C17.2579 20.2183 19.6031 17.766 22.535 17.766C24.6983 17.766 26.6027 19.0953 27.5065 21.2346L27.9316 22.2422L28.3567 21.2346C29.2461 19.128 31.2512 17.7664 33.4658 17.7664C36.3972 17.7664 38.7428 20.2187 39.0488 23.6408C39.0498 23.6481 39.1841 24.43 38.8573 25.8134Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M23.3849 19.6483C20.8399 19.6483 18.7693 21.7188 18.7693 24.2639C18.7693 24.5192 18.9756 24.7255 19.2309 24.7255C19.4861 24.7255 19.6924 24.5192 19.6924 24.2639C19.6924 22.2279 21.349 20.5714 23.3849 20.5714C23.6402 20.5714 23.8465 20.3651 23.8465 20.1098C23.8465 19.8546 23.6397 19.6483 23.3849 19.6483Z"
-                    fill="white"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(16 16)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <div class="landing__infos">
-              <div class="landing__info">
-                <img
-                  src="assets/img/bed.svg"
-                  alt="Bed Icon"
-                  class="landing__info__icon"
-                />
-                <p class="landing__room">4 Bedrooms</p>
-              </div>
-              <div class="landing__info">
-                <img
-                  src="assets/img/bathroom.svg"
-                  alt="Bed Icon"
-                  class="landing__info__icon"
-                />
-                <p class="landing__room">4 Bathrooms</p>
-              </div>
-            </div>
-            <p class="landing__size">657 SQ FT ( 61 SQ M)</p>
-          </div>
-        </div>
-        <div class="landing__box">
-          <div class="landing__image">
-            <img src="assets/img/house1.jpg" alt="House" class="landing__img" />
-            <div class="landing__overlay"></div>
-            <div class="landing__costs">
-              <p class="landing__cost">‎₦5,000 per unit</p>
-            </div>
-          </div>
-          <div class="landing__content">
-            <div class="landing__first">
-              <div class="landing__head">
-                <p class="landing__location">Akoka, yaba</p>
-                <p class="landing__sub">Lagos</p>
-              </div>
-              <svg
-                width="56"
-                height="56"
-                viewBox="0 0 56 56"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  class="landing__like"
-                  cx="28"
-                  cy="28"
-                  r="28"
-                  fill="#C9472C"
-                />
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M39.9604 23.4968C39.6101 19.6408 36.8809 16.8433 33.4653 16.8433C31.1898 16.8433 29.1063 18.0678 27.9339 20.0304C26.7721 18.0424 24.774 16.8428 22.535 16.8428C19.1199 16.8428 16.3902 19.6404 16.0403 23.4963C16.0126 23.6666 15.8991 24.563 16.2443 26.0247C16.7419 28.1332 17.8912 30.051 19.5671 31.5695L27.9284 39.1572L36.4332 31.57C38.1091 30.051 39.2584 28.1336 39.756 26.0247C40.1012 24.5634 39.9877 23.6671 39.9604 23.4968ZM38.8573 25.8134C38.4031 27.739 37.3503 29.4934 35.8156 30.8836L27.9339 37.9156L20.1875 30.8855C18.65 29.4925 17.5976 27.7385 17.143 25.8129C16.8162 24.4296 16.9505 23.6481 16.951 23.6431L16.9579 23.5965C17.2579 20.2183 19.6031 17.766 22.535 17.766C24.6983 17.766 26.6027 19.0953 27.5065 21.2346L27.9316 22.2422L28.3567 21.2346C29.2461 19.128 31.2512 17.7664 33.4658 17.7664C36.3972 17.7664 38.7428 20.2187 39.0488 23.6408C39.0498 23.6481 39.1841 24.43 38.8573 25.8134Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M23.3849 19.6483C20.8399 19.6483 18.7693 21.7188 18.7693 24.2639C18.7693 24.5192 18.9756 24.7255 19.2309 24.7255C19.4861 24.7255 19.6924 24.5192 19.6924 24.2639C19.6924 22.2279 21.349 20.5714 23.3849 20.5714C23.6402 20.5714 23.8465 20.3651 23.8465 20.1098C23.8465 19.8546 23.6397 19.6483 23.3849 19.6483Z"
-                    fill="white"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(16 16)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <div class="landing__infos">
-              <div class="landing__info">
-                <img
-                  src="assets/img/bed.svg"
-                  alt="Bed Icon"
-                  class="landing__info__icon"
-                />
-                <p class="landing__room">4 Bedrooms</p>
-              </div>
-              <div class="landing__info">
-                <img
-                  src="assets/img/bathroom.svg"
-                  alt="Bed Icon"
-                  class="landing__info__icon"
-                />
-                <p class="landing__room">4 Bathrooms</p>
-              </div>
-            </div>
-            <p class="landing__size">657 SQ FT ( 61 SQ M)</p>
-          </div>
-        </div>
-        <div class="landing__box">
-          <div class="landing__image">
-            <img src="assets/img/house1.jpg" alt="House" class="landing__img" />
-            <div class="landing__overlay"></div>
-            <div class="landing__costs">
-              <p class="landing__cost">‎₦5,000 per unit</p>
-            </div>
-          </div>
-          <div class="landing__content">
-            <div class="landing__first">
-              <div class="landing__head">
-                <p class="landing__location">Akoka, yaba</p>
-                <p class="landing__sub">Lagos</p>
-              </div>
-              <svg
-                width="56"
-                height="56"
-                viewBox="0 0 56 56"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  class="landing__like"
-                  cx="28"
-                  cy="28"
-                  r="28"
-                  fill="#C9472C"
-                />
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M39.9604 23.4968C39.6101 19.6408 36.8809 16.8433 33.4653 16.8433C31.1898 16.8433 29.1063 18.0678 27.9339 20.0304C26.7721 18.0424 24.774 16.8428 22.535 16.8428C19.1199 16.8428 16.3902 19.6404 16.0403 23.4963C16.0126 23.6666 15.8991 24.563 16.2443 26.0247C16.7419 28.1332 17.8912 30.051 19.5671 31.5695L27.9284 39.1572L36.4332 31.57C38.1091 30.051 39.2584 28.1336 39.756 26.0247C40.1012 24.5634 39.9877 23.6671 39.9604 23.4968ZM38.8573 25.8134C38.4031 27.739 37.3503 29.4934 35.8156 30.8836L27.9339 37.9156L20.1875 30.8855C18.65 29.4925 17.5976 27.7385 17.143 25.8129C16.8162 24.4296 16.9505 23.6481 16.951 23.6431L16.9579 23.5965C17.2579 20.2183 19.6031 17.766 22.535 17.766C24.6983 17.766 26.6027 19.0953 27.5065 21.2346L27.9316 22.2422L28.3567 21.2346C29.2461 19.128 31.2512 17.7664 33.4658 17.7664C36.3972 17.7664 38.7428 20.2187 39.0488 23.6408C39.0498 23.6481 39.1841 24.43 38.8573 25.8134Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M23.3849 19.6483C20.8399 19.6483 18.7693 21.7188 18.7693 24.2639C18.7693 24.5192 18.9756 24.7255 19.2309 24.7255C19.4861 24.7255 19.6924 24.5192 19.6924 24.2639C19.6924 22.2279 21.349 20.5714 23.3849 20.5714C23.6402 20.5714 23.8465 20.3651 23.8465 20.1098C23.8465 19.8546 23.6397 19.6483 23.3849 19.6483Z"
-                    fill="white"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(16 16)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <div class="landing__infos">
-              <div class="landing__info">
-                <img
-                  src="assets/img/bed.svg"
-                  alt="Bed Icon"
-                  class="landing__info__icon"
-                />
-                <p class="landing__room">4 Bedrooms</p>
-              </div>
-              <div class="landing__info">
-                <img
-                  src="assets/img/bathroom.svg"
-                  alt="Bed Icon"
-                  class="landing__info__icon"
-                />
-                <p class="landing__room">4 Bathrooms</p>
-              </div>
-            </div>
-            <p class="landing__size">657 SQ FT ( 61 SQ M)</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div data-modal="trigger-1" class="modal">
-      <div class="content-wrapper">
-        <button class="close"></button>
-        <header class="modal-header">
-          <h2>Land & survey</h2>
-        </header>
-        <div class="content">
-          <div class="images">
-            <img src="assets/img/survey.jpg" alt="survey" class="image" />
-            <img src="assets/img/survey.jpg" alt="survey" class="image" />
-            <img src="assets/img/survey.jpg" alt="survey" class="image" />
-            <img src="assets/img/survey.jpg" alt="survey" class="image" />
-            <img src="assets/img/survey.jpg" alt="survey" class="image" />
-            <img src="assets/img/survey.jpg" alt="survey" class="image" />
-            <img src="assets/img/survey.jpg" alt="survey" class="image" />
-            <img src="assets/img/survey.jpg" alt="survey" class="image" />
-            <img src="assets/img/survey.jpg" alt="survey" class="image" />
-            <img src="assets/img/survey.jpg" alt="survey" class="image" />
-          </div>
-        </div>
+        <ul class="inner__list">
+          <li class="inner__list__item">
+            18” kitchen/diner overlooking garden
+          </li>
+          <li class="inner__list__item">Fully integrated appliances</li>
+          <li class="inner__list__item">
+            Fitted kitchen with soft close doors and drawers
+          </li>
+          <li class="inner__list__item">Beatiful tiling to bathroom</li>
+          <li class="inner__list__item">Two parking spaces</li>
+          <li class="inner__list__item">Excellent transport links</li>
+        </ul>
       </div>
     </div>
-    <div data-modal="trigger-2" class="modal">
-      <div class="content-wrapper">
-        <button class="close"></button>
-        <header class="modal-header">
-          <h2>Development</h2>
-        </header>
-        <div class="content">
-          <div class="images">
-            <img src="assets/img/deve.jpg" alt="survey" class="image" />
-            <img src="assets/img/deve.jpg" alt="survey" class="image" />
-            <img src="assets/img/deve.jpg" alt="survey" class="image" />
-            <img src="assets/img/deve.jpg" alt="survey" class="image" />
-            <img src="assets/img/deve.jpg" alt="survey" class="image" />
-            <img src="assets/img/deve.jpg" alt="survey" class="image" />
-            <img src="assets/img/deve.jpg" alt="survey" class="image" />
-            <img src="assets/img/deve.jpg" alt="survey" class="image" />
-            <img src="assets/img/deve.jpg" alt="survey" class="image" />
-            <img src="assets/img/deve.jpg" alt="survey" class="image" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div data-modal="trigger-3" class="modal">
-      <div class="content-wrapper">
-        <button class="close"></button>
-        <header class="modal-header">
-          <h2>Completion</h2>
-        </header>
-        <div class="content">
-          <div class="images">
-            <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
-            <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
-            <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
-            <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
-            <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
-            <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
-            <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
-            <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
-            <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
-            <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer m-none">
-      <div class="footer__content">
-        <div class="footer__link">
-          <ul class="footer__link__items">
-            <li class="footer__link__item">
-              <p class="footer__link__title">Quick Links</p>
-            </li>
-            <li class="footer__link__item">
-              <a href="#" class="footer__link__text footer__link__text__link"
-                >About Us</a
-              >
-            </li>
-            <li class="footer__link__item">
-              <a href="#" class="footer__link__text footer__link__text__link"
-                >Partners & Programs</a
-              >
-            </li>
-            <li class="footer__link__item">
-              <a href="#" class="footer__link__text footer__link__text__link"
-                >Terms and Conditions</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer__contact">
-          <p class="footer__link__title">CONTACT</p>
-          <p class="footer__link__text">
-            Block G, House 4, Moore Road, Yaba, Lagos.
-          </p>
-          <p class="footer__link__text">0809 222 2109, 01 291 4247</p>
-          <p class="footer__link__text">info@loftyheights.com</p>
-        </div>
-        <div class="footer__subcribe">
-          <p class="footer__link__title">NEWSLETTER</p>
-          <p class="footer__link__text">
-            Recieve latest updates and news directly from our team
-          </p>
-          <div class="footer__input-container">
-            <input
-              type="text"
-              placeholder="What’s your email address"
-              class="footer__input"
-            />
-            <button type="submit" class="footer__input__btn">Subscribe</button>
-          </div>
-        </div>
-
-        <div class="footer__apps">
-          <p class="footer__link__title">Also find us on</p>
-          <div class="footer__buttons">
-            <a href="#" class="footer__button">
-              <img
-                src="assets/img/google-play-download-android-app.svg"
-                alt="Instagram"
-                class="footer__button__img"
-              />
-            </a>
-            <a href="#" class="footer__button">
-              <img
-                src="assets/img/appstore-apple.svg"
-                alt="Instagram"
-                class="footer__button__img"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__line"></div>
-      <div class="footer__bottom">
-        <p class="footer__copyright">
-          ©2018 - Lofty Heights | All right reserved
+    <div class="inner__detail">
+      <div class="inner__detail--1">
+        <h4 class="features-title">Details</h4>
+        <div class="inner__line"></div>
+        <p class="features-paragraph">
+          The property is a four-bedroom home at 1087 Sq. Ft., it boasts a
+          master bedroom with ensuite, south-east facing garden, extensive
+          storage, 18ft kitchen/diner with integrated appliances, the bathroom
+          has a beautiful tiling and aluminium taps and shower and two side by
+          side parking spaces. Yaba bus stop is only 100 metres away and the
+          property has been carefully designed with todays lifestyle in mind.
+          Inviting landscaped gardens to give a welcoming feel, and the
+          well-proportioned apartments will make you instantly feel at home.
         </p>
-        <div class="footer__social-medias">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <a href="#">
+      </div>
+      <div class="inner__detail--2">
+        <div class="inner__features">
+          <div class="inner__feature">
+            <img src="assets/img/bed.svg" alt="Bed" />
+            <p class="features-sub">4 Bedrooms</p>
+          </div>
+          <div class="inner__feature">
+            <img src="assets/img/bathroom.svg" alt="Bath" />
+            <p class="features-sub">4 Bathrooms</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="progress">
+    <div class="progress--1">
+      <svg width="469" height="478" viewBox="0 0 469 478" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+          <rect fill="white" width="0" height="0" />
+        </mask>
+        <path
+          d="M62.7071 94.2929C62.3166 93.9024 61.6834 93.9024 61.2929 94.2929L54.9289 100.657C54.5384 101.047 54.5384 101.681 54.9289 102.071C55.3195 102.462 55.9526 102.462 56.3431 102.071L62 96.4142L67.6569 102.071C68.0474 102.462 68.6805 102.462 69.0711 102.071C69.4616 101.681 69.4616 101.047 69.0711 100.657L62.7071 94.2929ZM61.2929 477.707C61.6834 478.098 62.3166 478.098 62.7071 477.707L69.0711 471.343C69.4616 470.953 69.4616 470.319 69.0711 469.929C68.6805 469.538 68.0474 469.538 67.6568 469.929L62 475.586L56.3431 469.929C55.9526 469.538 55.3194 469.538 54.9289 469.929C54.5384 470.319 54.5384 470.953 54.9289 471.343L61.2929 477.707ZM61 95L61 477L63 477L63 95L61 95Z"
+          fill="black" mask="url(#)" />
+        <path
+          d="M1.44 297.216C2.05867 296.971 2.67733 296.656 3.296 296.272C3.92533 295.888 4.48 295.435 4.96 294.912H6.32V306H4.384V297.504C4.096 297.728 3.73333 297.947 3.296 298.16C2.85867 298.373 2.43733 298.549 2.032 298.688L1.44 297.216ZM17.9738 300.448C17.9738 302.315 17.6324 303.749 16.9497 304.752C16.2671 305.744 15.3231 306.24 14.1177 306.24C12.9124 306.24 11.9684 305.744 11.2857 304.752C10.6031 303.749 10.2617 302.315 10.2617 300.448C10.2617 299.52 10.3471 298.699 10.5177 297.984C10.6991 297.259 10.9551 296.651 11.2857 296.16C11.6271 295.669 12.0324 295.296 12.5017 295.04C12.9817 294.784 13.5204 294.656 14.1177 294.656C15.3231 294.656 16.2671 295.157 16.9497 296.16C17.6324 297.152 17.9738 298.581 17.9738 300.448ZM15.9737 300.448C15.9737 299.872 15.9417 299.333 15.8777 298.832C15.8137 298.331 15.7071 297.899 15.5577 297.536C15.4191 297.163 15.2324 296.869 14.9977 296.656C14.7631 296.443 14.4697 296.336 14.1177 296.336C13.7657 296.336 13.4671 296.443 13.2217 296.656C12.9871 296.869 12.7951 297.163 12.6457 297.536C12.5071 297.899 12.4057 298.331 12.3417 298.832C12.2884 299.333 12.2617 299.872 12.2617 300.448C12.2617 301.024 12.2884 301.563 12.3417 302.064C12.4057 302.565 12.5071 303.003 12.6457 303.376C12.7951 303.739 12.9871 304.027 13.2217 304.24C13.4671 304.453 13.7657 304.56 14.1177 304.56C14.4697 304.56 14.7631 304.453 14.9977 304.24C15.2324 304.027 15.4191 303.739 15.5577 303.376C15.7071 303.003 15.8137 302.565 15.8777 302.064C15.9417 301.563 15.9737 301.024 15.9737 300.448ZM28.0019 293.584C28.4499 293.584 28.8445 293.627 29.1859 293.712C29.5272 293.787 29.7832 293.856 29.9539 293.92L29.5859 295.52C29.4045 295.435 29.1912 295.365 28.9459 295.312C28.7112 295.259 28.4552 295.232 28.1779 295.232C27.8685 295.232 27.6072 295.28 27.3939 295.376C27.1805 295.461 27.0099 295.584 26.8819 295.744C26.7539 295.904 26.6632 296.101 26.6099 296.336C26.5565 296.56 26.5299 296.805 26.5299 297.072V297.632H29.5699V299.248H26.5299V306H24.5939V297.04C24.5939 295.963 24.8765 295.12 25.4419 294.512C26.0072 293.893 26.8605 293.584 28.0019 293.584ZM31.3841 295.424L33.3201 295.104V297.632H36.2961V299.248H33.3201V302.656C33.3201 303.328 33.4268 303.808 33.6401 304.096C33.8535 304.384 34.2161 304.528 34.7281 304.528C35.0801 304.528 35.3895 304.491 35.6561 304.416C35.9335 304.341 36.1521 304.272 36.3121 304.208L36.6321 305.744C36.4081 305.84 36.1148 305.936 35.7521 306.032C35.3895 306.139 34.9628 306.192 34.4721 306.192C33.8748 306.192 33.3735 306.112 32.9681 305.952C32.5735 305.792 32.2588 305.563 32.0241 305.264C31.7895 304.955 31.6241 304.587 31.5281 304.16C31.4321 303.723 31.3841 303.227 31.3841 302.672V295.424Z"
+          fill="#424B5A" />
+        <path
+          d="M239.464 19C239.528 18.1893 239.672 17.336 239.896 16.44C240.12 15.544 240.392 14.6747 240.712 13.832C241.043 12.9787 241.4 12.184 241.784 11.448C242.179 10.7013 242.568 10.0773 242.952 9.576H237.848V7.912H245.256V9.384C244.904 9.77867 244.52 10.3173 244.104 11C243.688 11.6827 243.293 12.456 242.92 13.32C242.547 14.1733 242.221 15.0907 241.944 16.072C241.677 17.0533 241.512 18.0293 241.448 19H239.464ZM255.428 6.584C255.876 6.584 256.271 6.62667 256.612 6.712C256.953 6.78667 257.209 6.856 257.38 6.92L257.012 8.52C256.831 8.43467 256.617 8.36533 256.372 8.312C256.137 8.25867 255.881 8.232 255.604 8.232C255.295 8.232 255.033 8.28 254.82 8.376C254.607 8.46133 254.436 8.584 254.308 8.744C254.18 8.904 254.089 9.10133 254.036 9.336C253.983 9.56 253.956 9.80533 253.956 10.072V10.632H256.996V12.248H253.956V19H252.02V10.04C252.02 8.96267 252.303 8.12 252.868 7.512C253.433 6.89333 254.287 6.584 255.428 6.584ZM258.81 8.424L260.746 8.104V10.632H263.722V12.248H260.746V15.656C260.746 16.328 260.853 16.808 261.066 17.096C261.28 17.384 261.642 17.528 262.154 17.528C262.506 17.528 262.816 17.4907 263.082 17.416C263.36 17.3413 263.578 17.272 263.738 17.208L264.058 18.744C263.834 18.84 263.541 18.936 263.178 19.032C262.816 19.1387 262.389 19.192 261.898 19.192C261.301 19.192 260.8 19.112 260.394 18.952C260 18.792 259.685 18.5627 259.45 18.264C259.216 17.9547 259.05 17.5867 258.954 17.16C258.858 16.7227 258.81 16.2267 258.81 15.672V8.424Z"
+          fill="#424B5A" />
+        <mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+          <rect fill="white" width="0" height="0" />
+        </mask>
+        <path
+          d="M85.2929 49.2929C84.9024 49.6834 84.9024 50.3166 85.2929 50.7071L91.6569 57.0711C92.0474 57.4616 92.6805 57.4616 93.0711 57.0711C93.4616 56.6805 93.4616 56.0474 93.0711 55.6569L87.4142 50L93.0711 44.3431C93.4616 43.9526 93.4616 43.3195 93.0711 42.9289C92.6805 42.5384 92.0474 42.5384 91.6569 42.9289L85.2929 49.2929ZM468.707 50.7071C469.098 50.3166 469.098 49.6834 468.707 49.2929L462.343 42.9289C461.953 42.5384 461.319 42.5384 460.929 42.9289C460.538 43.3195 460.538 43.9526 460.929 44.3431L466.586 50L460.929 55.6569C460.538 56.0474 460.538 56.6805 460.929 57.0711C461.319 57.4616 461.953 57.4616 462.343 57.0711L468.707 50.7071ZM86 51H468V49H86V51Z"
+          fill="black" mask="url(#)" />
+        <path d="M210.388 125.503L202.551 129.857V122.02H124.184L85 192.551H92.8368H210.388V125.503Z" fill="#BF515A"
+          fill-opacity="0.1" />
+        <path d="M421.979 122.02H343.612V129.857L335.775 125.503V192.551H453.327H461.163L421.979 122.02Z" fill="#BF515A"
+          fill-opacity="0.1" />
+        <path
+          d="M210.388 192.551H92.8369V427.654H210.388V192.551ZM179.041 333.612V349.286V357.122V388.47V396.306H171.204H132.02H124.183V388.47V357.122V349.286V333.612V325.775H132.02H171.204H179.041V333.612ZM179.041 231.734V247.408V255.245V286.592V294.429H171.204H132.02H124.183V286.592V255.245V247.408V231.734V223.898H132.02H171.204H179.041V231.734Z"
+          fill="#F2D057" fill-opacity="0.1" />
+        <path
+          d="M335.775 427.653H453.327V192.551H335.775V427.653ZM367.123 286.592V255.245V247.408V231.734V223.898H374.959H414.143H421.98V231.734V247.408V255.245V286.592V294.429H414.143H374.959H367.123V286.592ZM367.123 388.47V357.122V349.286V333.612V325.775H374.959H414.143H421.98V333.612V349.286V357.122V388.47V396.306H414.143H374.959H367.123V388.47Z"
+          fill="#F2D057" fill-opacity="0.1" />
+        <path
+          d="M210.388 125.503V192.551V427.654H241.735V333.612H304.429V427.653H335.776V192.551V125.503L273.082 90.6736L210.388 125.503ZM304.429 231.734V247.408V255.245V286.592V294.429H296.592H288.755H249.571H241.735V286.592V255.245V247.408V231.734V223.898H249.571H296.592H304.429V231.734ZM296.592 161.204C296.592 174.188 286.067 184.714 273.082 184.714C260.097 184.714 249.571 174.189 249.571 161.204C249.571 148.219 260.098 137.694 273.082 137.694C286.066 137.694 296.592 148.22 296.592 161.204Z"
+          fill="#E9A868" fill-opacity="0.1" />
+        <path d="M132.02 286.592H163.367L132.02 255.245V286.592Z" fill="#95FFFF" fill-opacity="0.1" />
+        <path d="M163.367 286.592H171.204V255.245H132.02L163.367 286.592Z" fill="#80D7F0" fill-opacity="0.1" />
+        <path d="M171.204 231.734H132.02V247.408H171.204V231.734Z" fill="#6EB1E2" fill-opacity="0.1" />
+        <path
+          d="M132.02 223.898H124.183V231.734V247.408V255.245V286.592V294.429H132.02H171.204H179.041V286.592V255.245V247.408V231.734V223.898H171.204H132.02ZM171.204 286.592H163.367H132.02V255.245H171.204V286.592ZM171.204 247.408H132.02V231.734H171.204V247.408Z"
+          fill="#695A69" fill-opacity="0.1" />
+        <path d="M249.571 286.592H280.918L249.571 255.245V286.592Z" fill="#95FFFF" fill-opacity="0.1" />
+        <path d="M296.592 231.734H249.571V247.408H296.592V231.734Z" fill="#6EB1E2" fill-opacity="0.1" />
+        <path d="M249.571 255.245L280.918 286.592H296.592V255.245H288.755H249.571Z" fill="#80D7F0" fill-opacity="0.1" />
+        <path
+          d="M249.571 223.898H241.734V231.734V247.408V255.245V286.592V294.429H249.571H288.755H296.592H304.429V286.592V255.245V247.408V231.734V223.898H296.592H249.571ZM296.592 286.592H280.918H249.571V255.245H288.755H296.592V286.592ZM296.592 247.408H249.571V231.734H296.592V247.408Z"
+          fill="#695A69" fill-opacity="0.1" />
+        <path d="M304.429 333.612H241.734V427.653V459H304.429V427.653V333.612Z" fill="#944851" />
+        <path d="M210.388 427.653H92.8369V459H210.388V427.653Z" fill="#E9A868" />
+        <path d="M453.327 427.653H335.775V459H453.327V427.653Z" fill="#E9A868" />
+        <path d="M335.776 427.653H304.429V459H335.776V427.653Z" fill="#D6805C" />
+        <path d="M241.735 427.653H210.388V459H241.735V427.653Z" fill="#D6805C" />
+        <path
+          d="M210.388 125.503L273.082 90.6736L335.775 125.503L343.612 129.857V122.02V114.183L273.082 75L202.551 114.183V122.02V129.857L210.388 125.503Z"
+          fill="#944851" fill-opacity="0.1" />
+        <path
+          d="M249.571 161.204C249.571 174.188 260.097 184.714 273.082 184.714C286.066 184.714 296.592 174.189 296.592 161.204C296.592 148.219 286.066 137.694 273.082 137.694C260.098 137.694 249.571 148.22 249.571 161.204ZM288.755 161.204C288.755 169.86 281.738 176.878 273.082 176.878C264.426 176.878 257.408 169.861 257.408 161.204C257.408 155.538 260.424 150.59 264.929 147.837C267.306 146.382 270.091 145.53 273.082 145.53C281.738 145.53 288.755 152.548 288.755 161.204Z"
+          fill="#695A69" fill-opacity="0.1" />
+        <path
+          d="M262 150.122C262.876 149.246 263.866 148.486 264.929 147.837C260.425 150.59 257.408 155.538 257.408 161.204C257.408 169.86 264.426 176.878 273.082 176.878C281.738 176.878 288.755 169.861 288.755 161.204C288.755 165.532 287.001 169.45 284.163 172.286L262 150.122Z"
+          fill="#95FFFF" fill-opacity="0.1" />
+        <path
+          d="M288.755 161.204C288.755 152.548 281.738 145.53 273.082 145.53C281.738 145.53 288.755 152.549 288.755 161.204Z"
+          fill="#95FFFF" />
+        <path
+          d="M273.082 145.53C270.091 145.53 267.306 146.382 264.929 147.837C263.866 148.487 262.876 149.246 262 150.122L284.163 172.286C287.001 169.45 288.755 165.532 288.755 161.204C288.755 152.549 281.738 145.53 273.082 145.53Z"
+          fill="#6EB1E2" fill-opacity="0.1" />
+        <path d="M374.959 255.245V286.592H406.306L374.959 255.245Z" fill="#95FFFF" fill-opacity="0.1" />
+        <path d="M414.143 286.592V255.245H374.959L406.306 286.592H414.143Z" fill="#80D7F0" fill-opacity="0.1" />
+        <path d="M414.143 231.734H374.959V247.408H414.143V231.734Z" fill="#6EB1E2" fill-opacity="0.1" />
+        <path
+          d="M414.143 294.429H421.98V286.592V255.245V247.408V231.734V223.898H414.143H374.959H367.123V231.734V247.408V255.245V286.592V294.429H374.959H414.143ZM374.959 231.734H414.143V247.408H374.959V231.734ZM374.959 255.245H414.143V286.592H406.307H374.959V255.245Z"
+          fill="#695A69" fill-opacity="0.1" />
+        <path d="M132.02 388.47H163.367L132.02 357.122V388.47Z" fill="#95FFFF" fill-opacity="0.1" />
+        <path d="M163.367 388.47H171.204V357.122H132.02L163.367 388.47Z" fill="#80D7F0" fill-opacity="0.1" />
+        <path d="M171.204 333.612H132.02V349.286H171.204V333.612Z" fill="#6EB1E2" fill-opacity="0.1" />
+        <path
+          d="M132.02 325.775H124.183V333.612V349.286V357.122V388.47V396.306H132.02H171.204H179.041V388.47V357.122V349.286V333.612V325.775H171.204H132.02ZM171.204 388.47H163.367H132.02V357.122H171.204V388.47ZM171.204 349.286H132.02V333.612H171.204V349.286Z"
+          fill="#695A69" fill-opacity="0.1" />
+        <path d="M374.959 357.122V388.47H406.306L374.959 357.122Z" fill="#95FFFF" fill-opacity="0.1" />
+        <path d="M414.143 388.47V357.122H374.959L406.306 388.47H414.143Z" fill="#80D7F0" fill-opacity="0.1" />
+        <path d="M414.143 333.612H374.959V349.286H414.143V333.612Z" fill="#6EB1E2" fill-opacity="0.1" />
+        <path
+          d="M414.143 396.306H421.98V388.47V357.122V349.286V333.612V325.775H414.143H374.959H367.123V333.612V349.286V357.122V388.47V396.306H374.959H414.143ZM374.959 333.612H414.143V349.286H374.959V333.612ZM374.959 357.122H414.143V388.47H406.307H374.959V357.122Z"
+          fill="#695A69" fill-opacity="0.1" />
+      </svg>
+    </div>
+    <div class="progress--2">
+      <div class="radialProgressBar progress-10">
+        <div class="overlay">
+          <div class="progress__texts">
+            <p class="progress__no">10</p>
+            <p class="progress__title">Completed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="map">
+    <h3 class="map__title">Map</h3>
+    <p class="map__sub">Akoka, Yaba,Lagos</p>
+    <div class="map__showcase">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="100%" height="100%" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Akoka%2C%20Yaba%2CLagos&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+            href="https://usave.co.uk">usave</a>
+        </div>
+        <style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            height: 100%;
+            width: 100%;
+          }
+
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 100%;
+            width: 100%;
+          }
+        </style>
+      </div>
+    </div>
+  </section>
+  <section class="related">
+    <div class="related__heading">
+      <h4 class="related__title">Related properties</h4>
+      <div class="inner__line"></div>
+    </div>
+    <div class="landing__boxes">
+      <div class="landing__box">
+        <div class="landing__image">
+          <img src="assets/img/house1.jpg" alt="House" class="landing__img" />
+          <div class="landing__overlay"></div>
+          <div class="landing__costs">
+            <p class="landing__cost">‎₦5,000 per unit</p>
+          </div>
+        </div>
+        <div class="landing__content">
+          <div class="landing__first">
+            <div class="landing__head">
+              <p class="landing__location">Akoka, yaba</p>
+              <p class="landing__sub">Lagos</p>
+            </div>
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle class="landing__like" cx="28" cy="28" r="28" fill="#C9472C" />
               <g clip-path="url(#clip0)">
                 <path
-                  class="footer__social-media"
-                  d="M20 3.79875C19.2562 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4413 2.18C18.6488 2.6525 17.7737 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5762 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7912 2.23375 11.7362C2.765 13.36 4.2725 14.5537 6.065 14.5925C4.67 15.6837 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3262 0 16.285C1.81625 17.4562 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9537 6.10125 17.945 5.9275C18.7587 5.35 19.4425 4.62875 20 3.79875Z"
-                  fill="white"
-                />
+                  d="M39.9604 23.4968C39.6101 19.6408 36.8809 16.8433 33.4653 16.8433C31.1898 16.8433 29.1063 18.0678 27.9339 20.0304C26.7721 18.0424 24.774 16.8428 22.535 16.8428C19.1199 16.8428 16.3902 19.6404 16.0403 23.4963C16.0126 23.6666 15.8991 24.563 16.2443 26.0247C16.7419 28.1332 17.8912 30.051 19.5671 31.5695L27.9284 39.1572L36.4332 31.57C38.1091 30.051 39.2584 28.1336 39.756 26.0247C40.1012 24.5634 39.9877 23.6671 39.9604 23.4968ZM38.8573 25.8134C38.4031 27.739 37.3503 29.4934 35.8156 30.8836L27.9339 37.9156L20.1875 30.8855C18.65 29.4925 17.5976 27.7385 17.143 25.8129C16.8162 24.4296 16.9505 23.6481 16.951 23.6431L16.9579 23.5965C17.2579 20.2183 19.6031 17.766 22.535 17.766C24.6983 17.766 26.6027 19.0953 27.5065 21.2346L27.9316 22.2422L28.3567 21.2346C29.2461 19.128 31.2512 17.7664 33.4658 17.7664C36.3972 17.7664 38.7428 20.2187 39.0488 23.6408C39.0498 23.6481 39.1841 24.43 38.8573 25.8134Z"
+                  fill="white" />
+                <path
+                  d="M23.3849 19.6483C20.8399 19.6483 18.7693 21.7188 18.7693 24.2639C18.7693 24.5192 18.9756 24.7255 19.2309 24.7255C19.4861 24.7255 19.6924 24.5192 19.6924 24.2639C19.6924 22.2279 21.349 20.5714 23.3849 20.5714C23.6402 20.5714 23.8465 20.3651 23.8465 20.1098C23.8465 19.8546 23.6397 19.6483 23.3849 19.6483Z"
+                  fill="white" />
               </g>
               <defs>
                 <clipPath id="clip0">
-                  <rect width="20" height="20" fill="white" />
+                  <rect width="24" height="24" fill="white" transform="translate(16 16)" />
                 </clipPath>
               </defs>
-            </a>
-          </svg>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <a href="#">
-              <path
-                class="footer__social-media"
-                d="M5.2711 10.652H7.46341V19.6774C7.46341 19.8556 7.60778 20 7.78599 20H11.5031C11.6813 20 11.8257 19.8556 11.8257 19.6774V10.6945H14.346C14.5099 10.6945 14.6477 10.5716 14.6665 10.4088L15.0492 7.08609C15.0597 6.99469 15.0308 6.90313 14.9696 6.83453C14.9084 6.7659 14.8208 6.7266 14.7288 6.7266H11.8259V4.64375C11.8259 4.0159 12.1639 3.6975 12.8308 3.6975C12.9258 3.6975 14.7288 3.6975 14.7288 3.6975C14.907 3.6975 15.0514 3.55305 15.0514 3.37492V0.324961C15.0514 0.146758 14.907 0.00238281 14.7288 0.00238281H12.113C12.0946 0.00148438 12.0536 0 11.9932 0C11.5393 0 9.96173 0.0891015 8.71552 1.23555C7.33474 2.50602 7.52669 4.02715 7.57255 4.2909V6.72652H5.27106C5.09286 6.72652 4.94849 6.8709 4.94849 7.0491V10.3294C4.94853 10.5075 5.0929 10.652 5.2711 10.652Z"
-                fill="white"
-              />
-            </a>
-          </svg>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <a href="#">
-              <path
-                class="footer__social-media"
-                d="M2.3112 0.000854492H15.6899C16.9609 0.000854492 18 1.15579 18 2.56805V17.4333C18 18.8451 16.9609 19.9993 15.6899 19.9993H2.3112C1.04016 19.9993 0 18.8451 0 17.4333V2.56805C0 1.15579 1.04016 0.000854492 2.3112 0.000854492ZM13.1128 2.22199C12.6665 2.22199 12.3025 2.62805 12.3025 3.12365V5.27792C12.3025 5.77372 12.6665 6.17885 13.1128 6.17885H15.1469C15.5925 6.17885 15.9573 5.77372 15.9573 5.27792V3.12365C15.9573 2.62805 15.5925 2.22199 15.1469 2.22199H13.1128ZM15.965 8.45792H14.3813C14.5315 9.00292 14.6129 9.57765 14.6129 10.1752C14.6129 13.5007 12.1069 16.1979 9.01692 16.1979C5.9277 16.1979 3.42168 13.5007 3.42168 10.1752C3.42168 9.57765 3.50388 9.00292 3.65334 8.45792H2.001V16.9067C2.001 17.3443 2.32254 17.7002 2.71596 17.7002H15.2504C15.6442 17.7002 15.965 17.3443 15.965 16.9067V8.45792ZM9.01698 6.06525C7.02138 6.06525 5.40258 7.80712 5.40258 9.95779C5.40258 12.1063 7.02138 13.8495 9.01698 13.8495C11.0137 13.8495 12.6325 12.1063 12.6325 9.95779C12.6325 7.80705 11.0137 6.06525 9.01698 6.06525Z"
-                fill="white"
-              />
-            </a>
-          </svg>
+            </svg>
+          </div>
+          <div class="landing__infos">
+            <div class="landing__info">
+              <img src="assets/img/bed.svg" alt="Bed Icon" class="landing__info__icon" />
+              <p class="landing__room">4 Bedrooms</p>
+            </div>
+            <div class="landing__info">
+              <img src="assets/img/bathroom.svg" alt="Bed Icon" class="landing__info__icon" />
+              <p class="landing__room">4 Bathrooms</p>
+            </div>
+          </div>
+          <p class="landing__size">657 SQ FT ( 61 SQ M)</p>
         </div>
       </div>
-    </footer>
-    <script src="assets/js/main.js"></script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("Demo");
-        if (x.className.indexOf("show") == -1) {
-          x.className += " show";
-        } else {
-          x.className = x.className.replace(" show", "");
-        }
+      <div class="landing__box">
+        <div class="landing__image">
+          <img src="assets/img/house1.jpg" alt="House" class="landing__img" />
+          <div class="landing__overlay"></div>
+          <div class="landing__costs">
+            <p class="landing__cost">‎₦5,000 per unit</p>
+          </div>
+        </div>
+        <div class="landing__content">
+          <div class="landing__first">
+            <div class="landing__head">
+              <p class="landing__location">Akoka, yaba</p>
+              <p class="landing__sub">Lagos</p>
+            </div>
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle class="landing__like" cx="28" cy="28" r="28" fill="#C9472C" />
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M39.9604 23.4968C39.6101 19.6408 36.8809 16.8433 33.4653 16.8433C31.1898 16.8433 29.1063 18.0678 27.9339 20.0304C26.7721 18.0424 24.774 16.8428 22.535 16.8428C19.1199 16.8428 16.3902 19.6404 16.0403 23.4963C16.0126 23.6666 15.8991 24.563 16.2443 26.0247C16.7419 28.1332 17.8912 30.051 19.5671 31.5695L27.9284 39.1572L36.4332 31.57C38.1091 30.051 39.2584 28.1336 39.756 26.0247C40.1012 24.5634 39.9877 23.6671 39.9604 23.4968ZM38.8573 25.8134C38.4031 27.739 37.3503 29.4934 35.8156 30.8836L27.9339 37.9156L20.1875 30.8855C18.65 29.4925 17.5976 27.7385 17.143 25.8129C16.8162 24.4296 16.9505 23.6481 16.951 23.6431L16.9579 23.5965C17.2579 20.2183 19.6031 17.766 22.535 17.766C24.6983 17.766 26.6027 19.0953 27.5065 21.2346L27.9316 22.2422L28.3567 21.2346C29.2461 19.128 31.2512 17.7664 33.4658 17.7664C36.3972 17.7664 38.7428 20.2187 39.0488 23.6408C39.0498 23.6481 39.1841 24.43 38.8573 25.8134Z"
+                  fill="white" />
+                <path
+                  d="M23.3849 19.6483C20.8399 19.6483 18.7693 21.7188 18.7693 24.2639C18.7693 24.5192 18.9756 24.7255 19.2309 24.7255C19.4861 24.7255 19.6924 24.5192 19.6924 24.2639C19.6924 22.2279 21.349 20.5714 23.3849 20.5714C23.6402 20.5714 23.8465 20.3651 23.8465 20.1098C23.8465 19.8546 23.6397 19.6483 23.3849 19.6483Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="24" height="24" fill="white" transform="translate(16 16)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="landing__infos">
+            <div class="landing__info">
+              <img src="assets/img/bed.svg" alt="Bed Icon" class="landing__info__icon" />
+              <p class="landing__room">4 Bedrooms</p>
+            </div>
+            <div class="landing__info">
+              <img src="assets/img/bathroom.svg" alt="Bed Icon" class="landing__info__icon" />
+              <p class="landing__room">4 Bathrooms</p>
+            </div>
+          </div>
+          <p class="landing__size">657 SQ FT ( 61 SQ M)</p>
+        </div>
+      </div>
+      <div class="landing__box">
+        <div class="landing__image">
+          <img src="assets/img/house1.jpg" alt="House" class="landing__img" />
+          <div class="landing__overlay"></div>
+          <div class="landing__costs">
+            <p class="landing__cost">‎₦5,000 per unit</p>
+          </div>
+        </div>
+        <div class="landing__content">
+          <div class="landing__first">
+            <div class="landing__head">
+              <p class="landing__location">Akoka, yaba</p>
+              <p class="landing__sub">Lagos</p>
+            </div>
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle class="landing__like" cx="28" cy="28" r="28" fill="#C9472C" />
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M39.9604 23.4968C39.6101 19.6408 36.8809 16.8433 33.4653 16.8433C31.1898 16.8433 29.1063 18.0678 27.9339 20.0304C26.7721 18.0424 24.774 16.8428 22.535 16.8428C19.1199 16.8428 16.3902 19.6404 16.0403 23.4963C16.0126 23.6666 15.8991 24.563 16.2443 26.0247C16.7419 28.1332 17.8912 30.051 19.5671 31.5695L27.9284 39.1572L36.4332 31.57C38.1091 30.051 39.2584 28.1336 39.756 26.0247C40.1012 24.5634 39.9877 23.6671 39.9604 23.4968ZM38.8573 25.8134C38.4031 27.739 37.3503 29.4934 35.8156 30.8836L27.9339 37.9156L20.1875 30.8855C18.65 29.4925 17.5976 27.7385 17.143 25.8129C16.8162 24.4296 16.9505 23.6481 16.951 23.6431L16.9579 23.5965C17.2579 20.2183 19.6031 17.766 22.535 17.766C24.6983 17.766 26.6027 19.0953 27.5065 21.2346L27.9316 22.2422L28.3567 21.2346C29.2461 19.128 31.2512 17.7664 33.4658 17.7664C36.3972 17.7664 38.7428 20.2187 39.0488 23.6408C39.0498 23.6481 39.1841 24.43 38.8573 25.8134Z"
+                  fill="white" />
+                <path
+                  d="M23.3849 19.6483C20.8399 19.6483 18.7693 21.7188 18.7693 24.2639C18.7693 24.5192 18.9756 24.7255 19.2309 24.7255C19.4861 24.7255 19.6924 24.5192 19.6924 24.2639C19.6924 22.2279 21.349 20.5714 23.3849 20.5714C23.6402 20.5714 23.8465 20.3651 23.8465 20.1098C23.8465 19.8546 23.6397 19.6483 23.3849 19.6483Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="24" height="24" fill="white" transform="translate(16 16)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="landing__infos">
+            <div class="landing__info">
+              <img src="assets/img/bed.svg" alt="Bed Icon" class="landing__info__icon" />
+              <p class="landing__room">4 Bedrooms</p>
+            </div>
+            <div class="landing__info">
+              <img src="assets/img/bathroom.svg" alt="Bed Icon" class="landing__info__icon" />
+              <p class="landing__room">4 Bathrooms</p>
+            </div>
+          </div>
+          <p class="landing__size">657 SQ FT ( 61 SQ M)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div data-modal="trigger-1" class="modal">
+    <div class="content-wrapper">
+      <button class="close"></button>
+      <header class="modal-header">
+        <h2>Land & survey</h2>
+      </header>
+      <div class="content">
+        <div class="images">
+          <img src="assets/img/survey.jpg" alt="survey" class="image" />
+          <img src="assets/img/survey.jpg" alt="survey" class="image" />
+          <img src="assets/img/survey.jpg" alt="survey" class="image" />
+          <img src="assets/img/survey.jpg" alt="survey" class="image" />
+          <img src="assets/img/survey.jpg" alt="survey" class="image" />
+          <img src="assets/img/survey.jpg" alt="survey" class="image" />
+          <img src="assets/img/survey.jpg" alt="survey" class="image" />
+          <img src="assets/img/survey.jpg" alt="survey" class="image" />
+          <img src="assets/img/survey.jpg" alt="survey" class="image" />
+          <img src="assets/img/survey.jpg" alt="survey" class="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-modal="trigger-2" class="modal">
+    <div class="content-wrapper">
+      <button class="close"></button>
+      <header class="modal-header">
+        <h2>Development</h2>
+      </header>
+      <div class="content">
+        <div class="images">
+          <img src="assets/img/deve.jpg" alt="survey" class="image" />
+          <img src="assets/img/deve.jpg" alt="survey" class="image" />
+          <img src="assets/img/deve.jpg" alt="survey" class="image" />
+          <img src="assets/img/deve.jpg" alt="survey" class="image" />
+          <img src="assets/img/deve.jpg" alt="survey" class="image" />
+          <img src="assets/img/deve.jpg" alt="survey" class="image" />
+          <img src="assets/img/deve.jpg" alt="survey" class="image" />
+          <img src="assets/img/deve.jpg" alt="survey" class="image" />
+          <img src="assets/img/deve.jpg" alt="survey" class="image" />
+          <img src="assets/img/deve.jpg" alt="survey" class="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-modal="trigger-3" class="modal">
+    <div class="content-wrapper">
+      <button class="close"></button>
+      <header class="modal-header">
+        <h2>Completion</h2>
+      </header>
+      <div class="content">
+        <div class="images">
+          <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
+          <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
+          <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
+          <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
+          <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
+          <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
+          <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
+          <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
+          <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
+          <img src="assets/img/abuja7.jpg" alt="survey" class="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer m-none">
+    <div class="footer__content">
+      <div class="footer__link">
+        <ul class="footer__link__items">
+          <li class="footer__link__item">
+            <p class="footer__link__title">Quick Links</p>
+          </li>
+          <li class="footer__link__item">
+            <a href="#" class="footer__link__text footer__link__text__link">About Us</a>
+          </li>
+          <li class="footer__link__item">
+            <a href="#" class="footer__link__text footer__link__text__link">Partners & Programs</a>
+          </li>
+          <li class="footer__link__item">
+            <a href="#" class="footer__link__text footer__link__text__link">Terms and Conditions</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <p class="footer__link__title">CONTACT</p>
+        <p class="footer__link__text">
+          Block G, House 4, Moore Road, Yaba, Lagos.
+        </p>
+        <p class="footer__link__text">0809 222 2109, 01 291 4247</p>
+        <p class="footer__link__text">info@loftyheights.com</p>
+      </div>
+      <div class="footer__subcribe">
+        <p class="footer__link__title">NEWSLETTER</p>
+        <p class="footer__link__text">
+          Recieve latest updates and news directly from our team
+        </p>
+        <div class="footer__input-container">
+          <input type="text" placeholder="What’s your email address" class="footer__input" />
+          <button type="submit" class="footer__input__btn">Subscribe</button>
+        </div>
+      </div>
+
+      <div class="footer__apps">
+        <p class="footer__link__title">Also find us on</p>
+        <div class="footer__buttons">
+          <a href="#" class="footer__button">
+            <img src="assets/img/google-play-download-android-app.svg" alt="Instagram" class="footer__button__img" />
+          </a>
+          <a href="#" class="footer__button">
+            <img src="assets/img/appstore-apple.svg" alt="Instagram" class="footer__button__img" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__line"></div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        ©2018 - Lofty Heights | All right reserved
+      </p>
+      <div class="footer__social-medias">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="#">
+            <g clip-path="url(#clip0)">
+              <path class="footer__social-media"
+                d="M20 3.79875C19.2562 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4413 2.18C18.6488 2.6525 17.7737 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5762 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7912 2.23375 11.7362C2.765 13.36 4.2725 14.5537 6.065 14.5925C4.67 15.6837 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3262 0 16.285C1.81625 17.4562 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9537 6.10125 17.945 5.9275C18.7587 5.35 19.4425 4.62875 20 3.79875Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </a>
+        </svg>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="#">
+            <path class="footer__social-media"
+              d="M5.2711 10.652H7.46341V19.6774C7.46341 19.8556 7.60778 20 7.78599 20H11.5031C11.6813 20 11.8257 19.8556 11.8257 19.6774V10.6945H14.346C14.5099 10.6945 14.6477 10.5716 14.6665 10.4088L15.0492 7.08609C15.0597 6.99469 15.0308 6.90313 14.9696 6.83453C14.9084 6.7659 14.8208 6.7266 14.7288 6.7266H11.8259V4.64375C11.8259 4.0159 12.1639 3.6975 12.8308 3.6975C12.9258 3.6975 14.7288 3.6975 14.7288 3.6975C14.907 3.6975 15.0514 3.55305 15.0514 3.37492V0.324961C15.0514 0.146758 14.907 0.00238281 14.7288 0.00238281H12.113C12.0946 0.00148438 12.0536 0 11.9932 0C11.5393 0 9.96173 0.0891015 8.71552 1.23555C7.33474 2.50602 7.52669 4.02715 7.57255 4.2909V6.72652H5.27106C5.09286 6.72652 4.94849 6.8709 4.94849 7.0491V10.3294C4.94853 10.5075 5.0929 10.652 5.2711 10.652Z"
+              fill="white" />
+          </a>
+        </svg>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="#">
+            <path class="footer__social-media"
+              d="M2.3112 0.000854492H15.6899C16.9609 0.000854492 18 1.15579 18 2.56805V17.4333C18 18.8451 16.9609 19.9993 15.6899 19.9993H2.3112C1.04016 19.9993 0 18.8451 0 17.4333V2.56805C0 1.15579 1.04016 0.000854492 2.3112 0.000854492ZM13.1128 2.22199C12.6665 2.22199 12.3025 2.62805 12.3025 3.12365V5.27792C12.3025 5.77372 12.6665 6.17885 13.1128 6.17885H15.1469C15.5925 6.17885 15.9573 5.77372 15.9573 5.27792V3.12365C15.9573 2.62805 15.5925 2.22199 15.1469 2.22199H13.1128ZM15.965 8.45792H14.3813C14.5315 9.00292 14.6129 9.57765 14.6129 10.1752C14.6129 13.5007 12.1069 16.1979 9.01692 16.1979C5.9277 16.1979 3.42168 13.5007 3.42168 10.1752C3.42168 9.57765 3.50388 9.00292 3.65334 8.45792H2.001V16.9067C2.001 17.3443 2.32254 17.7002 2.71596 17.7002H15.2504C15.6442 17.7002 15.965 17.3443 15.965 16.9067V8.45792ZM9.01698 6.06525C7.02138 6.06525 5.40258 7.80712 5.40258 9.95779C5.40258 12.1063 7.02138 13.8495 9.01698 13.8495C11.0137 13.8495 12.6325 12.1063 12.6325 9.95779C12.6325 7.80705 11.0137 6.06525 9.01698 6.06525Z"
+              fill="white" />
+          </a>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("Demo");
+      if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+      } else {
+        x.className = x.className.replace(" show", "");
       }
-    </script>
-  </body>
+    }
+  </script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      loop: true,
+      freeMode: true,
+      loopedSlides: 5, //looped slides should be the same
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      loop: true,
+      loopedSlides: 5, //looped slides should be the same
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+  </script>
+</body>
+
 </html>
