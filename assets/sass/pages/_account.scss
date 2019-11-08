@@ -308,10 +308,19 @@
       width: 70%;
     }
 
+    &__imgs {
+      height: 18.6rem;
+      width: 40%;
+
+      @include respond(l-phone2) {
+        display: none;
+      }
+    }
+
     &__img {
       height: 100%;
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
 
       @include respond(l-phone2) {
         display: none;

@@ -214,9 +214,23 @@
   &__inner {
     width: 100%;
     padding: 1.8rem 0;
-
+    flex: 1 1 40%;
     font-size: 2.4rem;
     margin-top: 2%;
+
+    &--pay {
+      flex: 1 1 40%;
+    }
+
+    &--install {
+      flex: 1 1 60%;
+      margin-left: 3%;
+      background: #B3C6D0;
+      
+      &:hover {
+        background: #8EAAB9;
+      }
+    }
   }
 
   &__payment {

@@ -80,5 +80,117 @@
 
 .radio {
   padding: 0;
-  position: relative;
+	position: relative;
+	
+	&__direct {
+		width: 14px;
+		height: 14px;
+		margin-right: 2%;
+	}
 }
+
+
+
+
+.radio-container {
+	position: relative;
+	margin: 6% auto 0;
+	font-size: 1.5rem;
+}
+.radiobtn {
+	position: relative;
+  display: block;
+  &__text {
+    margin-left: 44px;
+    text-transform: uppercase;
+  }
+	label {
+		display: block;
+		background: #f2f2f2;
+		color: $black-color;
+		border-radius: 5px;
+		padding: 2rem;
+		border: 2px solid transparent;
+		margin-bottom: 3%;
+		cursor: pointer;
+		&:after,
+		&:before {
+			content: "";
+			position: absolute;
+			left: 24px;
+			top: 50%;
+			width: 20px;
+			height: 20px;
+			border-radius: 3px;
+      background: transparent;
+      transform: translateY(-50%);
+      border: 1px solid #A8A8A8;
+		}
+		&:before {
+			background: transparent;
+			transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s,
+				0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+			z-index: 2;
+			overflow: hidden;
+			background-repeat: no-repeat;
+			background-size: 13px;
+			background-position: center;
+			width: 0;
+			height: 0;
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNS4zIDEzLjIiPiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE0LjcuOGwtLjQtLjRhMS43IDEuNyAwIDAgMC0yLjMuMUw1LjIgOC4yIDMgNi40YTEuNyAxLjcgMCAwIDAtMi4zLjFMLjQgN2ExLjcgMS43IDAgMCAwIC4xIDIuM2wzLjggMy41YTEuNyAxLjcgMCAwIDAgMi40LS4xTDE1IDMuMWExLjcgMS43IDAgMCAwLS4yLTIuM3oiIGRhdGEtbmFtZT0iUGZhZCA0Ii8+PC9zdmc+);
+		}
+	}
+	input[type="radio"] {
+		display: none;
+		position: absolute;
+		width: 100%;
+    appearance: none;
+    border: 1px solid #A8A8A8;
+		&:checked + label {
+			background: $white-color;
+			animation-name: blink;
+			animation-duration: 1s;
+			border-color: $primary-color;
+			&:after {
+        background: $primary-color;
+        border: 1px solid $primary-color;
+			}
+			&:before {
+				width: 20px;
+				height: 20px;
+        border: 1px solid $primary-color;
+			}
+		}
+	}
+}
+
+@keyframes blink {
+	0% {
+		background-color: lighten($primary-color, 48%);
+	}
+	10% {
+		background-color: lighten($primary-color, 48%);
+	}
+	11% {
+		background-color: lighten($primary-color, 95%);
+	}
+	29% {
+		background-color: lighten($primary-color, 95%);
+	}
+	30% {
+		background-color: lighten($primary-color, 48%);
+	}
+	50% {
+		background-color: lighten($primary-color, 95%);
+	}
+	45% {
+		background-color: lighten($primary-color, 48%);
+	}
+	50% {
+		background-color: lighten($primary-color, 95%);
+	}
+	100% {
+		background-color: lighten($primary-color, 48%);
+	}
+}
+

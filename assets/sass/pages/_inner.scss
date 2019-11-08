@@ -103,6 +103,7 @@
     border: 0.75px solid #a8a8a8;
     border-radius: 8px;
     position: relative;
+    background: $white-color;
   }
 
   &__dropdown {
@@ -140,6 +141,12 @@
         background: #a8a8a8;
         color: $white-color;
       }
+    }
+
+    &__direct {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3%;
     }
   }
 
@@ -183,6 +190,10 @@
     }
   }
 
+  &__buttons {
+    display: flex;
+  }
+
   &__folders {
     display: flex;
 
@@ -224,6 +235,10 @@
       @include respond(tab-port3) {
         font-size: 2.6rem;
       }
+
+      @include respond(l-phone2) {
+        list-style-type: none;
+      }
     }
   }
 
@@ -251,6 +266,19 @@
     }
   }
 
+  &__details {
+    margin: 3% 0;
+  }
+
+  &__payed {
+    margin: 13%  0;
+  }
+
+  &__svg {
+    margin: 0 auto 3%;
+    display: block;
+  }
+
   &__features {
     display: flex;
   }
@@ -275,3 +303,8 @@
     }
   }
 }
+
+// .inner__pay > div:last-child, :nth-child(1) {
+//   display: none;
+// }
+// :nth-child(1)
