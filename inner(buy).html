@@ -168,7 +168,7 @@
               <button type="submit" class="btn btn__inner btn__inner--pay">
                 Pay
               </button>
-              <button type="submit" class="btn btn__inner btn__inner--install">
+              <button id="payIst" class="btn btn__inner btn__inner--install">
                 Pay Installmentally
               </button>
             </div>
@@ -198,10 +198,10 @@
                 </label>
               </div>
 
-              <button type="submit" class="btn btn__inner">Next</button>
+              <button class="btn btn__inner" id="payOpt">Next</button>
             </form>
           </div>
-          <div id="payment">
+          <div id="payment" style="display: none;">
             <p class="inner__pick inner__pick--title">PICK MONTHS</p>
             <p class="inner__pick inner__pick--heading">₦5,000 Monthly</p>
             <form class="radio-container">
@@ -227,10 +227,10 @@
                 <label for="direct">Direct debit</label>
               </div>
 
-              <button type="submit" class="btn btn__inner">Next</button>
+              <button class="btn btn__inner" id="cardDet">Next</button>
             </form>
           </div>
-          <div id="card__details">
+          <div id="card__details" style="display: none;">
             <p class="inner__pick inner__pick--title">CARD DETAILS</p>
             <p class="inner__pick inner__pick--heading">₦5,000 Monthly</p>
             <form class="signup__forms__container">
@@ -248,9 +248,9 @@
                 <input required type="number" id="cvv" name="cvv" class="input__field" />
               </div>
             </form>
-            <button type="submit" class="btn btn__inner">Pay</button>
+            <button class="btn btn__inner" id="cardPay">Pay</button>
           </div>
-          <div id="bank__details">
+          <div id="bank__details" style="display: none;">
             <p class="inner__pick inner__pick--title">BANK DETAILS</p>
             <p class="inner__pick inner__pick--heading">₦5,000 Monthly</p>
             <div class="inner__details">
@@ -260,10 +260,10 @@
               <p class="details__text">Lofty Heights Limited</p>
               <p class="details__title">Account Number</p>
               <p class="details__text">0122552117</p>
-              <button type="submit" class="btn btn__inner">Next</button>
+              <button class="btn btn__inner" id="bankPay">Next</button>
             </div>
           </div>
-          <div id="card__payed">
+          <div id="card__payed" style="display: none;">
             <div class="inner__payed">
               <svg class="inner__svg" width="30%" height="30%" viewBox="0 0 128 128" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -274,7 +274,7 @@
               <p class="inner__sucess">Payment Successful</p>
             </div>
           </div>
-          <div id="bank__payed">
+          <div id="bank__payed" style="display: none;">
             <div class="inner__payed">
               <svg class="inner__svg" width="30%" height="30%" viewBox="0 0 128 128" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -813,6 +813,84 @@
       }
     });
   </script>
+
+  <script>
+    var payIst = document.getElementById('payIst')
+
+    var home = document.getElementById('home')
+    var month = document.getElementById('month')
+    var payment = document.getElementById('payment')
+    var card__details = document.getElementById('card__details')
+    var bank__details = document.getElementById('bank__details')
+    var card__payed = document.getElementById('card__payed')
+    var bank__payed = document.getElementById('bank__payed')
+
+
+    payIst.addEventListener('click', (e) => {
+      home.style.display = "none"
+      month.style.display = 'block'
+    });
+
+    var payOpt = document.getElementById('payOpt')
+    payOpt.addEventListener('click', (e) => {
+      e.preventDefault();
+      month.style.display = "none"
+      payment.style.display = 'block'
+    });
+
+    var cardDet = document.getElementById('cardDet')
+    cardDet.addEventListener('click', (e) => {
+      e.preventDefault();
+      let card = document.getElementById('card')
+      if (card.checked) {
+        payment.style.display = "none"
+        card__details.style.display = 'block'
+      }
+      else {
+        payment.style.display = "none"
+        bank__details.style.display = 'block'
+      }
+    });
+
+    var cardPay = document.getElementById('cardPay')
+    console.dir(card__payed)
+    cardPay.addEventListener('click', (e) => {
+      e.preventDefault();
+      card__details.style.display = "none"
+      card__payed.style.display = 'block'
+      setInterval(() => {
+        card__payed.style.display = 'none'
+        home.style.display = "block"
+      }, 1500);
+    });
+
+    var bankPay = document.getElementById('bankPay')
+    console.dir(card__payed)
+    bankPay.addEventListener('click', (e) => {
+      e.preventDefault();
+      bank__details.style.display = "none"
+      bank__payed.style.display = 'block'
+      setInterval(() => {
+        bank__payed.style.display = 'none'
+        home.style.display = "block"
+      }, 1500);
+    });
+
+    var bankPay = document.getElementById('bankPay')
+    bankPay.addEventListener('click', (e) => {
+      e.preventDefault();
+      bank__details.style.display = "none"
+      bank__payed.style.display = 'block'
+    });
+
+    function cardSuccess() {
+      setTimeout(function () {
+        bank__details.style.display = "none"
+        bank__payed.style.display = 'block'
+      }, 3000);
+    }
+  </script>
+
 
   <script>
     $(".btn__inner a").on("click", function (e) {
