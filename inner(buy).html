@@ -165,7 +165,7 @@
                 <span class="inner__pay-arrow">&#8594;</span></a>
             </p>
             <div class="inner__buttons">
-              <button type="submit" class="btn btn__inner btn__inner--pay">
+              <button id="payNow" class="btn btn__inner btn__inner--pay">
                 Pay
               </button>
               <button id="payIst" class="btn btn__inner btn__inner--install">
@@ -835,6 +835,13 @@
     payOpt.addEventListener('click', (e) => {
       e.preventDefault();
       month.style.display = "none"
+      payment.style.display = 'block'
+    });
+
+    var payNow = document.getElementById('payNow')
+    payNow.addEventListener('click', (e) => {
+      e.preventDefault();
+      home.style.display = "none"
       payment.style.display = 'block'
     });
 
