@@ -140,10 +140,7 @@
       position: absolute;
       color: $black-color;
       display: none;
-
-      @include respond(l-phone2) {
-        z-index: 2;
-      }
+      z-index: 2;
 
       &:hover {
         background: #a8a8a8;
