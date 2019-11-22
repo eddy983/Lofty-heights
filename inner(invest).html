@@ -104,23 +104,204 @@
       </div>
       <div class="inner__main--2">
         <div class="inner__pay">
-          <button onclick="myFunction()" class="inner__dropdown">
-            Invest in a home
-          </button>
-          <a href="inner(buy).html">
-            <div id="Demo" class="inner__dropdown__content">
-              <p>Buy a home</p>
+          <div id="home">
+            <button onclick="myFunction()" class="inner__dropdown">
+              Invest in a home
+            </button>
+            <a href="inner(buy).html">
+              <div id="Demo" class="inner__dropdown__content">
+                <p>Buy a home</p>
+              </div>
+            </a>
+            <div class="cntr">
+
+              <label for="opt1" class="radio-2 tabradio">
+                <input type="radio" name="rdo" id="opt1" class="hidden" onclick="openCity(event,'unit')" checked />
+                <span class="label"></span>Units
+              </label>
+
+              <label for="opt2" class="radio-2 tabradio">
+                <input type="radio" name="rdo" id="opt2" class="hidden" onclick="openCity(event,'flat')" />
+                <span class="label"></span>Flat
+              </label>
+
+              <label for="opt3" class="radio-2 tabradio">
+                <input type="radio" name="rdo" id="opt3" class="hidden" onclick="openCity(event,'building')"/>
+                <span class="label"></span>Building
+              </label>
+
             </div>
-          </a>
-          <p class="inner__pay-title">‎₦5,000,000</p>
-          <p class="inner__pay-sub">Amount to be earned ‎₦8,000,000</p>
-          <p class="inner__pay-discount">
-            <a href="#" class="inner__pay-link">Get 20% discount by using Riby Cobanking
-              <span class="inner__pay-arrow">&#8594;</span></a>
-          </p>
-          <button type="submit" class="btn btn__inner">Pay</button>
+
+            <div id="unit" class="type__form">
+              <form class="signup__forms__container signup__forms__container--1">
+                <div class="input">
+                  <label for="input__field-2" class="input__label">Number of units</label>
+                  <input type="number" class="input__field-2" required />
+                </div>
+                <div class="input">
+                  <p class="input__label">Remaining Units</p>
+                  <div class="input__field-2 input__field-2--grey">
+                    201
+                  </div>
+                </div>
+              </form>
+              <p class="inner__pay-title">₦5,000</p>
+              <p class="inner__pay-sub mb-5">Amount to be earned ‎₦10,000 per unit </p>
+              <div class="inner__buttons">
+                <button id="payNow" class="btn btn__inner btn__inner--pay">
+                  Pay
+                </button>
+                <button id="payIst" class="btn btn__inner btn__inner--install">
+                  Pay Installmentally
+                </button>
+              </div>
+            </div>
+
+            <div id="flat" style="display: none;" class="type__form">
+              <form class="signup__forms__container signup__forms__container--1">
+                <div class="input w100">
+                  <label for="input__field-2" class="input__label">Number of flats</label>
+                  <input type="number" class="input__field-2" required />
+                </div>
+              </form>
+              <p class="inner__pay-title">₦5,000,000</p>
+              <p class="inner__pay-sub mb-5">Amount to be earned ‎₦7,000,000</p>
+              <div class="inner__buttons">
+                <button id="payNow" class="btn btn__inner btn__inner--pay">
+                  Pay
+                </button>
+                <button id="payIst" class="btn btn__inner btn__inner--install">
+                  Pay Installmentally
+                </button>
+              </div>
+            </div>
+
+            <div id="building" style="display: none;" class="type__form">
+              <p class="inner__pay-title">₦50,000,000</p>
+              <p class="inner__pay-sub grey-color mb-5">Please in order to proceed you have to fill a form</p>
+
+              <button class="btn btn__inner" onclick="window.location.href = 'building.html'">
+                Fill form
+              </button>
+
+            </div>
+          </div>
+          <div id="month" style="display: none;">
+            <p class="inner__pick inner__pick--title">PICK MONTHS</p>
+            <form class="radio-container">
+              <div class="radiobtn">
+                <input type="radio" id="6 months" name="pick" value="6 months" checked />
+                <label for="6 months">
+                  <p class="radiobtn__text">6 months</p>
+                </label>
+              </div>
+  
+              <div class="radiobtn">
+                <input type="radio" id="12 months" name="pick" value="12 months" />
+                <label for="12 months">
+                  <p class="radiobtn__text">12 months</p>
+                </label>
+              </div>
+  
+              <div class="radiobtn">
+                <input type="radio" id="18 months" name="pick" value="18 months" />
+                <label for="18 months">
+                  <p class="radiobtn__text">18 months</p>
+                </label>
+              </div>
+  
+              <button class="btn btn__inner" id="payOpt">Next</button>
+            </form>
+          </div>
+          <div id="payment" style="display: none;">
+            <p class="inner__pick inner__pick--title">PICK MONTHS</p>
+            <p class="inner__pick inner__pick--heading">₦5,000 Monthly</p>
+            <form class="radio-container">
+              <div class="radiobtn">
+                <input type="radio" id="card" name="pick" value="card" checked />
+                <label for="card">
+                  <p class="radiobtn__text">CREDIT/ DEBIT CARD</p>
+                </label>
+              </div>
+  
+              <div class="radiobtn">
+                <input type="radio" id="bank" name="pick" value="bank" />
+                <label for="bank">
+                  <p class="radiobtn__text">BANK TRANSFER</p>
+                </label>
+              </div>
+  
+              <p class="inner__deduct">
+                Do you want the money to be deducted monthly
+              </p>
+              <div class="inner__direct">
+                <input type="checkbox" name="type" id="direct" class="radio__direct" />
+                <label for="direct">Direct debit</label>
+              </div>
+  
+              <button class="btn btn__inner" id="cardDet">Next</button>
+            </form>
+          </div>
+          <div id="card__details" style="display: none;">
+            <p class="inner__pick inner__pick--title">CARD DETAILS</p>
+            <p class="inner__pick inner__pick--heading">₦5,000 Monthly</p>
+            <form class="signup__forms__container">
+              <div class="input w100">
+                <label for="card-no" class="input__label">Card number</label>
+                <input required type="number" class="input__field" name="card-no" id="card-no" />
+                <small class="input__error" style="display: none">Card number invalid</small>
+              </div>
+              <div class="input">
+                <label for="valid" class="input__label">Valid thru</label>
+                <input required type="month" id="valid" name="valid" class="input__field" />
+              </div>
+              <div class="input">
+                <label for="cvv" class="input__label">CVV</label>
+                <input required type="number" id="cvv" name="cvv" class="input__field" />
+              </div>
+            </form>
+            <button class="btn btn__inner" id="cardPay">Pay</button>
+          </div>
+          <div id="bank__details" style="display: none;">
+            <p class="inner__pick inner__pick--title">BANK DETAILS</p>
+            <p class="inner__pick inner__pick--heading">₦5,000 Monthly</p>
+            <div class="inner__details">
+              <p class="details__title">Bank</p>
+              <p class="details__text">First Bank PLC</p>
+              <p class="details__title">Account Name</p>
+              <p class="details__text">Lofty Heights Limited</p>
+              <p class="details__title">Account Number</p>
+              <p class="details__text">0122552117</p>
+              <button class="btn btn__inner" id="bankPay">Next</button>
+            </div>
+          </div>
+          <div id="card__payed" style="display: none;">
+            <div class="inner__payed">
+              <svg class="inner__svg" width="30%" height="30%" viewBox="0 0 128 128" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M37.76 51.84L28.8 60.8L57.6 89.6L121.6 25.6L112.64 16.64L57.6 71.68L37.76 51.84ZM115.2 64C115.2 92.16 92.16 115.2 64 115.2C35.84 115.2 12.8 92.16 12.8 64C12.8 35.84 35.84 12.8 64 12.8C69.12 12.8 73.6 13.44 78.08 14.72L88.3203 4.48C80.64 1.92 72.32 0 64 0C28.8 0 0 28.8 0 64C0 99.2 28.8 128 64 128C99.2 128 128 99.2 128 64H115.2Z"
+                  fill="#6FCF97" />
+              </svg>
+              <p class="inner__sucess">Payment Successful</p>
+            </div>
+          </div>
+          <div id="bank__payed" style="display: none;">
+            <div class="inner__payed">
+              <svg class="inner__svg" width="30%" height="30%" viewBox="0 0 128 128" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M37.76 51.84L28.8 60.8L57.6 89.6L121.6 25.6L112.64 16.64L57.6 71.68L37.76 51.84ZM115.2 64C115.2 92.16 92.16 115.2 64 115.2C35.84 115.2 12.8 92.16 12.8 64C12.8 35.84 35.84 12.8 64 12.8C69.12 12.8 73.6 13.44 78.08 14.72L88.3203 4.48C80.64 1.92 72.32 0 64 0C28.8 0 0 28.8 0 64C0 99.2 28.8 128 64 128C99.2 128 128 99.2 128 64H115.2Z"
+                  fill="#6FCF97" />
+              </svg>
+              <p class="inner__sucess">Thank You</p>
+              <p class="inner__sucess--sub">The property will added to your dashboard once approved</p>
+            </div>
+          </div>
         </div>
+
       </div>
+    </div>
     </div>
     <div class="inner__sub">
       <div class="inner__sub--1">
@@ -613,6 +794,103 @@
       } else {
         x.className = x.className.replace(" show", "");
       }
+    }
+  </script>
+  <script>
+    var payIst = document.getElementById('payIst')
+
+    var home = document.getElementById('home')
+    var month = document.getElementById('month')
+    var payment = document.getElementById('payment')
+    var card__details = document.getElementById('card__details')
+    var bank__details = document.getElementById('bank__details')
+    var card__payed = document.getElementById('card__payed')
+    var bank__payed = document.getElementById('bank__payed')
+    var unit = document.getElementById('unit')
+    var flat = document.getElementById('flat')
+    var Building = document.getElementById('Building')
+
+    payIst.addEventListener('click', (e) => {
+      home.style.display = "none"
+      month.style.display = 'block'
+    });
+
+    var payOpt = document.getElementById('payOpt')
+    payOpt.addEventListener('click', (e) => {
+      e.preventDefault();
+      month.style.display = "none"
+      payment.style.display = 'block'
+    });
+
+    var payNow = document.getElementById('payNow')
+    payNow.addEventListener('click', (e) => {
+      e.preventDefault();
+      home.style.display = "none"
+      payment.style.display = 'block'
+    });
+
+    var cardDet = document.getElementById('cardDet')
+    cardDet.addEventListener('click', (e) => {
+      e.preventDefault();
+      let card = document.getElementById('card')
+      if (card.checked) {
+        payment.style.display = "none"
+        card__details.style.display = 'block'
+      }
+      else {
+        payment.style.display = "none"
+        bank__details.style.display = 'block'
+      }
+    });
+
+    var cardPay = document.getElementById('cardPay')
+    console.dir(card__payed)
+    cardPay.addEventListener('click', (e) => {
+      e.preventDefault();
+      card__details.style.display = "none"
+      card__payed.style.display = 'block'
+      setInterval(() => {
+        card__payed.style.display = 'none'
+        home.style.display = "block"
+      }, 1500);
+    });
+
+    var bankPay = document.getElementById('bankPay')
+    console.dir(card__payed)
+    bankPay.addEventListener('click', (e) => {
+      e.preventDefault();
+      bank__details.style.display = "none"
+      bank__payed.style.display = 'block'
+      setInterval(() => {
+        bank__payed.style.display = 'none'
+        home.style.display = "block"
+      }, 1500);
+    });
+
+    var bankPay = document.getElementById('bankPay')
+    bankPay.addEventListener('click', (e) => {
+      e.preventDefault();
+      bank__details.style.display = "none"
+      bank__payed.style.display = 'block'
+    });
+
+    function cardSuccess() {
+      setTimeout(function () {
+        bank__details.style.display = "none"
+        bank__payed.style.display = 'block'
+      }, 3000);
+    }
+  </script>
+
+  <script>
+    function openCity(evt, typeName) {
+      var i, x, tabradios;
+      x = document.getElementsByClassName("type__form");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tabradios = document.getElementsByClassName("tabradio");
+      document.getElementById(typeName).style.display = "block";
     }
   </script>
 

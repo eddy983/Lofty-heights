@@ -95,6 +95,10 @@
       @include respond(tab-port3) {
         margin-bottom: 6%;
       }
+
+      @include respond(l-phone2) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -136,6 +140,10 @@
       position: absolute;
       color: $black-color;
       display: none;
+
+      @include respond(l-phone2) {
+        z-index: 2;
+      }
 
       &:hover {
         background: #a8a8a8;
@@ -192,6 +200,10 @@
 
   &__buttons {
     display: flex;
+
+    @include respond(l-phone2) {
+      flex-direction: column;
+    }
   }
 
   &__folders {
@@ -199,6 +211,10 @@
 
     @include respond(tab-port3) {
       margin-bottom: 6%;
+    }
+
+    @include respond(l-phone2) {
+      flex-direction: column;
     }
   }
 
@@ -218,6 +234,11 @@
 
     &:not(:first-child) {
       margin-left: 3%;
+
+      @include respond(l-phone2) {
+        margin-left: 0;
+        margin-top: 5%;
+      }
     }
   }
 
