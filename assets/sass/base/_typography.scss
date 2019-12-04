@@ -124,13 +124,31 @@ body {
       font-size: 1.2rem;
     }
 
-    &__name {
-      font-size: 1.6rem;
-    }
-    &__sub {
-      font-size: 1.2rem;
-      letter-spacing: 0.03em;
+    &__number {
+      font-size: 4.8rem;
       color: #a8a8a8;
+      font-weight: bold;
+    }
+
+    &__purchase {
+      font-size: 1.2rem;
+    }
+
+    &__pur-title {
+      color: #8b9292;
+      font-size: 2.4rem;
+    }
+
+    &__pending {
+      &__title {
+        font-size: 1.4rem;
+        margin-bottom: 4%;
+      }
+
+      &__link {
+        color: $primary-color;
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -138,6 +156,10 @@ body {
     &__type {
       font-size: 1.4rem;
       font-weight: bold;
+
+      &--2 {
+        font-size: 1rem;
+      }
 
       @include respond(l-phone2) {
         font-size: 2.4rem;
@@ -147,6 +169,10 @@ body {
     &__unit {
       font-size: 1.4rem;
 
+      &--2 {
+        font-size: 1.2rem;
+      }
+
       @include respond(l-phone2) {
         font-size: 2.4rem;
       }
@@ -155,6 +181,10 @@ body {
 
   &__house {
     font-size: 2.6rem;
+
+    &--2 {
+      font-size: 1.8rem;
+    }
 
     @include respond(l-phone2) {
       font-size: 5.6rem;
@@ -170,6 +200,10 @@ body {
   &__location {
     font-size: 1.8rem;
     color: #a8a8a8;
+
+    &--2 {
+      font-size: 1.4rem;
+    }
 
     @include respond(l-phone2) {
       font-size: 3.8rem;

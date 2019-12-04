@@ -69,22 +69,6 @@
     }
   }
 
-  &__change {
-    border: none;
-    background: transparent;
-    font-size: 1.2rem;
-    letter-spacing: 0.03em;
-    margin-top: 32%;
-    color: #cf604a;
-    font-weight: 600;
-    padding: 1.2rem;
-    margin-left: -1.2rem;
-
-    &:hover {
-      background: $pink-color;
-    }
-  }
-
   &__view {
     padding: 1rem 0;
     width: 100%;
@@ -109,6 +93,11 @@
       @include respond(l-phone2) {
         width: 48%;
       }
+    }
+
+    &--3 {
+      padding: 0.6rem 0;
+      font-size: 1.4rem;
     }
 
     &:hover {
@@ -260,5 +249,11 @@
       background: transparent;
       color: $dark-red-color;
     }
+  }
+
+  &__lil-pay {
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
   }
 }

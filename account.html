@@ -100,58 +100,165 @@
         </a>
       </nav>
     </div>
-    <div class="account__content tab-d">
-      <h1 class="account__heading">Account Overview</h1>
-      <div class="account__overviews">
-        <div class="account__details">
-          <div class="account__details__header">
-            <p class="account__details__heading">ACCOUNT DETAILS</p>
+    <div class="account__contents">
+      <div class="account__content tab-d">
+        <h1 class="account__heading">Account Overview</h1>
+        <div class="account__overviews">
+          <div class="account__details">
+            <div class="account__details__header">
+              <p class="account__details__heading">ACCOUNT DETAILS</p>
+            </div>
+            <div class="account__details__body">
+              <div class="account__details__transactions">
+                <p class="account__details__number">10</p>
+                <p class="account__details__sub">Transactions</p>
+              </div>
+              <div class="account__details__investments">
+                <div class="account__details__investment">
+                  <p class="account__details__purchase">
+                    <span class="account__details__pur-title">5</span>
+                    Investments
+                  </p>
+                  <p class="account__details__purchase">
+                    <span class="account__details__pur-title">5</span> Purchase
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="account__details__pendings">
+              <h5 class="account__details__pending__title">Pending Payments</h5>
+              <div class="account__details__pending">
+                <a href="#" class="account__details__pending__link">Penthouse, Alagomeji - 5,000 Naira</a>
+                <button class="btn btn__lil-pay">Pay Now</button>
+              </div>
+              <div class="account__details__pending">
+                <a href="#" class="account__details__pending__link">Duplex, Eti Osa - 10,000 Naira</a>
+                <button class="btn btn__lil-pay">Pay Now</button>
+              </div>
+            </div>
           </div>
-          <div class="account__details__body">
-            <p class="account__details__name">Adelola Temitope</p>
-            <p class="account__details__sub">adelolatemitope@gmail.com</p>
-            <button class="btn btn__change">CHANGE PASSWORD</button>
+          <div class="account__transaction account__transaction--2">
+            <div class="account__trans__items">
+              <div class="account__trans__imgs">
+                <img src="assets/img/trans-img-1.png" alt="Transaction Image"
+                  class="account__trans__img account__trans__img--2" />
+              </div>
+              <div class="account__trans__info">
+                <div class="account__trans__text">
+                  <p class="account__house account__house--2">Miniflat</p>
+                  <p class="account__location account__location--2">Akoka, yaba</p>
+                </div>
+                <button onclick="window.location.href='trans-payment.html'" class="btn btn__view btn__view--3">
+                  View
+                </button>
+              </div>
+            </div>
+            <div class="account__trans__statuses">
+              <div class="account__trans__status account__trans__status--2">
+                <p class="account__trans__type account__trans__type--2">Number of Units</p>
+                <p class="account__trans__unit account__trans__unit--2">20</p>
+              </div>
+              <div class="account__trans__line"></div>
+              <div class="account__trans__status account__trans__status--2">
+                <p class="account__trans__type account__trans__type--2">Type</p>
+                <p class="account__trans__unit account__trans__unit--2">Investment</p>
+              </div>
+              <div class="account__trans__line"></div>
+              <div class="account__trans__status account__trans__status--2">
+                <p class="account__trans__type account__trans__type--2">Amount Due</p>
+                <p class="account__trans__unit account__trans__unit--2 red-color">‎₦50,000</p>
+              </div>
+              <div class="account__trans__line"></div>
+              <div class="account__trans__status account__trans__status--2">
+                <p class="account__trans__type account__trans__type--2">Status</p>
+                <p class="account__trans__unit account__trans__unit--2 blue-color">Ongoing</p>
+              </div>
+              <div class="account__trans__line"></div>
+            </div>
           </div>
         </div>
         <div class="account__overview">
           <table>
             <tr>
-              <th>Recent Transactions</th>
+              <th class="payment__text">Recent Transactions</th>
+              <th class="phone-d">&nbsp;</th>
+              <th class="phone-d">&nbsp;</th>
               <th>&nbsp;</th>
               <th>&nbsp;</th>
-              <th>&nbsp;</th>
             </tr>
             <tr>
-              <td>11/08/2019</td>
-              <td>akoka, yaba, lagos</td>
-              <td>₦5,000</td>
-              <td class="green-color">Completed</td>
+              <td class="payment__sub phone-sx-d">DATE</td>
+              <td class="payment__sub phone-d">PROPERTY</td>
+              <td class="payment__sub phone-d">AMOUNT RECEIVED</td>
+              <td class="payment__sub">AMOUNT PAYED</td>
+              <td class="payment__sub">MODE OF PAYMENT</td>
             </tr>
             <tr>
-              <td>11/08/2019</td>
-              <td>akoka, yaba, lagos</td>
-              <td>₦5,000</td>
-              <td class="green-color">Completed</td>
+              <td class="payment__text phone-sx-d">11/08/2019</td>
+              <td class="payment__text phone-d">Miniflat, akoka, lagos</td>
+              <td class="payment__text phone-d">₦0</td>
+              <td class="payment__text">₦5,000</td>
+              <td class="payment__text">Card</td>
             </tr>
             <tr>
-              <td>11/08/2019</td>
-              <td>akoka, yaba, lagos</td>
-              <td>₦5,000</td>
-              <td class="green-color">Completed</td>
+              <td class="payment__text phone-sx-d">11/08/2019</td>
+              <td class="payment__text phone-d">Penthouse, Alagomeji</td>
+              <td class="payment__text phone-d">₦5,000</td>
+              <td class="payment__text">₦0</td>
+              <td class="payment__text">Bank Transfer</td>
             </tr>
             <tr>
-              <td>11/08/2019</td>
-              <td>akoka, yaba, lagos</td>
-              <td>₦5,000</td>
-              <td class="green-color">Completed</td>
+              <td class="payment__text phone-sx-d">11/08/2019</td>
+              <td class="payment__text phone-d">Duplex, Eti Osa</td>
+              <td class="payment__text phone-d">₦0</td>
+              <td class="payment__text">₦5,000</td>
+              <td class="payment__text">Card</td>
+            </tr>
+            <tr>
+              <td class="payment__text phone-sx-d">11/08/2019</td>
+              <td class="payment__text phone-d">Miniflat, Sabo</td>
+              <td class="payment__text phone-d">₦5,000</td>
+              <td class="payment__text">₦0</td>
+              <td class="payment__text">Bank Transfer</td>
             </tr>
           </table>
+        </div>
+
+
+      </div>
+
+      <a href="#popup">
+        <div class="account__advert" id="advert">
+          <img src="assets/img/advert.png" alt="advert Image" class="account__advert__img">
+        </div>
+      </a>
+
+    </div>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <a href="#advert" class="popup__close">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M23.904 4.09576C18.4431 -1.36515 9.55708 -1.36568 4.09564 4.09576C-1.36581 9.5572 -1.36527 18.4427 4.09564 23.9041C9.55654 29.3656 18.4426 29.3656 23.904 23.9041C29.3649 18.4427 29.3649 9.55666 23.904 4.09576ZM19.5232 19.5233C19.1025 19.9441 18.4205 19.9441 17.9997 19.5233L13.9998 15.5234L9.80974 19.7135C9.389 20.1342 8.707 20.1342 8.28626 19.7135C7.86553 19.2928 7.86553 18.6108 8.28626 18.19L12.4764 13.9999L8.47643 10C8.0557 9.57929 8.0557 8.89674 8.47643 8.47655C8.89716 8.05582 9.57917 8.05582 9.9999 8.47655L13.9998 12.4765L17.809 8.66725C18.2298 8.24652 18.9118 8.24652 19.3325 8.66725C19.7533 9.08799 19.7533 9.76999 19.3325 10.1907L15.5233 13.9999L19.5232 17.9999C19.944 18.4206 19.944 19.1026 19.5232 19.5233Z"
+                fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="28" height="28" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <div class="popup__image">
+          <img src="assets/img/Ad.png" alt="Ad" class="popup__img">
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="footer footer--set">
+  <footer class="footer">
     <div class="footer__content">
       <div class="footer__link">
         <ul class="footer__link__items">
