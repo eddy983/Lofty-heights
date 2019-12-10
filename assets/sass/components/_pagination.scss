@@ -5,6 +5,10 @@
   display: flex;
   justify-content: center;
 
+  &--gallery {
+    padding: 0rem 0 12rem 0;
+  }
+
   &--2 {
     padding: 8rem 0;
   }
