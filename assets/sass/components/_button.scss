@@ -143,7 +143,14 @@
     font-weight: 500;
 
     &-signin {
-      background: $primary-color;
+      background: transparent;
+      border: 2px solid $white-color;
+
+      // &:hover {
+      //   background: transparent;
+      //   border: 2px solid $primary-color;
+      //   color: $primary-color;
+      // }
     }
 
     &-login {
@@ -268,5 +275,12 @@
       padding: 2.4rem 0;
       font-size: 2.4rem;
     }
+  }
+
+  &__become {
+    margin-top: 2.5%;
+    font-size: 1.6rem;
+    padding: 1.8rem 3.6rem;
+    font-weight: bold;
   }
 }
