@@ -1,0 +1,86 @@
+.member {
+  background: #fef5f6;
+  padding: 0 18% 10.8rem;
+
+  @include respond(tab-land2) {
+    padding: 0 6% 10.8rem;
+  }
+
+  &__card {
+    background: #FFFFFF;
+    border: 1px solid rgba(215, 35, 41, 0.36);
+    border-radius: 8px;
+    padding: 6% 6% 2%;
+
+    &:not(:last-child) {
+      margin-bottom: 3%;
+
+      @include respond(tab-port) {
+        margin-bottom: 8%;
+      }
+    }
+
+
+    &__heading {
+      display: flex;
+      align-items: center;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__bubble {
+    border: 2px solid #8B9292;
+    padding: 0.6rem 1.4rem;
+    border-radius: 100px;
+
+    @include respond(tab-land2) {
+      padding: 0.6rem 2rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 3%;
+    }
+
+
+  }
+
+  &__other {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  &__radios {
+    display: flex;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__radio {
+    &:not(:first-child) {
+      margin-left: 4%;
+    }
+
+    @include respond(tab-port) {
+      &:not(:first-child) {
+        margin-top: 3%;
+        margin-left: 0%;
+      }
+    }
+
+    &--2 {
+      margin-left: 0;
+
+      &:not(:first-child) {
+        margin-top: 3%;
+        margin-left: 0%;
+      }
+    }
+  }
+
+
+}

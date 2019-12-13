@@ -526,6 +526,56 @@ body {
   }
 }
 
+.member {
+  &__heading {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 5% 0 4%;
+
+    @include respond(tab-land2) {
+      font-size: 6rem;
+    }
+  }
+
+  &__number {
+    color: $grey-color;
+    font-size: 1.4rem;
+
+    @include respond(tab-land2) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    color: $grey-color;
+    margin-left: 2%;
+
+    @include respond(tab-land2) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__other--title {
+    font-size: 2.4rem;
+    margin-bottom: 3%;
+
+    @include respond(tab-land2) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__label {
+    margin-left: 32px;
+    font-size: 1.4rem;
+
+    @include respond(tab-land2) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
 .footer {
   &__copyright {
     font-size: 1.4rem;

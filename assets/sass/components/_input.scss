@@ -5,6 +5,14 @@
   margin-bottom: 3%;
   position: relative;
 
+  &--member {
+    margin-bottom: 5%;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+
   @include respond(desktop) {
     margin-bottom: 10%;
   }

@@ -10,6 +10,10 @@
   user-select: none;
   top: 25%;
   left: 25%;
+
+  &--left {
+    left: 0;
+  }
 }
 
 /* Hide the browser's default checkbox */

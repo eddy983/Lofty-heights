@@ -14,6 +14,10 @@ input[type=radio] {
   text-align: center;
   font-size: 1.4rem;
 
+  &--2 {
+    width: 24.5%;
+  }
+
   &:hover {
     color: $white-color;
     background: $primary-color;
@@ -35,4 +39,8 @@ input[type=radio] {
   overflow: hidden;
   width: 100%;
   margin-bottom: 6%;
+
+  &--2 {
+    margin: 5% 0;
+  }
 }
