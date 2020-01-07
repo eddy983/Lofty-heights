@@ -1,15 +1,3 @@
-@mixin position {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@mixin footer-width {
-  width: 100%;
-  margin: 5% 0 5%;
-}
-
 // MEDIA QUERY MANAGER
 /*
 0 - 400px: Small Phone
@@ -115,5 +103,30 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   @if $breakpoint == big-desktop {
     @media (max-width: 160em) { @content }; // 2560px in em
+  }
+}
+
+
+// Other Mixins
+
+@mixin position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin footer-width {
+  width: 100%;
+  margin: 5% 0 5%;
+}
+
+@mixin curve {
+  height: 20.8rem;
+  width: 20.8rem;
+
+  @include respond(l-phone2) {
+    height: 28.8rem;
+    width: 28.8rem;
   }
 }

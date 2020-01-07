@@ -28,6 +28,7 @@
     flex: 0 0 28%;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
     border-radius: 8px;
+    margin-right: 4%;
 
     @include respond(tab-land2) {
       flex: 0 0 100%;
@@ -302,7 +303,7 @@
 
         &:not(:first-child) {
           margin: 0 1.8rem 0 1.4rem;
-  
+
           @include respond(l-phone2) {
             margin: 0;
           }
@@ -315,8 +316,6 @@
         flex-direction: column;
         align-items: center;
       }
-
-      
     }
 
     &__line {
@@ -406,7 +405,7 @@
       }
     }
   }
-  
+
   &__advert {
     height: 14rem;
     margin-top: 5%;
@@ -415,6 +414,71 @@
       height: 100%;
       width: 100%;
     }
+  }
+
+  &__saving {
+    display: flex;
+    align-items: center;
+
+    @include respond(l-phone) {
+      flex-direction: column;
+    }
+
+    &__progress {
+      @include respond(l-phone) {
+        flex-direction: column;
+      }
+    } 
+
+    &__text {
+      margin-left: 8%;
+
+      @include respond(l-phone2) {
+        margin-left: 0;
+        margin-top: 8%;
+      }
+    }
+
+    &__boxes {
+      display: flex;
+      width: 100%;
+      margin-top: 6%;
+
+      @include respond(l-phone2) {
+        flex-direction: column;
+      }
+    }
+
+    &__box {
+      width: 33.3333333%;
+      box-shadow: 0px 0px 4px rgba(69, 80, 89, 0.4);
+      border-radius: 8px;
+      padding: 4%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include respond(l-phone2) {
+        padding: 12%;
+        width: 100%;
+      }
+
+      &:not(:last-child) {
+        margin-right: 3%;
+
+        @include respond(l-phone2) {
+          margin-right: 0;
+          margin-bottom: 8%;
+        }
+      }
+    }
+  }
+
+  &__none {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 0;
   }
 }
 

@@ -221,10 +221,10 @@
     &--install {
       flex: 1 1 60%;
       margin-left: 3%;
-      background: #B3C6D0;
-      
+      background: #b3c6d0;
+
       &:hover {
-        background: #8EAAB9;
+        background: #8eaab9;
       }
     }
   }
@@ -282,5 +282,17 @@
     font-size: 1.6rem;
     padding: 1.8rem 3.6rem;
     font-weight: bold;
+  }
+
+  &__member {
+    font-size: 1.6rem;
+    padding: 14px 48px;
+    margin-top: 5%;
+
+    @include respond(l-phone2) {
+      width: 100%;
+      font-size: 2.6rem;
+      margin-top: 14%;
+    }
   }
 }
