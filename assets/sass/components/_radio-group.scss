@@ -16,6 +16,12 @@ input[type=radio] {
 
   &--2 {
     width: 24.5%;
+
+    @include respond(l-phone) {
+      width: 100%;
+      font-size: 2rem;
+      padding: 12px 0;
+    }
   }
 
   &:hover {
@@ -42,5 +48,10 @@ input[type=radio] {
 
   &--2 {
     margin: 5% 0;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

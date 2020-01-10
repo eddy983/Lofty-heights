@@ -34,6 +34,10 @@
     transform: translate(-50%, -50%) scale(.25);
     transition: all .5s .2s;
 
+    &--2 {
+      border-radius: 12px;
+    }
+
     @include respond(tab-land) {
       width: 85%;
     }
@@ -78,6 +82,10 @@
     &:hover {
       color: #555;
     }
+  }
+
+  &__welcome {
+    padding: 8% 6%;
   }
 
 }

@@ -270,6 +270,10 @@
     display: block;
     margin: 0 auto 4%;
 
+    @include respond(l-phone2) {
+      margin-top: 6%;
+    }
+
     @include respond(phone) {
       width: 100%;
       padding: 2.4rem 0;
@@ -293,6 +297,27 @@
       width: 100%;
       font-size: 2.6rem;
       margin-top: 14%;
+    }
+  }
+
+  &__next {
+    font-size: 1.8rem;
+    padding: 1.2rem 4.8rem;
+    display: block;
+    margin: 1% auto 0%;
+    width: fit-content;
+    text-decoration: none;
+
+    @include respond(tab-land2) {
+      font-size: 2.8rem;
+      padding: 2.2rem 10.8rem;
+    }
+
+    @include respond(l-phone2) {
+      width: 100%;
+      padding: 2.4rem 0;
+      font-size: 2.4rem;
+      text-align: center;
     }
   }
 }

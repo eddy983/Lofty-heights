@@ -630,6 +630,20 @@ body {
   }
 }
 
+.welcome {
+  &--title {
+    font-size: 3.6rem;
+    font-weight: normal;
+    text-align: center;
+  }
+  &--sub {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 8%;
+    color: $bluish-grey-color;
+  }
+}
+
 .footer {
   &__copyright {
     font-size: 1.4rem;

@@ -47,7 +47,7 @@
 
   <header class="account__header">
     <a href="account.html" class="account__arrow">&larr;</a>
-    <p class="account__main">Transactions</p>
+    <p class="account__main">Savings</p>
   </header>
 
   <main class="account">
@@ -131,6 +131,74 @@
 
     </div>
   </main>
+
+  <div class="popup" id="popup">
+    <div class="popup__content popup__content--2">
+      <div class="popup__welcome">
+        <div id="welcome__first">
+          <h1 class="welcome--title">Welcome Emem Isong</h1>
+          <p class="welcome--sub">Thanks for joining, we just need to know your savings plan</p>
+          <div class="radio-group radio-group--2">
+            <input type="radio" id="option-one" name="selector" class="radio" /><label for="option-one"
+              class="label label--2">
+              3 Months
+            </label>
+            <input type="radio" id="option-two" name="selector" class="radio" /><label for="option-two"
+              class="label label--2">
+              6 Months
+            </label>
+            <input type="radio" id="option-three" name="selector" class="radio" />
+            <label for="option-three" class="label label--2">12 Months</label>
+            <input type="radio" id="option-four" name="selector" class="radio" />
+            <label for="option-four" class="label label--2">18 Months</label>
+          </div>
+          <form class="signup__forms__container">
+            <div class="input input--member">
+              <label for="input__field" class="input__label">Amount ( ₦ )</label>
+              <input required type="number" class="input__field">
+            </div>
+            <div class="input input--member">
+              <label for="input__field" class="input__label">Date of debit</label>
+              <input required type="date" class="input__field empty">
+            </div>
+          </form>
+          <button class="btn btn__next" id="next">Next</button>
+        </div>
+        <div id="welcome__last" style="display: none;">
+          <h1 class="welcome--title">Last step</h1>
+          <p class="welcome--sub"> Please add your card number</p>
+          <form class="signup__forms__container">
+            <div class="input input--member w100">
+              <label for="input__field" class="input__label">Card Number</label>
+              <input required type="number" class="input__field">
+            </div>
+            <div class="input input--member">
+              <label for="input__field" class="input__label">Valid Until</label>
+              <input required type="month" class="input__field empty">
+            </div>
+            <div class="input input--member">
+              <label for="input__field" class="input__label">CVC</label>
+              <input required type="number" class="input__field">
+            </div>
+          </form>
+          <div class="member__other">
+            <div class="member__radios fxd-c">
+              <div class="member__radio member__radio--2">
+                <div class="radio">
+                  <label class="container container--left">
+                    <input required type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <p class="member__label">we will automatically invest 50% of your money in the next property</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn__next">Continue</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="footer__content">
@@ -218,6 +286,17 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var welcomeFirst = document.getElementById('welcome__first')
+    var welcomeLast = document.getElementById('welcome__last')
+    var next = document.getElementById('next')
+
+    next.addEventListener('click', (e) => {
+      welcomeFirst.style.display = "none"
+      welcomeLast.style.display = 'block'
+    });
+  </script>
 </body>
 
 </html>
